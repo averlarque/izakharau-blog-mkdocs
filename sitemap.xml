@@ -6,22 +6,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://izakharau.me/about/</loc>
+         <loc>https://izakharau.me/essays/api-design/</loc>
          <lastmod>2023-10-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://izakharau.me/announcements/</loc>
+         <loc>https://izakharau.me/pages/about/</loc>
          <lastmod>2023-10-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://izakharau.me/api-experience/</loc>
+         <loc>https://izakharau.me/pages/announcements/</loc>
          <lastmod>2023-10-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://izakharau.me/business-analysis/ba-po/</loc>
+         <loc>https://izakharau.me/pages/media/</loc>
          <lastmod>2023-10-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -96,7 +96,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://izakharau.me/product-management/product-management/</loc>
+         <loc>https://izakharau.me/posts/media/medium-replacing-legacy-3/</loc>
          <lastmod>2023-10-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
