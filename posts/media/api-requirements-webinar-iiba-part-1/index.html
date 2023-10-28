@@ -6,32 +6,28 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Let's talk about backward compatibility and how to deal with the breaking changes in terms of API.">
+        <meta name="description" content="On October 26, 2023, I hosted a webinar for Business Analysts about API and the requirements specifics about that. Here are materials and a recording from the event...">
       
       
       
-        <link rel="canonical" href="https://ilyazakharau.com/posts/backward-compatibility/">
+        <link rel="canonical" href="https://ilyazakharau.com/posts/media/api-requirements-webinar-iiba-part-1/">
       
       
-        <link rel="prev" href="../api-design-tooling/">
       
       
-        <link rel="next" href="../product-manager-year-one/">
-      
-      
-      <link rel="icon" href="../../favicon.ico">
+      <link rel="icon" href="../../../favicon.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
     
     
       
-        <title>Breaking changes & Backward compatibility - ILYA ZAKHARAU - Platform Product Manager & Agile Product Owner</title>
+        <title>IIBA Belarus "Requirements & API. Part 1" - Webinar materials - ILYA ZAKHARAU - Platform Product Manager & Agile Product Owner</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35e1ed30.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.35e1ed30.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -50,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -89,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#breaking-changes-backward-compatibility" class="md-skip">
+        <a href="#requirements-api-part-1-26102023" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +99,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="ILYA ZAKHARAU - Platform Product Manager &amp; Agile Product Owner" class="md-header__button md-logo" aria-label="ILYA ZAKHARAU - Platform Product Manager & Agile Product Owner" data-md-component="logo">
+    <a href="../../.." title="ILYA ZAKHARAU - Platform Product Manager &amp; Agile Product Owner" class="md-header__button md-logo" aria-label="ILYA ZAKHARAU - Platform Product Manager & Agile Product Owner" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -123,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Breaking changes & Backward compatibility
+              IIBA Belarus "Requirements & API. Part 1" - Webinar materials
             
           </span>
         </div>
@@ -215,7 +211,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -230,21 +226,17 @@
         
   
   
-    
-  
   
     
     
       
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../essays/api-design/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../essays/api-design/" class="md-tabs__link">
           
   
     
@@ -265,7 +257,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../pages/announcements/" class="md-tabs__link">
+      <a href="../../../pages/announcements/" class="md-tabs__link">
         
   
     
@@ -282,7 +274,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../pages/media/" class="md-tabs__link">
+      <a href="../../../pages/media/" class="md-tabs__link">
         
   
     
@@ -299,7 +291,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../pages/about/" class="md-tabs__link">
+      <a href="../../../pages/about/" class="md-tabs__link">
         
   
     
@@ -333,7 +325,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="ILYA ZAKHARAU - Platform Product Manager &amp; Agile Product Owner" class="md-nav__button md-logo" aria-label="ILYA ZAKHARAU - Platform Product Manager & Agile Product Owner" data-md-component="logo">
+    <a href="../../.." title="ILYA ZAKHARAU - Platform Product Manager &amp; Agile Product Owner" class="md-nav__button md-logo" aria-label="ILYA ZAKHARAU - Platform Product Manager & Agile Product Owner" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -350,7 +342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -367,8 +359,6 @@
       
   
   
-    
-  
   
     
     
@@ -384,12 +374,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -403,7 +393,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Essays
@@ -414,8 +404,6 @@
                 
   
   
-    
-  
   
     
     
@@ -436,12 +424,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
@@ -455,7 +443,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             API Design
@@ -468,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../essays/api-design/" class="md-nav__link">
+      <a href="../../../essays/api-design/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -488,7 +476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../definition-of-api-requirements-v2/" class="md-nav__link">
+      <a href="../../definition-of-api-requirements-v2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -508,7 +496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../non-functional-requirements-and-api/" class="md-nav__link">
+      <a href="../../non-functional-requirements-and-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -528,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-design-first/" class="md-nav__link">
+      <a href="../../api-design-first/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -548,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-design-tooling/" class="md-nav__link">
+      <a href="../../api-design-tooling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -566,29 +554,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Breaking changes & Backward compatibility
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../backward-compatibility/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -597,54 +565,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#breaking-the-broken" class="md-nav__link">
-    Breaking the broken
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#expect-the-unexpected" class="md-nav__link">
-    Expect the unexpected
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-the-link-becomes-missing" class="md-nav__link">
-    When the link becomes missing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#change-history" class="md-nav__link">
-    Change history
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -706,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-manager-year-one/" class="md-nav__link">
+      <a href="../../product-manager-year-one/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -726,7 +646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../product-manager-sophomore-year/" class="md-nav__link">
+      <a href="../../product-manager-sophomore-year/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -761,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pages/announcements/" class="md-nav__link">
+      <a href="../../../pages/announcements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -780,7 +700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pages/media/" class="md-nav__link">
+      <a href="../../../pages/media/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -799,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pages/about/" class="md-nav__link">
+      <a href="../../../pages/about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -839,29 +759,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#breaking-the-broken" class="md-nav__link">
-    Breaking the broken
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#expect-the-unexpected" class="md-nav__link">
-    Expect the unexpected
+  <a href="#rus-webinar-recording-on-youtube" class="md-nav__link">
+    [RUS] Webinar recording on Youtube
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#when-the-link-becomes-missing" class="md-nav__link">
-    When the link becomes missing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#change-history" class="md-nav__link">
-    Change history
+  <a href="#eng-slides" class="md-nav__link">
+    [ENG] Slides
   </a>
   
 </li>
@@ -881,62 +794,19 @@
                   
 
 
-<div><h1 id="breaking-changes-backward-compatibility">Breaking changes &amp; Backward compatibility</h1>
-<p><img alt="Breaking changes everywhere" src="../images/breaking_changes.jpeg"></p>
-<p>I learned what backward compatibility means regarding software engineering when I started working on microservices. When you are responsible for services widely used by other teams inside and partners outside, you most likely become paranoid about maintaining backward compatibility of your API as much as possible. Especially when it is a  highly volatile environment with rapidly growing functionality and direction changes on the fly.</p>
-<p>At some point, I invented the term "backward awkwardability" - an awkward feeling while telling consumers that there are breaking changes in a new release, so they have to migrate. If your team does it frequently, they will say something like, "C'mon guys, you introduced breaking changes just a few iterations before! What's going on?"</p>
-<p>Let's talk about backward compatibility and how to deal with the breaking changes in terms of API.</p>
-<h2 id="breaking-the-broken">Breaking the broken</h2>
-<p>Maintaining backward compatibility means newer versions will keep the application's existing functionality intact. A recent version can contain bug fixes, improvements, or new features. But all previous components are working as expected, and no efforts are required to bring them back to work after the update.</p>
-<p>Breaking backward compatibility means you obligate your consumers to make efforts so they can retain the functionality they are already using. It is not the same as regression. The latter implies degrading the current customer experience due to newer changes. But that usually happens unintentionally because of a lack of quality assurance and fixed from the developer side.</p>
-<p>Breaking changes are intentional, and it requires some work to adapt the changes from the consumer side. They already did some job to start using your service. And now, they need to do this exercise again to keep going, and no guarantee that it will not happen again unless there is a written agreement to prevent such cases.</p>
-<p>Migration is often a non-planned job in the short or mid-term. Consumers are paying a double price: for new and current functionality. We assume that the value should compensate for the efforts.</p>
-<p>Regarding software development, the efforts are additional work hours to change the source code in compliance with the breaking changes. The cost of such changes may be high: a Business Analyst should assess the impact of changes, a Developer to investigate required changes and implement them, and a Quality assurance engineer to verify them.</p>
-<p>Let's review a more general example related to User experience. Any drastic changes in how users interact with the system require additional efforts to learn and adapt to how to use the functionality again. It is not critical when it is about moving a button in a direct-2-consumer app (I wanted to use Instagram as an example, but moving a button there might also be impactful). But considering professional and semi-professional software products, such changes will impact productivity resulting in money loss.</p>
-<p>A frustrated end-user can stop using an app and switch to a competitor. It is more complicated for professional service: you can switch from Figma if they decide to revolutionize the design process in an expected way. For enterprise-level vendors, such a switch might be a costly endeavor. A concerned service can be a vital part of business processes, and it is impossible to drop it immediately and jump to a competitor. Anyway, the cost of switching to another service is always higher than the cost of implementing the breaking changes.</p>
-<h2 id="expect-the-unexpected">Expect the unexpected</h2>
-<p>Is it possible to avoid breaking changes? Yes, technically. Keeping compatibility at any cost leads to an increase in technical debt. Your team will have to implement sometimes non-trivial and not the best solutions to honor their commitments. They also will be very limited in using new frameworks and libraries and major updates of the ones in current use. So you pay the price for maintaining backward compatibility instead of your customers.</p>
-<p>That strategy may work for conservative industries. The alternative is to regulate the introduction of breaking changes.
-The regulations depend on the organization's policies and services specifics. In general, it results in API contract terms aligned with consumers.</p>
-<p>The following questions are considered when "signing" the contract:</p>
-<p><strong>1) Frequency and schedule</strong></p>
-<p>The organization defines how frequently you are willing to release incompatible versions: per several releases or some calendar period. You aggregate the breaking changes in your product backlog and fire them in a particular release. So consumers can plan their migration activities accordingly.</p>
-<p>The main issue is to follow that schedule, as there might be business reasons to introduce breaking changes earlier than initially expected.</p>
-<p><strong>2) Communication</strong></p>
-<p>It matters how you notify customers about it. The worst option is to send them a link to a Jira ticket with a poor description and a mess in the comments. The best option is to write a comprehensive migration guide. Developers might consider writing such a guide a waste of time, but it is an investment to reduce future support activities.</p>
-<p><strong>3) Migration support</strong></p>
-<p>A comprehensive guide will not save you from additional communications: answering questions, helping with the update, and fixing bugs. So be prepared to have a support buffer in your team's capacity. Or even better, super-obvious advice: always have a support buffer.</p>
-<p><strong>4) Support timeline for previous releases</strong></p>
-<p>Customers may postpone the update to an unknown time due to various reasons. And they may keep requesting improvements and bug fixes for an older version they currently use. That ends up supporting several releases: moving forward with new releases and producing backports to the previous ones.</p>
-<p>The backports continuously require more efforts from the team, shifting focus from the future to the past. The more gap you have, the more challenging it is to improve an older version. It is not a trivial task from both a development and testing perspective that can trigger unexpected problems.</p>
-<p>To fight this, you must include another point in the contract: how long you commit to supporting previous versions.
-In my practice, there was a case when we supported five previous major releases. That was a solid argument to speed up the update. As we had a 2-week release cycle, the customers had about two months to plan and conduct the update.</p>
-<p>Frequent updates may not be typical for your industry. That period may vary due to different business contexts. Or you have a good old customer with a fat bank account unwilling to migrate soon. And the senior management will eat you alive if you try to push the unwanted update. That is mainly the organization or program-wide question. You can only support previous releases for a while but can't drop too frequently.</p>
-<h2 id="when-the-link-becomes-missing">When the link becomes missing</h2>
-<p>Maintaining backward compatibility for existing functionality and managing breaking changes is a challenge. And who is responsible for managing that? The answer is rather disappointing -  the entire team in various aspects:</p>
-<ul>
-<li>Business Analyst to conduct impact analysis when considering design options. </li>
-<li>Product owner to communicate with stakeholders. </li>
-<li>Tech Lead to manage tech debt and overall delivery. </li>
-<li>Developers follow the agreements and make all that happen. </li>
-<li>QAs to ensure we don't break something unintentionally.</li>
-</ul>
-<p>To finalize that topic, I would like to emphasize the following statements:</p>
-<ul>
-<li>When discussing a feature design or a bug fix for such a critical service, always ask yourself and the team if that can potentially introduce breaking changes. Become paranoid, just like me.</li>
-<li>Ensure all stakeholders, including the team, know the breaking change policy. If you don't have it already, you don't need it. If you need it, start the discussion in your organization.</li>
-<li>Test Automation is the key to preventing unexpected breaking changes with regression testing.</li>
-<li>When designing a data structure in general and API request/response format, remember that there will be no chance to change those when your service goes live. It is not possible to elaborate on all questions in advance. But that approach leaves no room for "will do it later." Try to consider all possible options, even if they might be unrealistic. The price for reckless design is the highest price we pay in the industry.</li>
-<li>Make sure breaking changes are appropriately communicated to your customers.</li>
-<li>And follow your Contract commitments.</li>
-</ul>
-<p><em>Take care,</em></p>
-<p><em>Ilya</em></p>
-<h2 id="change-history">Change history</h2>
-<ul>
-<li>2021-04-26: Initial version published</li>
-<li>2023-04-04: Second revision published</li>
-</ul></div>
+<div><h1 id="requirements-api-part-1-26102023">Requirements &amp; API. Part 1 (26/10/2023)</h1>
+<h2 id="overview">Overview</h2>
+<p>On October 26, 2023, I hosted a webinar for Business Analysts about API and the requirements specifics about that (<a href="/posts/announcements/api-requirements-webinar-iiba">announcement</a>).</p>
+<p>I was very excited about that opportunity. Even that part was based on my previous materials published here in my blog, and from the offline API workshop, I spent a lot of time polishing and re-structuring the content to fit a remote audience with different backgrounds.</p>
+<p>Personally, I do more like offline public speaking as it gives a sense of touch with people. While doing that online, you wonder whether people are still listening to you or you are not audible due to a connectivity issue. Also, you can't always see a reaction: you are just speaking with your laptop, hoping for the best.</p>
+<p>My speech was in Russian, and after years, I am losing my ability to make such long and structured pieces in that language. All my professional communication is done in English. I made hundreds of demos and other presentations in English rather than Russian. So, sometimes, I felt that I was translating from English.</p>
+<p>But overall, I had a good impression. I liked the questions from the audience and the general feedback. I am looking forward to Part 2 as there will be less theory and more practical examples with some tooling.</p>
+<p>All updates and announcement are available on <a href="https://www.linkedin.com/company/iiba-belarus-chapter/">IIBA® Belarus Chapter LinkdeIn page</a>.</p>
+<h2 id="rus-webinar-recording-on-youtube">[RUS] Webinar recording on Youtube</h2>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/E67AX4KTsWM?si=Bdxm1ydV7GlQ8QuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<h2 id="eng-slides">[ENG] Slides</h2>
+<p><embed alt="Alt text" src="/files/webinar-requirements-api-2023/261023-Requirements-API-Part1.pdf" style="min-height:75vh;width:100%" type="application/pdf"></embed></p></div>
 
 
   
@@ -1103,10 +973,10 @@ In my practice, there was a case when we supported five previous major releases.
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tracking", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tracking", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.aecac24b.min.js"></script>
       
     
   </body>

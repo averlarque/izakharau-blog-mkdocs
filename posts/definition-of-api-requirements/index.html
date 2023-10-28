@@ -853,7 +853,7 @@
                   
 
 
-<p><em>There is a <a href="/posts/definition-of-api-requirements-v2">2nd revision of this article</a>, so please read it instead. This, as my first published post in this blog, will stay here as a reminder of my bad writing.</em></p>
+<div><p><em>There is a <a href="/posts/definition-of-api-requirements-v2">2nd revision of this article</a>, so please read it instead. This, as my first published post in this blog, will stay here as a reminder of my bad writing.</em></p>
 <p>At some point in my career, I faced a need to specify requirements for API. Those were not typical solution requirements I worked on before. I learned about the API layer which is very common among the enterprise systems. It can hide a set of microservices or a legacy system from the outer world. Like any other system, it is also impacted by stakeholders' needs. And those needs have to be translated into requirements.</p>
 <p>We are going to decompose the definition of API requirements and see what lies within. I will pay your attention to what should be taken into consideration for the API layer. It is an introduction to this topic as there are other sides of it to explore further.</p>
 <p>We are not going to talk about implementation types of API such as REST, RPC, GraphQL, etc. Ideally, requirements should not be tied to the technical implementation and that rule works here as well.</p>
@@ -945,7 +945,7 @@ Making a chain of calls to one or several back-end services with a few Entities 
 <p>You need to consider that the data model stored in your database is not the same as the data model provided to the clients via API. B First, there can be some differences in data types used. Secondly, there is no need to expose all attributes you have in the data model via API. There is always some information you don't want to share with some types of users.</p>
 <p>Providing expected outcomes is a part of the Contract. So the information should correspond to clients' goals and expected format. Sometimes you need to transform the data originally provided by the back-end. That can be localization to a different language, another date format, currency conversion, combining data objects of different entities, adapting data from third-party providers, etc. Data mapping is the right requirement artifact to keep that important information.</p>
 <h1 id="epilogue">Epilogue</h1>
-<p>That is just a basic overview of what is beneath the API layer. We are not touching specific implementation and possible format of API specification and documentation. Hopefully, we will investigate those topics in the future.</p>
+<p>That is just a basic overview of what is beneath the API layer. We are not touching specific implementation and possible format of API specification and documentation. Hopefully, we will investigate those topics in the future.</p></div>
 
 
   
