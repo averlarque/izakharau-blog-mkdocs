@@ -6,32 +6,34 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Last year I wrote a short essay summarizing my first 365 days as a Product Manager. One more year has passed, and it is time to share more insights or learned lessons.">
+        <meta name="description" content="'Ilya Zakharau - a skilled Product Manager and Agile Product Owner with extensive experience in B2B Enterprise products focusing on API. 
+I am passionate about building Platforms that allow other people to develop and deliver their products.'
+">
       
       
       
-        <link rel="canonical" href="https://ilyazakharau.com/product-manager-sophomore-year/">
+        <link rel="canonical" href="https://ilyazakharau.com/essays/requirements-api/3-analysis/">
       
       
-        <link rel="prev" href="../new-mkdocs-blog-version/">
+        <link rel="prev" href="../2-definitions/">
       
       
-        <link rel="next" href="../medium-replacing-legacy-3/">
+        <link rel="next" href="../../api-design/">
       
       
-      <link rel="icon" href="../favicon.ico">
+      <link rel="icon" href="../../../favicon.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.11">
     
     
       
-        <title>Product Manager: Sophomore Year - ILYA ZAKHARAU - About Product Management, Business Analysis, and APIs</title>
+        <title>Analysis - ILYA ZAKHARAU - About Product Management, Business Analysis, and APIs</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -86,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#product-manager-sophomore-year" class="md-skip">
+        <a href="#requirements-api-analysis" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +102,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="ILYA ZAKHARAU - About Product Management, Business Analysis, and APIs" class="md-header__button md-logo" aria-label="ILYA ZAKHARAU - About Product Management, Business Analysis, and APIs" data-md-component="logo">
+    <a href="../../.." title="ILYA ZAKHARAU - About Product Management, Business Analysis, and APIs" class="md-header__button md-logo" aria-label="ILYA ZAKHARAU - About Product Management, Business Analysis, and APIs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -120,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Product Manager: Sophomore Year
+              Analysis
             
           </span>
         </div>
@@ -213,13 +215,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href=".." class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
           
   
     
@@ -235,17 +235,21 @@
         
   
   
+    
+  
   
     
     
       
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../essays/requirements-api/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -300,7 +304,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../about/" class="md-tabs__link">
+      <a href="../../../about/" class="md-tabs__link">
         
   
     
@@ -323,9 +327,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -336,7 +338,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="ILYA ZAKHARAU - About Product Management, Business Analysis, and APIs" class="md-nav__button md-logo" aria-label="ILYA ZAKHARAU - About Product Management, Business Analysis, and APIs" data-md-component="logo">
+    <a href="../../.." title="ILYA ZAKHARAU - About Product Management, Business Analysis, and APIs" class="md-nav__button md-logo" aria-label="ILYA ZAKHARAU - About Product Management, Business Analysis, and APIs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -351,8 +353,6 @@
       
   
   
-    
-  
   
   
     
@@ -369,22 +369,21 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href=".." class="md-nav__link ">
+            <a href="../../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -395,13 +394,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Home
@@ -469,7 +468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../archive/2024/" class="md-nav__link">
+      <a href="../../../archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -492,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../archive/2023/" class="md-nav__link">
+      <a href="../../../archive/2023/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -515,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../archive/2022/" class="md-nav__link">
+      <a href="../../../archive/2022/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -538,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../archive/2021/" class="md-nav__link">
+      <a href="../../../archive/2021/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -623,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../category/api/" class="md-nav__link">
+      <a href="../../../category/api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -646,7 +645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../category/announcements/" class="md-nav__link">
+      <a href="../../../category/announcements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -669,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../category/books/" class="md-nav__link">
+      <a href="../../../category/books/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -692,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../category/business-analysis/" class="md-nav__link">
+      <a href="../../../category/business-analysis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -715,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../category/media/" class="md-nav__link">
+      <a href="../../../category/media/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -738,7 +737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../category/product-management/" class="md-nav__link">
+      <a href="../../../category/product-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -771,8 +770,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -785,19 +786,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -808,7 +810,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Essays
@@ -819,6 +821,8 @@
                 
   
   
+    
+  
   
   
     
@@ -840,18 +844,16 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../essays/requirements-api/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -868,7 +870,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             Requirements & API
@@ -884,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../essays/requirements-api/1-glossary/" class="md-nav__link">
+      <a href="../1-glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -905,7 +907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../essays/requirements-api/2-definitions/" class="md-nav__link">
+      <a href="../2-definitions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -923,10 +925,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../essays/requirements-api/3-analysis/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Analysis
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -935,6 +957,113 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-we-need-requirements-for-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why do we need requirements for API?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements classification
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements engineering
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requirements engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting point
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-gap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functional gap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contract-black-box" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contract &amp; Black box
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-be-so-agile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't be so agile
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-on-the-topic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading on the topic
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -955,7 +1084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../essays/api-design/" class="md-nav__link">
+      <a href="../../api-design/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1009,7 +1138,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../essays/replacing-legacy/" class="md-nav__link ">
+            <a href="../../replacing-legacy/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1042,7 +1171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../essays/replacing-legacy/replacing-legacy-1/" class="md-nav__link">
+      <a href="../../replacing-legacy/replacing-legacy-1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1063,7 +1192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../essays/replacing-legacy/replacing-legacy-2/" class="md-nav__link">
+      <a href="../../replacing-legacy/replacing-legacy-2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1084,7 +1213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../essays/replacing-legacy/replacing-legacy-3/" class="md-nav__link">
+      <a href="../../replacing-legacy/replacing-legacy-3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1105,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../essays/replacing-legacy/replacing-legacy-4/" class="md-nav__link">
+      <a href="../../replacing-legacy/replacing-legacy-4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1126,7 +1255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../essays/replacing-legacy/replacing-legacy-5/" class="md-nav__link">
+      <a href="../../replacing-legacy/replacing-legacy-5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1202,7 +1331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
+      <a href="../../../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1223,8 +1352,6 @@
             
             
               
-                
-              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1244,54 +1371,87 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#identity-crisis" class="md-nav__link">
+  <a href="#why-do-we-need-requirements-for-api" class="md-nav__link">
     <span class="md-ellipsis">
-      Identity crisis
+      Why do we need requirements for API?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#people-often-dont-know-what-they-are-doing" class="md-nav__link">
+  <a href="#requirements-classification" class="md-nav__link">
     <span class="md-ellipsis">
-      People (often don't) know what they are doing
+      Requirements classification
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#look-outside-and-share-what-you-see" class="md-nav__link">
+  <a href="#requirements-engineering" class="md-nav__link">
     <span class="md-ellipsis">
-      Look outside and share what you see
+      Requirements engineering
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Requirements engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starting-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting point
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-gap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functional gap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contract-black-box" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contract &amp; Black box
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-be-so-agile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't be so agile
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#validate-architecture-design" class="md-nav__link">
+  <a href="#reading-on-the-topic" class="md-nav__link">
     <span class="md-ellipsis">
-      Validate Architecture design
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#product-vision-clash" class="md-nav__link">
-    <span class="md-ellipsis">
-      Product vision clash
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#afterword" class="md-nav__link">
-    <span class="md-ellipsis">
-      Afterword
+      Reading on the topic
     </span>
   </a>
   
@@ -1306,144 +1466,156 @@
             
           
           
-  <div class="md-content md-content--post" data-md-component="content">
-    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
-      <div class="md-sidebar__scrollwrap">
-        <div class="md-sidebar__inner md-post">
-          <nav class="md-nav md-nav--primary">
-            <div class="md-post__back">
-              <div class="md-nav__title md-nav__container">
-                <a href=".." class="md-nav__link">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-                  <span class="md-ellipsis">
-                    Back to index
-                  </span>
-                </a>
-              </div>
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<div><h1 id="requirements-api-analysis">Requirements &amp; API: Analysis</h1>
+<p>With this chapter, we first will understand why we need requirements for API and their place in the requirements classification frameworks. Then, we review the requirements engineering process and specific aspects you need to consider.</p>
+<h2 id="why-do-we-need-requirements-for-api">Why do we need requirements for API?</h2>
+<p>Let's answer why business analysts have suddenly started working on API requirements. About a decade ago, when I began my career in IT as a business analyst, it was not a part of my general BA responsibilities. Now, you can see more job descriptions for BAs, POs, and PMs to learn about API. And I have a subjective explanation about API becoming a must-know for us.</p>
+<p>The leading software architecture approach back then was an on-premise deployed monolithic application. Simply, that was a tied backend service that communicated with a desktop or web UI client. That backend was integrated with several internal or external services in different ways, such as file upload via FTP. </p>
+<p>A Business analyst focused on business capabilities and their representation on the UI side, plus requirements for integrations such as mappings and request logic. The detailed interaction across the backend, UI client, and integrated system was the responsibility of tech folks. </p>
+<p>But things started moving when Cloud, SaaS, and Microservices architecture (MSA) became a dominant trend for system design:</p>
+<p><img alt="" src="../images/3-1.png"></p>
+<p>Because of those trends, systems become more interconnected than ever before. Some services become API-first, meaning you can only use them through their APIs. So, API becomes a business model with higher-level requirements. With that, you get stakeholders, regulations, restrictions, etc. The stuff a business analyst, product owner, and product manager takes care of.</p>
+<p>The number of API clients has increased exponentially, including those on the web, mobile applications, IoT, etc. Additionally, microservices communicate with each other within a system through APIs. Thus, there are many external and internal clients, vertically and horizontally, each with its stakeholders and specific needs.</p>
+<p>Another crucial aspect is that APIs are more vulnerable to attacks as they provide a direct way to break into a system. So, we are not just designing and implementing API but also ensuring their security.</p>
+<p>To summarize, the "businessfication" of API due to the rise of Cloud, MSA, and SaaS, increased number of clients, high-security risks, and, last but not least, imposed industry and government regulations have made API also a zone of interest for all kinds of business folks.</p>
+<p>That is not a comprehensive explanation of that shift, but that is how I see it from my perspective. I would like to see your thoughts in the comments.</p>
+<h2 id="requirements-classification">Requirements classification</h2>
+<p>Before diving into BA theory, let's clarify that API requirements are not functional. UI is the closest analogy. There is a system capability (function) and several ways for users to access it. In the previous chapter, we identified API as a <strong>distribution channel</strong>. And that is the same for any public interface: UI, Command-line interface (CLI), Chatbots, etc.</p>
+<p>You can express a functional requirement through API design. However, API itself is not a direct concern of system capabilities. Going back to the UI analogy: the design patterns, components you choose to use, or color scheme are crucial for UX, but we don't call them functional requirements.</p>
+<p>For example: "System shall return a list of items filtered by x and sorted by y" that is a functional requirement. However, how you return this list to UI and API might differ. If a single front-end utilizes that API endpoint, it is enough to describe how from a UI perspective. This single client acts as the primary stakeholder here. But if several clients want to get the list for their purpose, we need to spend additional time communicating with them and aligning on expectations of what they need to get and why. The outcome might differ significantly from how you return those list items for UI.</p>
+<p>Ok, API requirements are not functional, so what type of requirements do they belong to? Let's review several sources.</p>
+<p>In the recent "Software Requirements Essentials" by K. Wiegers and C. Hokanson define "External interface requirement":</p>
+<blockquote>
+<p>A description of a connection between the solution being built and other elements of the world around it, including users, other software systems, hardware devices, and networks.</p>
+</blockquote>
+<p>The classic "Software Requirements," 3rd edition by K. Wiegers and J. Beatty, highlights the interconnection between non-functional requirements and interfaces.</p>
+<blockquote>
+<p>"Other classes of non-functional requirements describe external interfaces between the system and the outside world. These include connections to other software systems, hardware components, and users, as well as communication interfaces."</p>
+</blockquote>
+<p>According to the standard ISO/IEC/IEEE 29148:2018 "Systems and software engineering — Life cycle processes — Requirements engineering," there is such a requirement type as Interface requirements (5.2.8.3):</p>
+<blockquote>
+<p>Interface requirements are the definition of how the system is required to interact with external systems (external interface), or how system elements within the system, including human elements, interact with each other (internal interface). External interface requirements state characteristics required of the system, software or service at a point or region of connection of the system, software or service to the world outside of the item. They include, as applicable, characteristics such as location, geometry and what the interface is to be able to pass in each direction.</p>
+</blockquote>
+<p>Interface requirements are not non-functional requirements because interfaces have non-functional requirements on their own: security, compatibility, usability, compliance, etc. An interface is not just a quality attribute of a specific capability. However, a lousy interface will definitely worsen user experience, whether we are talking about UI or API.</p>
+<p>Also, selected technology and design patterns imply constraints on interfaces. So, software architecture also impacts the analysis process, especially for API. For example, whether API should be synchronous or asynchronous (event-driven) depends on the architecture and utilized protocol.</p>
+<p>Under interface requirements (where we also include UI and CLI), it also makes sense to separate integration requirements when a system acts as a Consumer and API requirements when it is a Producer (see previous part about Producers &amp; Consumers). Those subtypes share a lot in common, but the outcome differs. The latter's outcome means operational API endpoints. Meanwhile, working interaction between systems is the first outcome.</p>
+<h2 id="requirements-engineering">Requirements engineering</h2>
+<p>BABOK v3 (IIBA, 2015) does not classify API requirements as non-functional or any other requirement type. However, it describes the interface analysis technique (10.24), which talks about API and interfaces in general. The analysis consists of 3 stages such as:</p>
+<ul>
+<li>Preparing to identify and understand what interfaces are needed by studying actors' interactions.</li>
+<li>Conducting identification by describing a function of each future interface, evaluating the type of an interface and its initial design</li>
+<li>Defining interface with inputs, outputs, validations, etc.</li>
+</ul>
+<p>The requirements development is not so different from the "traditional" business analysis process: elicitation, analysis, specification, and validation. Right now, we are focusing more on the first steps. Specification and further validation have some peculiarities, but we need to dive into HTTP protocol basics and API structure to discuss them. That will come in later chapters.</p>
+<h3 id="starting-point">Starting point</h3>
+<p>We have a bunch of questions as a starting point:</p>
+<ul>
+<li>Why do we need this?<ul>
+<li>E.g., We want to make an access point for 3rd parties to get data our system produces not from UI but a paid public API. In short, add a new distribution channel and monetize it.</li>
+</ul>
+</li>
+<li>For whom are we doing this?<ul>
+<li>For example, medical data brokers will use our data to build their market prediction models.</li>
+</ul>
+</li>
+<li>What will it do?<ul>
+<li>E.g., Return set purchase records for the provided period.</li>
+</ul>
+</li>
+<li>How will they do it?<ul>
+<li>For example, authorize with a token and provide a line-of-business ID with period start and end dates.</li>
+</ul>
+</li>
+</ul>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>The next step is to define the prerequisite of an API call - authentication and authorization:</p>
+<ul>
+<li>Authentication is about verifying clients and allowing them to communicate with your API.</li>
+<li>Authorization is about permissions to enable specific clients to make particular API requests and see certain data.</li>
+<li>Another critical point is whether a Consumer possesses all the necessary input data to make a call.</li>
+<li>You need to understand whether you need a new permission associated with a new API endpoint or re-use existing ones.</li>
+</ul>
+<h3 id="functional-gap">Functional gap</h3>
+<p>Another important question is whether a system already provides such capability. And if so, does it require any improvement?</p>
+<p>If there is a gap between current system capabilities and the desired interface, it is a matter of solution requirements. So, the traditional BA practices should be used there.</p>
+<p>For example, if there are search criteria for a new API endpoint, we need to make sure they are included in the search index. And that is already a backend-related matter.</p>
+<p>If you want to describe a solution through the interface, that will not be enough to cover all the aspects. A bare minimum is to have a data model as a data dictionary or entity relationship diagram with good-old use cases describing where new APIs will be used.</p>
+<p>The task is to identify and describe use cases where one or several API endpoints will be utilized. Nowadays, APIs are very granular, which is why a single API without context doesn't make much sense. So, a scenario where specific actions with several Entities are involved will consist of more than one API call. </p>
+<h3 id="contract-black-box">Contract &amp; Black box</h3>
+<p>If we take a simplistic look at API, it will look like</p>
+<p><img alt="" src="../images/3-2.png"></p>
+<p>The outcome of the analysis is a described input/request structure and outcome/response. That represents a black box, which we also call an API contract.</p>
+<ul>
+<li>An API contract is an agreement about expected input and outcome between you and the Clients. </li>
+<li>The Contract is strictly formalized, and clients agree to follow it when they start using your API. </li>
+<li>The API Producer takes responsibility for maintaining the consistency of the Contract.</li>
+<li>There can be legal punishment for breaking API contracts</li>
+<li>API contract can be defined before the implementation so both sides can work in parallel.</li>
+</ul>
+<p>And two important things there:</p>
+<ol>
+<li>
+<p>The request/response model, called the API model, does not equal a Data Model in a database. API is an abstraction built upon a database to secure interaction with the outside world. Models might differ in naming, set of exposed attributes, and even in some data types.</p>
+</li>
+<li>
+<p>New API must be consistent with existing system APIs. If something is called in a particular way, you should follow that. It would help to avoid possible confusion and increased cognitive load for your Consumers</p>
+</li>
+</ol>
+<p>API Models can be described in:</p>
+<ul>
+<li>formal ways:<ul>
+<li>data formats like XML and JSON</li>
+<li>in specification forma like OpenAPI. <a href="https://www.openapis.org/">OpenAPI</a> is the most common formal API specification format for HTTP</li>
+</ul>
+</li>
+<li>informal ways, like an Excel spreadsheet or any textual format. Informal formats usually tend to mimic OpenAPI but in a more human-friendly manner</li>
+</ul>
+<p>Request logic handles what happens inside the black box (glass box). It can also be described as:</p>
+<ul>
+<li>informally (text description with several steps)</li>
+<li>visually: UML activity or sequence diagram etc</li>
+<li>specification like formats</li>
+</ul>
+<p>Request logic can be a simple CRUD command for an Entity object. It also can be a sophisticated aggregated request with a few internal APIs involved. We cover that in later chapters.</p>
+<h2 id="dont-be-so-agile">Don't be so agile</h2>
+<p>While working with UI, it is easier to introduce changes than with API. There is a risk of breaking the user experience, but that is generally about the cognitive effort of the user to adapt to something new. They are not paying money for your changes.</p>
+<p>On the other side, Consumers are paying the price for adapting to breaking changes of the utilized API or migrating to the new ones. They need additional integration and maintenance effort, from changing client code to updating autotests, documentation, etc.</p>
+<p>Thus, all that "iterative-flexible" is not very much about API. They evolve during their lifecycle, for sure. However, breaking API contracts frequently is not a good way of achieving sustainability. There are ways to mitigate that, but it definitely should be in the mind of every API Producer.</p>
+<p>From the requirements engineering perspective, analysis should be done more thoroughly, especially if it is a paid public API that is to be used by multiple consumers.</p>
+<h2 id="reading-on-the-topic">Reading on the topic</h2>
+<ul>
+<li><a href="https://ilyazakharau.com/definition-of-api-requirements-v2/">Definition of API Requirements</a></li>
+<li><a href="https://ilyazakharau.com/non-functional-requirements-and-api/">Non-functional Requirements and API</a></li>
+<li><a href="https://ilyazakharau.com/backward-compatibility/">Breaking changes &amp; Backward compatibility</a></li>
+<li><a href="https://ilyazakharau.com/api-requirements-webinar-iiba-part-1%262/">Summary of the "Requirements &amp; API" webinars for IIBA Belarus</a></li>
+</ul></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
             </div>
-            
-            <ul class="md-post__meta md-nav__list">
-              <li class="md-nav__item md-nav__item--section">
-                <div class="md-post__title">
-                  <span class="md-ellipsis">
-                    Metadata
-                  </span>
-                </div>
-                <nav class="md-nav">
-                  <ul class="md-nav__list">
-                    <li class="md-nav__item">
-                      <div class="md-nav__link">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5Z"/></svg>
-                        <time datetime="2023-05-23 22:30:00" class="md-ellipsis">May 23, 2023</time>
-                      </div>
-                    </li>
-                    
-                    
-                      <li class="md-nav__item">
-                        <div class="md-nav__link">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3H9m3 2 4 13 3-1-4-13-3 1M5 5v13h3V5H5M3 19v2h18v-2H3Z"/></svg>
-                          <span class="md-ellipsis">
-                            in
-                            
-                              <a href="../category/product-management/">Product Management</a></span>
-                        </div>
-                      </li>
-                    
-                    
-                      
-                      <li class="md-nav__item">
-                        <div class="md-nav__link">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5Z"/></svg>
-                          <span class="md-ellipsis">
-                            
-                              4 min read
-                            
-                          </span>
-                        </div>
-                      </li>
-                    
-                  </ul>
-                </nav>
-              </li>
-            </ul>
-          </nav>
           
-        </div>
-      </div>
-    </div>
-    <article class="md-content__inner md-typeset">
-      
-        
-  
-  
-
-<nav class="md-tags" >
-  
-    
-    
-    
-      <span class="md-tag">Career</span>
-    
-  
-</nav>
-
-
-
-<div><h1 id="product-manager-sophomore-year">Product Manager: Sophomore Year</h1>
-<figure>
-<p><img alt="Cover" src="../2023/images/pm_sophomore_year.jpg" width="300">
-  </p>
-<figcaption><a href="https://www.vecteezy.com/free-vector/toddler">Toddler Vectors by Vecteezy</a></figcaption>
-</figure>
-<p>Last year I wrote a <a href="/product-manager-year-one">short essay</a> summarizing my first 365 days as a Product Manager. One more year has passed, and it is time to share more insights or learned lessons.</p>
-<p><strong>Important notice</strong>: It is only about my experience, so some things may not apply to what other PMs are experiencing. Product Management is a vast discipline with different responsibilities across different companies and industries.</p>
-<!-- more -->
-
-<h2 id="identity-crisis">Identity crisis</h2>
-<p>The more I read books or consume other content about Product Management, the more I ask myself, "Am I even a real Product Manager?" Sometimes I feel like a Jira backlog administrator, and sometimes like a Project manager who needs to go through and respond to dozens of emails daily and micro-manage to make everything work.</p>
-<p>There were a few moments when I wanted to switch back to Business Analysis, where I felt safer knowing which tools to use and what I could achieve with them. PM is responsible for everything but usually without any means of power. And the sense of powerlessness is devastating. You see multiple success stories around you and push more, but the outcome remains unchanged. So you start questioning your abilities which affect mental health.</p>
-<p>But the truth is that you can't build a solid house on sand. You can die heroically doing that but what for? The reasons may be lying outside, and I should not blame myself. Maybe. I know what I am capable of.</p>
-<h2 id="people-often-dont-know-what-they-are-doing">People (often don't) know what they are doing</h2>
-<p>I have naive assumptions that I am surrounded by professionals who know what and why they are doing. Mainly, I have never questioned higher management. I could argue with some decisions but never disagree with a general direction. I thought that the smartest guys in a room with dozens of years of experience and university degrees I only could dream of, knowing what they were doing. In reality, it is not always the case.</p>
-<p>That also applies to some peers from whom you expect to resolve some dependencies. If your team has an external dependency, you must put extra effort into managing this. It is not only about a schedule but also what and how it will be delivered (if delivered at all). And also, only some people care about mid or long-term consequences.</p>
-<p>I'm not too fond of the escalation. I want peers to align with each other, commit and follow and respect the commitment. Unfortunately, that is not often the case for various reasons: incompetence, lack of responsibility, and "hidden agenda."</p>
-<h2 id="look-outside-and-share-what-you-see">Look outside and share what you see</h2>
-<p>When you are developing an internal platform, you focus needs of a department or an entire organization. At some point, when we were at a crossroads, I understood that we were unlikely the ones who solely fought a similar problem. We cannot look into other internal platforms, but we can research how open-source and commercial solutions are trying to resolve the same issues.</p>
-<p>So I started revising any available materials: user and technical documentation, release notes, webinars, etc. I was particular about how they approached the functionality we already have and how they designed solutions we only plan to implement. Then I did a summary and presented it to the team. There were a lot of insights during those sessions. It was not about attempts to "re-use" someone's design but more about questioning our past decisions and discussing future ones. That gives additional perspective on many things we have taken for granted.</p>
-<p>Also, comparing our internal platform with market solutions has triggered revisiting the entire product vision. Ok, this is what those guys are providing - who are we compared with them? We are not competing with them, but the comparison can encourage the team. Something we did better (from our perspective), something we need to learn from them. But we can be proud of what we build, which has some potential to contend in the market.</p>
-<h2 id="validate-architecture-design">Validate Architecture design</h2>
-<p>If I provided enough input with business, functional, and non-functional requirements, I would expect tech guys would design the right architecture without my interference. But now I am sure a PM needs to participate or at least validate an outcome of the architecture design process.</p>
-<p>I am not talking about doing tech design instead of architects. I don't have expertise in tech design, but now I have enough general knowledge and courage to ask straightforward questions about every aspect of it. Ask questions and challenge them against the business needs that solution will cover.</p>
-<h2 id="product-vision-clash">Product vision clash</h2>
-<p>Product management is not only about producing your own vision but about adapting and nurturing others' vision as your own, from my perspective. PM's vision is not existing in a vacuum, as stakeholders ( especially C and V-level roles) are guiding and impacting it.</p>
-<p>In Year One, I mentioned taking responsibility for a previous product vision and pushing it further. But at some point, you come up with your own vision, which may not match the management stakeholder's view. And here you whether agree and adopt that vision or continue pursuing your vision, but somewhere else.</p>
-<h2 id="afterword">Afterword</h2>
-<p>And again, I am sharing the negative mostly. It is not all bad. Positive stuff results in all other articles, posts, workshops I am doing, and the feedback I get. That keeps me going. Let's see what this year will bring.</p>
-<p><em>Take care,</em></p>
-<p><em>Ilya</em></p></div>
-
-
-
-
-
-
-
-  
-  
-
-
-
-  
-
-
-  
-
-
-
-      
-    </article>
-  </div>
-
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -1600,7 +1772,7 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "navigation.tracking", "navigation.indexes", "navigation.expand"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tracking", "navigation.indexes", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
 <!-- Add scripts that need to run before here -->
@@ -1608,9 +1780,9 @@
     data-id="ilya.zakharau" data-description="Support me on Buy me a coffee!" data-message="" data-color="#40DCA5"
     data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
-      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
-        <script src="../js/open_in_new_tab.js"></script>
+        <script src="../../../js/open_in_new_tab.js"></script>
       
     
 <!-- Add scripts that need to run afterwards here -->
