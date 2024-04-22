@@ -1476,7 +1476,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
 <div><h1 id="requirements-api-analysis">Requirements &amp; API: Analysis</h1>
 <p>With this chapter, we first will understand why we need requirements for API and their place in the requirements classification frameworks. Then, we review the requirements engineering process and specific aspects you need to consider.</p>
 <h2 id="why-do-we-need-requirements-for-api">Why do we need requirements for API?</h2>
-<p>Let's answer why business analysts have suddenly started working on API requirements. About a decade ago, when I began my career in IT as a business analyst, it was not a part of my general BA responsibilities. Now, you can see more job descriptions for BAs, POs, and PMs to learn about API. And I have a subjective explanation about API becoming a must-know for us.</p>
+<p>Let's answer why business analysts have suddenly started working on API requirements. About a decade ago, when I began my career in IT as a business analyst, it was not a part of my general BA responsibilities. Now, you can see more job descriptions for BAs, POs, and PMs requiring API knowledge. And I have a subjective explanation of why that happened.</p>
 <p>The leading software architecture approach back then was an on-premise deployed monolithic application. Simply, that was a tied backend service that communicated with a desktop or web UI client. That backend was integrated with several internal or external services in different ways, such as file upload via FTP. </p>
 <p>A Business analyst focused on business capabilities and their representation on the UI side, plus requirements for integrations such as mappings and request logic. The detailed interaction across the backend, UI client, and integrated system was the responsibility of tech folks. </p>
 <p>But things started moving when Cloud, SaaS, and Microservices architecture (MSA) became a dominant trend for system design:</p>
@@ -1484,12 +1484,12 @@ Also, I write and speak regularly about APIs, Product Management and Business An
 <p>Because of those trends, systems become more interconnected than ever before. Some services become API-first, meaning you can only use them through their APIs. So, API becomes a business model with higher-level requirements. With that, you get stakeholders, regulations, restrictions, etc. The stuff a business analyst, product owner, and product manager takes care of.</p>
 <p>The number of API clients has increased exponentially, including those on the web, mobile applications, IoT, etc. Additionally, microservices communicate with each other within a system through APIs. Thus, there are many external and internal clients, vertically and horizontally, each with its stakeholders and specific needs.</p>
 <p>Another crucial aspect is that APIs are more vulnerable to attacks as they provide a direct way to break into a system. So, we are not just designing and implementing API but also ensuring their security.</p>
-<p>To summarize, the "businessfication" of API due to the rise of Cloud, MSA, and SaaS, increased number of clients, high-security risks, and, last but not least, imposed industry and government regulations have made API also a zone of interest for all kinds of business folks.</p>
+<p><mark>To summarize, the "businessfication" of API due to the rise of Cloud, MSA, and SaaS, increased number of clients, high-security risks, and, last but not least, imposed industry and government regulations have made API also a zone of interest for all kinds of business folks.</mark></p>
 <p>That is not a comprehensive explanation of that shift, but that is how I see it from my perspective. I would like to see your thoughts in the comments.</p>
 <h2 id="requirements-classification">Requirements classification</h2>
 <p>Before diving into BA theory, let's clarify that API requirements are not functional. UI is the closest analogy. There is a system capability (function) and several ways for users to access it. In the previous chapter, we identified API as a <strong>distribution channel</strong>. And that is the same for any public interface: UI, Command-line interface (CLI), Chatbots, etc.</p>
 <p>You can express a functional requirement through API design. However, API itself is not a direct concern of system capabilities. Going back to the UI analogy: the design patterns, components you choose to use, or color scheme are crucial for UX, but we don't call them functional requirements.</p>
-<p>For example: "System shall return a list of items filtered by x and sorted by y" that is a functional requirement. However, how you return this list to UI and API might differ. If a single front-end utilizes that API endpoint, it is enough to describe how from a UI perspective. This single client acts as the primary stakeholder here. But if several clients want to get the list for their purpose, we need to spend additional time communicating with them and aligning on expectations of what they need to get and why. The outcome might differ significantly from how you return those list items for UI.</p>
+<p>For example: <em>"System shall return a list of X items filtered by Y and sorted by Z"</em> that is a functional requirement. However, how you return this list to UI and API might differ. If a single front-end utilizes that API endpoint, it is enough to describe how from a UI perspective. This single client acts as the primary stakeholder here. But if several clients want to get the list for their purpose, we need to spend additional time communicating with them and aligning on expectations of what they need to get and why. The outcome might differ significantly from how you return those list items for UI.</p>
 <p>Ok, API requirements are not functional, so what type of requirements do they belong to? Let's review several sources.</p>
 <p>In the recent "Software Requirements Essentials" by K. Wiegers and C. Hokanson define "External interface requirement":</p>
 <blockquote>
@@ -1503,19 +1503,19 @@ Also, I write and speak regularly about APIs, Product Management and Business An
 <blockquote>
 <p>Interface requirements are the definition of how the system is required to interact with external systems (external interface), or how system elements within the system, including human elements, interact with each other (internal interface). External interface requirements state characteristics required of the system, software or service at a point or region of connection of the system, software or service to the world outside of the item. They include, as applicable, characteristics such as location, geometry and what the interface is to be able to pass in each direction.</p>
 </blockquote>
-<p>Interface requirements are not non-functional requirements because interfaces have non-functional requirements on their own: security, compatibility, usability, compliance, etc. An interface is not just a quality attribute of a specific capability. However, a lousy interface will definitely worsen user experience, whether we are talking about UI or API.</p>
+<p>Interface requirements are not non-functional because interfaces have its own quality attributes: security, compatibility, usability, compliance, etc. An interface is not just a quality attribute of a specific capability. However, a lousy interface will definitely worsen user experience, whether we are talking about UI or API.</p>
 <p>Also, selected technology and design patterns imply constraints on interfaces. So, software architecture also impacts the analysis process, especially for API. For example, whether API should be synchronous or asynchronous (event-driven) depends on the architecture and utilized protocol.</p>
 <p>Under interface requirements (where we also include UI and CLI), it also makes sense to separate integration requirements when a system acts as a Consumer and API requirements when it is a Producer (see previous part about Producers &amp; Consumers). Those subtypes share a lot in common, but the outcome differs. The latter's outcome means operational API endpoints. Meanwhile, working interaction between systems is the first outcome.</p>
 <h2 id="requirements-engineering">Requirements engineering</h2>
-<p>BABOK v3 (IIBA, 2015) does not classify API requirements as non-functional or any other requirement type. However, it describes the interface analysis technique (10.24), which talks about API and interfaces in general. The analysis consists of 3 stages such as:</p>
+<p>BABOK v3 (IIBA, 2015) does not classify API or integration requirements. However, it describes the interface analysis technique (10.24), which talks about API and interfaces in general. The analysis consists of 3 stages such as:</p>
 <ul>
 <li>Preparing to identify and understand what interfaces are needed by studying actors' interactions.</li>
-<li>Conducting identification by describing a function of each future interface, evaluating the type of an interface and its initial design</li>
+<li>Conducting identification by describing a function of each future interface, evaluating the type of an interface and its initial design.</li>
 <li>Defining interface with inputs, outputs, validations, etc.</li>
 </ul>
 <p>The requirements development is not so different from the "traditional" business analysis process: elicitation, analysis, specification, and validation. Right now, we are focusing more on the first steps. Specification and further validation have some peculiarities, but we need to dive into HTTP protocol basics and API structure to discuss them. That will come in later chapters.</p>
 <h3 id="starting-point">Starting point</h3>
-<p>We have a bunch of questions as a starting point:</p>
+<p>There we have a bunch of questions to consider:</p>
 <ul>
 <li>Why do we need this?<ul>
 <li>E.g., We want to make an access point for 3rd parties to get data our system produces not from UI but a paid public API. In short, add a new distribution channel and monetize it.</li>
@@ -1535,7 +1535,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
 </li>
 </ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>The next step is to define the prerequisite of an API call - authentication and authorization:</p>
+<p>The next step is to define prerequisites of an API call - authentication and authorization:</p>
 <ul>
 <li>Authentication is about verifying clients and allowing them to communicate with your API.</li>
 <li>Authorization is about permissions to enable specific clients to make particular API requests and see certain data.</li>
@@ -1546,7 +1546,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
 <p>Another important question is whether a system already provides such capability. And if so, does it require any improvement?</p>
 <p>If there is a gap between current system capabilities and the desired interface, it is a matter of solution requirements. So, the traditional BA practices should be used there.</p>
 <p>For example, if there are search criteria for a new API endpoint, we need to make sure they are included in the search index. And that is already a backend-related matter.</p>
-<p>If you want to describe a solution through the interface, that will not be enough to cover all the aspects. A bare minimum is to have a data model as a data dictionary or entity relationship diagram with good-old use cases describing where new APIs will be used.</p>
+<p><mark>If you want to describe a solution through the interface, that will not be enough to cover all the aspects. A bare minimum is to have a data model as a data dictionary or entity relationship diagram with good-old use cases describing where new APIs will be used.</mark></p>
 <p>The task is to identify and describe use cases where one or several API endpoints will be utilized. Nowadays, APIs are very granular, which is why a single API without context doesn't make much sense. So, a scenario where specific actions with several Entities are involved will consist of more than one API call. </p>
 <h3 id="contract-black-box">Contract &amp; Black box</h3>
 <p>If we take a simplistic look at API, it will look like</p>
@@ -1586,7 +1586,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
 <p>Request logic can be a simple CRUD command for an Entity object. It also can be a sophisticated aggregated request with a few internal APIs involved. We cover that in later chapters.</p>
 <h2 id="dont-be-so-agile">Don't be so agile</h2>
 <p>While working with UI, it is easier to introduce changes than with API. There is a risk of breaking the user experience, but that is generally about the cognitive effort of the user to adapt to something new. They are not paying money for your changes.</p>
-<p>On the other side, Consumers are paying the price for adapting to breaking changes of the utilized API or migrating to the new ones. They need additional integration and maintenance effort, from changing client code to updating autotests, documentation, etc.</p>
+<p><mark>On the other side, Consumers are paying the price for adapting to breaking changes of the utilized API or migrating to the new ones.</mark> They need additional integration and maintenance effort, from changing client code to updating autotests, documentation, etc.</p>
 <p>Thus, all that "iterative-flexible" is not very much about API. They evolve during their lifecycle, for sure. However, breaking API contracts frequently is not a good way of achieving sustainability. There are ways to mitigate that, but it definitely should be in the mind of every API Producer.</p>
 <p>From the requirements engineering perspective, analysis should be done more thoroughly, especially if it is a paid public API that is to be used by multiple consumers.</p>
 <h2 id="reading-on-the-topic">Reading on the topic</h2>
@@ -1595,7 +1595,8 @@ Also, I write and speak regularly about APIs, Product Management and Business An
 <li><a href="https://ilyazakharau.com/non-functional-requirements-and-api/">Non-functional Requirements and API</a></li>
 <li><a href="https://ilyazakharau.com/backward-compatibility/">Breaking changes &amp; Backward compatibility</a></li>
 <li><a href="https://ilyazakharau.com/api-requirements-webinar-iiba-part-1%262/">Summary of the "Requirements &amp; API" webinars for IIBA Belarus</a></li>
-</ul></div>
+</ul>
+<p><em>Next Chapter: Structure (WIP)</em></p></div>
 
 
 
