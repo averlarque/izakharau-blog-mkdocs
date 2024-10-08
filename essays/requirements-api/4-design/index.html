@@ -1471,14 +1471,14 @@ Also, I write and speak regularly about APIs, Product Management and Business An
 
 
 <div><h1 id="requirements-api-design">Requirements &amp; API: Design</h1>
-<p>This chapter explores the structure and API design specifics of HTTP API and its definition via the OpenAPI specification. Then, we distinguish a traditional code-first, design-first, and fresh-new AI approach to API development.</p>
+<p>This chapter explores the structure and API design specifics of HTTP API and its definition with the OpenAPI specification. Then, we distinguish a traditional code-first, design-first, and fresh-new AI approach to API development.</p>
 <h2 id="the-structure">The Structure</h2>
 <p>The Contract is an essential part of the API design, which relies on a protocol and architecture style.</p>
 <p>For instance, HTTP-based API design differs from its SOAP counterpart. Even within a single protocol, the design of REST(ful) and GraphQL is different. They are based on HTTP, but how they are designed is driven by corresponding architecture styles.</p>
 <hr>
-<p><strong>Note:</strong> As a regular Product person (Product manager, Product owner, business analyst), you don't need to dive into the protocol and know the specifics. The previous chapters (Definition and Analysis) would be sufficient for you. </p>
-<p>But if you work on an API-driven product and your organization uses an API design-first approach (we talk about it in the next chapter), you should know.</p>
-<p>Your organization is likely taking one or two approaches to architecture. You need to know the rules, but again, the specifics will come as soon as you gain experience working with them.</p>
+<p><strong>Note:</strong> As a Product person (product manager, product owner, business analyst), you don't necessarily need to dive into the protocol and know the specifics. The previous chapters (Definition and Analysis) would be sufficient for you. </p>
+<p>But if you work on an API-driven product and your organization uses an API design-first approach, that will be helpful to know more.</p>
+<p>Your organization is likely taking one or two API architecture approaches. You need to know the rules, but again, the specifics will come as soon as you gain experience working with them.</p>
 <hr>
 <h3 id="http-example">HTTP example</h3>
 <p>Let's see how a simple API endpoint to return Customer details looks with raw HTTP:</p>
@@ -1516,9 +1516,11 @@ Content-Type: application/json
 }
 </code></pre>
 <hr>
-<p>If you want to learn more about HTTP, then I suggest reading:
-* <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview">Overview of HTTP by Mozilla</a>
-* <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP">Evolution of HTTP by Mozilla</a></p>
+<p>If you want to learn more about HTTP, then I suggest reading:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview">Overview of HTTP by Mozilla</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP">Evolution of HTTP by Mozilla</a></li>
+</ul>
 <hr>
 <p>From a structural perspective, we now have:</p>
 <ul>
@@ -1677,19 +1679,19 @@ components:
 </ul>
 <hr>
 <p><img alt="" src="../images/4-1.png"></p>
-<p>Let's quickly check what we've got here compared with raw HTTP:</p>
+<p>Let's quickly check what we've got here compared with the raw HTTP:</p>
 <ul>
 <li>We know some context about that API definition, as it comes from a Legacy CRM system now used for read-only operations. So we can utilize that API to get historical customer data.</li>
 <li>We know more about the data structure. We can differentiate <code>customerId</code> from <code>internalId</code>, see the format specifics of <code>phoneNumber</code> and <code>country</code>, and understand what <code>accountStatus</code> implies.</li>
 <li>We know which errors to expect from a Server in particular cases to handle them on a Client side.</li>
 </ul>
 <h3 id="layers-of-the-design-structure">Layers of the Design structure</h3>
-<p>We still have the request/response data and metadata we saw in the HTTP example extended with documentation and context details:</p>
+<p>We still have the request/response data and metadata we saw in the HTTP example now extended with documentation and context details:</p>
 <p><img alt="" src="../images/4-2.png"></p>
 <p>This is how that design structure can be visualized by adding documentation and context to the request/response data and metadata.</p>
-<p>The described OAS example could be done in many ways, from another path to different naming of response body attributes. I am not talking about moving the response body to the Component object, so in production, that schema might look different.</p>
+<p>The described OAS example could be done in many ways, from another path to different naming of response body attributes. I am not even talking about moving the response body to the Component object. In the production, that schema might look very different.</p>
 <p>There are two major problems in software engineering: naming and caching. Naming greatly concerns API design. It is easy to deal with a dozen APIs and keep the structure consistent and understandable. But when there are hundreds or even thousands of APIs organization-wide, there must be an explicit set of rules for naming and managing things. That is an entire discipline called API Governance.</p>
-<p>So, when you proceed with API definition, you better have guidelines provided by Software architects that represent the protocols, architecture approaches, and background and practices applied in the organization.</p>
+<p>So, when you proceed with API definition, you better have guidelines provided by Software architects that represent the protocols, architecture approaches, and background with practices applied in the organization.</p>
 <h2 id="development-approaches">Development approaches</h2>
 <p>There are a few ways to develop API. Those ways impact how we proceed with the design.</p>
 <p><img alt="" src="../images/4-3.png"></p>
