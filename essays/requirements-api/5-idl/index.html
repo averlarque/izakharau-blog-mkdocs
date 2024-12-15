@@ -13,13 +13,13 @@ Also, I write and speak regularly about APIs, Product Management and Business An
       
       
       
-        <link rel="canonical" href="https://ilyazakharau.com/essays/replacing-legacy/replacing-legacy-1/">
+        <link rel="canonical" href="https://ilyazakharau.com/essays/requirements-api/5-idl/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../4-design/">
       
       
-        <link rel="next" href="../replacing-legacy-2/">
+        <link rel="next" href="../../api-design/">
       
       
         <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../feed_rss_created.xml">
@@ -30,7 +30,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
     
     
       
-        <title>Definition, Reasons, Characteristics - ILYA ZAKHARAU - About Product Management & Business Analysis</title>
+        <title>Interface Definition Languages (IDL) - ILYA ZAKHARAU - About Product Management & Business Analysis</title>
       
     
     
@@ -92,7 +92,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
     <div data-md-component="skip">
       
         
-        <a href="#definition-reasons-characteristics" class="md-skip">
+        <a href="#requirements-api-interface-definition-languages-idl" class="md-skip">
           Skip to content
         </a>
       
@@ -144,7 +144,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Definition, Reasons, Characteristics
+              Interface Definition Languages (IDL)
             
           </span>
         </div>
@@ -271,7 +271,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../requirements-api/" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -868,6 +868,8 @@ Also, I write and speak regularly about APIs, Product Management and Business An
                 
   
   
+    
+  
   
   
     
@@ -893,18 +895,16 @@ Also, I write and speak regularly about APIs, Product Management and Business An
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../requirements-api/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -921,7 +921,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             Requirements & API
@@ -937,7 +937,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
   
   
     <li class="md-nav__item">
-      <a href="../../requirements-api/1-glossary/" class="md-nav__link">
+      <a href="../1-glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -958,7 +958,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
   
   
     <li class="md-nav__item">
-      <a href="../../requirements-api/2-definitions/" class="md-nav__link">
+      <a href="../2-definitions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -979,7 +979,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
   
   
     <li class="md-nav__item">
-      <a href="../../requirements-api/3-analysis/" class="md-nav__link">
+      <a href="../3-analysis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1000,7 +1000,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
   
   
     <li class="md-nav__item">
-      <a href="../../requirements-api/4-design/" class="md-nav__link">
+      <a href="../4-design/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1018,10 +1018,30 @@ Also, I write and speak regularly about APIs, Product Management and Business An
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../requirements-api/5-idl/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Interface Definition Languages (IDL)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1030,6 +1050,62 @@ Also, I write and speak regularly about APIs, Product Management and Business An
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#openapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenAPI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typespec" class="md-nav__link">
+    <span class="md-ellipsis">
+      TypeSpec
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jsight" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSight
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-thoughts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Thoughts
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1068,8 +1144,6 @@ Also, I write and speak regularly about APIs, Product Management and Business An
                 
   
   
-    
-  
   
   
     
@@ -1095,16 +1169,18 @@ Also, I write and speak regularly about APIs, Product Management and Business An
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../replacing-legacy/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1121,7 +1197,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             Replacing Legacy
@@ -1134,30 +1210,10 @@ Also, I write and speak regularly about APIs, Product Management and Business An
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Definition, Reasons, Characteristics
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../replacing-legacy/replacing-legacy-1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1166,53 +1222,6 @@ Also, I write and speak regularly about APIs, Product Management and Business An
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#why-do-we-need-to-replace-a-legacy-system" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why do we need to replace a Legacy system?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-are-common-traits-of-legacy-projects" class="md-nav__link">
-    <span class="md-ellipsis">
-      What are common traits of Legacy projects?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#one-more-important-thing" class="md-nav__link">
-    <span class="md-ellipsis">
-      One more important thing
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1225,7 +1234,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
   
   
     <li class="md-nav__item">
-      <a href="../replacing-legacy-2/" class="md-nav__link">
+      <a href="../../replacing-legacy/replacing-legacy-2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1246,7 +1255,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
   
   
     <li class="md-nav__item">
-      <a href="../replacing-legacy-3/" class="md-nav__link">
+      <a href="../../replacing-legacy/replacing-legacy-3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1267,7 +1276,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
   
   
     <li class="md-nav__item">
-      <a href="../replacing-legacy-4/" class="md-nav__link">
+      <a href="../../replacing-legacy/replacing-legacy-4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1288,7 +1297,7 @@ Also, I write and speak regularly about APIs, Product Management and Business An
   
   
     <li class="md-nav__item">
-      <a href="../replacing-legacy-5/" class="md-nav__link">
+      <a href="../../replacing-legacy/replacing-legacy-5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1404,27 +1413,36 @@ Also, I write and speak regularly about APIs, Product Management and Business An
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-do-we-need-to-replace-a-legacy-system" class="md-nav__link">
+  <a href="#openapi" class="md-nav__link">
     <span class="md-ellipsis">
-      Why do we need to replace a Legacy system?
+      OpenAPI
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-are-common-traits-of-legacy-projects" class="md-nav__link">
+  <a href="#typespec" class="md-nav__link">
     <span class="md-ellipsis">
-      What are common traits of Legacy projects?
+      TypeSpec
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#one-more-important-thing" class="md-nav__link">
+  <a href="#jsight" class="md-nav__link">
     <span class="md-ellipsis">
-      One more important thing
+      JSight
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-thoughts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Thoughts
     </span>
   </a>
   
@@ -1445,59 +1463,68 @@ Also, I write and speak regularly about APIs, Product Management and Business An
                   
 
 
-<div><h1 id="definition-reasons-characteristics">Definition, Reasons, Characteristics</h1>
-<p>Let's start with a definition of "Legacy":</p>
-<blockquote>
-<p>A legacy system is an old method, technology, computer system, or application program, "of, relating to, or being a previous or outdated computer system," yet still in use.</p>
-</blockquote>
-<p>— <a href="https://en.wikipedia.org/wiki/Legacy_system">Wikipedia</a></p>
-<p><img alt="Fellow colleages are looking at a PHP monolith from a previous" src="../images/part1-1.png"></p>
-<p>Our understanding of Legacy depends on what we consider "old" and "outdated." From some perspective, a service you deployed last week to Production might already be the Legacy.</p>
-<p>Sorts of Legacy systems surround us. You can co-exist with a legacy by integrating it into your environment. Or you can replace it with a new system (which ironically will become the Legacy soon).</p>
-<p>In this and the following article, we will define what the Legacy-replacing project implies for a Business Analyst and other participants.</p>
-<h2 id="why-do-we-need-to-replace-a-legacy-system">Why do we need to replace a Legacy system?</h2>
-<p>There are multiple reasons for replacing the Legacy:</p>
-<p><strong>The system must be more scalable to meet current business needs</strong></p>
-<p>We are living in a dynamic business environment, so software and hardware pursue the evolution to adapt or predict the needs. There is a limited capacity for change in an existing system. There will be a dilemma at some point: keep updating by sacrificing some new opportunities or proceed with the replacement.</p>
-<p><strong>Security concerns</strong></p>
-<p>Old software will likely contain exploits that can be used for malicious purposes. The protocols, libraries, and frameworks used in such systems may be outdated and no longer supported by their creators. So, security becomes a concern for the Legacy system.</p>
-<p><strong>Difficulty in hiring people</strong></p>
-<p>The popularity of some technologies can fade away. People who know it may not be willing to continue working with it and are ready to switch to a newer tech stack. A new generation is not eager to learn the "old stuff." The older generation might be already retired. Replacing the Legacy with a more recent tech stack is also an attempt to match the current and possibly future hiring trends.</p>
-<p><strong>License change</strong></p>
-<p>A maintainer of technology used for a Legacy system may change the terms and conditions of usage. That may increase usage costs and trigger the replacement of Legacy with different, "cheaper" technology.</p>
-<p>Recent examples are <a href="https://redresscompliance.com/decoding-oracle-java-licensing-java-licensing-changes-2023/">Oracle's changes</a> in licensing for Java and <a href="https://www.lightbend.com/blog/why-we-are-changing-the-license-for-akka">Akka's change to BSL</a>.</p>
-<p><strong>There is a budget to spend and a manager's career to promote</strong></p>
-<p>That may sound ridiculous, but it is true. Having ambitions and some resources may trigger replacing an existing system with a newer version. And it is good if such a replacement is justified from the business perspective. Otherwise, that might cause only additional troubles.</p>
-<h2 id="what-are-common-traits-of-legacy-projects">What are common traits of Legacy projects?</h2>
-<p>If you join a project that aims to replace an operational Legacy system, you are likely to observe one or many items in various combinations:</p>
-<p><strong>It is a Monolith (but not always)</strong></p>
-<p>A Monolith software application is a single-tiered software application where all the components of the application are interconnected and interdependent. In other words, it is a single, unified application that performs all the functions required by the system. Monolith applications are usually large and complex, and any changes to the system require changes to the entire application. This makes it difficult to scale, maintain, and update the application.</p>
-<p>But Legacy does not always mean a monolith and vice versa. Any system built on other architectural patterns can be a legacy one.</p>
-<p><strong>Outdated or absent documentation</strong></p>
-<p>Documentation is the most overlooked piece in software development. The "let's-document-it-later" (never) approach in the long term becomes a significant concern. You need to understand the AS-IS of a system to proceed with a desired TO-BE.</p>
-<p>Absent documentation is much better than outdated and incorrect docs. In the first case, you know what you don't understand, which gives you an understanding of where to look. In the latter, you need to figure out where you are wrong. And that is more dangerous.</p>
-<p><strong>Runtime is the source of truth</strong></p>
-<p>You can't rely on the docs only. And depending on people is not an option either. It is an advantage to reach some people who have been working with the system for many years. But it would be best if you were cautious, as they might have their perspective on how things work. And that does not always coincide with reality.</p>
-<p>So, system-in-operation can be the source of truth. A BA can study how it operates under different conditions even though it is a black box. You need a lot of time, patience, and probably Postman.</p>
-<p>Another hint is to read a source code. It is uncommon for a BA to understand what is written there. But if you can understand how particular classes and methods work, that will make your life much easier.</p>
-<p><strong>The source code is missing</strong></p>
-<p>It is the worst-case scenario. The possibility that an organization can lose a source code of their service sounds ridiculous. But such cases happen in reality.</p>
-<p><strong>You are not the first BA on a project</strong></p>
-<p>And likely not the last one. There might be generations of business analysts who worked on maintaining or replacing a legacy system. If those persons are still reachable within your organization, it is an excellent opportunity to learn from their experience. Or start regretting that you are assigned to this project.</p>
-<p><strong>Don't trust previous requirements</strong></p>
-<p>I learned the hard way that if some requirements were written but not implemented some time ago, they are the subject of comprehensive revision.</p>
-<p>If you have inherited the backlog from a previous BA and it is already more than 1–3 months old, then you'd better revisit it. Requirements are not like wine. They usually turn to shit pretty quickly.</p>
-<p><strong>Unmotivated Team</strong></p>
-<p>Developers prefer to work with something other than legacy technologies. That can give some level of stability. But that may end up with losing a cost on the hiring market. But there are some exceptions, like COBOL developers.</p>
-<p>Older developers are dreaming more about retirement. Younger ones are dreaming about trending tech stacks. And they can have the motivation to replace the Legacy. But do they possess enough patience and competence to do that — that is the question.</p>
-<p>Building something from scratch is always easier than dealing with a tricky spaghetti code, sometimes not covered with any tests. And if there is poor team management, the atmosphere on such a project might not be very healthy for an ambitious BA.</p>
-<h2 id="one-more-important-thing">One more important thing</h2>
-<blockquote>
-<p>"Organizations which design systems … are constrained to produce designs which are copies of the communication structures of these organizations."</p>
-</blockquote>
-<p>— <a href="https://en.wikipedia.org/wiki/Conway%27s_law">M. Conway</a></p>
-<p>A legacy is a blueprint to reflect many years of an organization's communication structure's development (or degradation). It is a corporate archeology when trying to reach an ever-missed context.</p>
-<p>Do we need to replicate those layers and bring them to the future? That topic we will discuss in the following chapters.</p></div>
+<div><h1 id="requirements-api-interface-definition-languages-idl">Requirements &amp; API: Interface Definition Languages (IDL)</h1>
+<p>In the previous <a href="https://ilyazakharau.com/essays/requirements-api/4-design/">chapter</a>, we examined the OpenAPI specification (OAS) as a tool for designing a RESTful API request for a Web application. In this chapter, we will explore several languages that help formalize the API definition and automate development.</p>
+<p><strong>IDL</strong> stands for <strong>Interface Definition Language</strong>. It is a formal specification language used to define the structure and behavior of software interfaces.</p>
+<p>During my workshop, I like to tell the audience that "IDL is DSL" (Domain-specific language, by the way), confusing them with the abbreviations. Then I mention "used for the interface definition."</p>
+<p>As it is very typical with DSLs, plenty exist for various purposes. And the very question is which one will get public recognition and strive for global adoption. Only very few (if not the one) get the prize.</p>
+<p>Let's get started with the undisputed leader...</p>
+<h2 id="openapi">OpenAPI</h2>
+<p>We continue using the "Retrieve Customer details" example from the Legacy CRM API, but some fixes are required to make it a proper schema.</p>
+<script src="https://gist.github.com/averlarque/40ad78fd8ad6086a62bc853357bf5ad9.js"></script>
+
+<p>The significant change is that now we distinguish Models (Customer, Address) from an API operation (<code>GET /customer/{customerId}</code>), allowing reusing such models across other operations without duplication.</p>
+<p>That also contributes to readability, even though the number of lines hasn't increased much, and my trick with <code>examples</code> is not helping. OpenAPI can be expressed with JSON, so you can imagine how huge a schema can become with opening and closing square brackets.</p>
+<p>Extensiveness is the critical point of OAS for historical reasons: it must cover as many possible use cases as possible while maintaining backward compatibility with tooling. The specification's main advantage is the <a href="https://openapi.tools/">tool ecosystem</a>, which makes it unreachable for opponents.</p>
+<p>As a side effect, first-hand API design in a code editor becomes challenging. The infamous "PetStore" is too simple compared to real enterprise APIs with extended and complex models with hundreds (if not more) operations.</p>
+<p>I saw people trying to provide manually-written OpenAPI specs as requirements for API attached to a Jira ticket. Those might be fun to write but not to maintain thousands-lines YAML files.</p>
+<p>That can be mitigated with low- or no-code tools (here is <a href="https://ilyazakharau.com/api-design-tooling/">my article</a> on the topic from 2022). However, this approach has many side effects, including vendor lock and inflexibility.</p>
+<p>Now, let's turn to some competitors.</p>
+<h2 id="typespec">TypeSpec</h2>
+<p>It is the most prominent OpenAPI's rival with a super-powerful backer: Microsoft. They are attempting to challenge a position in API design-first language, and they do an excellent job.</p>
+<p>TypeSpec does not just sound like TypeScript. It has a TypeScript-like syntax with strong typification (or type safety, as they call it). It is less verbose, more precise, and modular.</p>
+<p>That similarity with TypeScript is a very good move, giving front-end developers the ability to define API in a manner closer to them. For full-stacks, that is also about streamlining the development process.</p>
+<p>Let's convert our example to TypeSpec:</p>
+<script src="https://gist.github.com/averlarque/eb2af4b123e5a715e3a47f6be0450cb0.js"></script>
+
+<p>If you are familiar with OpenAPI, here is the <a href="https://typespec.io/docs/getting-started/typespec-for-openapi-dev">guide</a> on how OAS components map to the TypeSpec's ones.</p>
+<p>Also, you can use the <a href="https://typespec.io/playground/">playground</a> to convert my TypeSpec schema to OpenAPI and see how things are mapped. The result of OpenAPI will differ from the original one.</p>
+<p>What I found interesting:</p>
+<ul>
+<li>You need to <code>import</code> TypeSpec libraries and apply the <code>using</code> statement that creates a shorthand for referencing a namespace from an imported module. For me, that is unusual and was confusing at first.</li>
+<li>All properties are required by default if not stated otherwise via <code>?</code>.</li>
+<li>Putting descriptions as comments above properties improves readability a lot.</li>
+<li>A mass of decorators (starting with <code>@</code>) complicates things visually.</li>
+<li>You define models and operations in the order you need, so there is no strict structure.</li>
+<li>Even though a model definition is straightforward, the operation's response body was tricky for me. I found different ways of handling response status codes, and I am unsure which one I used is the best solution.</li>
+<li>You don't need to define HTTP errors manually; just mentioning a status code would imply using a default error message.</li>
+<li>You can omit using an HTTP method (verb): if you name an operation as <code>read</code>, it will be considered as <code>GET</code> by default. I used the <code>@get</code> decorator just because it was unnatural for me (an OpenAPI person) to skip the method.</li>
+<li>I haven't found a way to provide an example for <code>createdDate</code>. </li>
+</ul>
+<p>My transition from OpenAPI to TypeSpec was not smooth. It took me time to get through the documentation and examples (I don't trust ChatGPT; none of the chat-generated examples worked). However, I am amazed by the versatility of TypeSpec, and it is a broader application than its "parent."</p>
+<p>TypeSpec is both-way compatible with OpenAPI. That means the people behind TypeSpec are not planning to fight with OpenAPI dominance in a plain field. Instead, leverage its infrastructure and target some use cases, formats, and protocols OpenAPI can't cover.</p>
+<p>By the way, Amazon has a similar solution called <a href="https://smithy.io/2.0/index.html">Smithy</a>. But I haven't heard much about it outside the AWS world.</p>
+<h2 id="jsight">JSight</h2>
+<p>There are a bunch of less prominent OpenAPI rivals. <a href="https://jsight.io/">JSight</a> is my favorite one of all.</p>
+<p>Let's translate our OpenAPI example to JSight:</p>
+<script src="https://gist.github.com/averlarque/f05dd98125c1aaa33f93a38b1168aaf6.js"></script>
+
+<p>What I found interesting:</p>
+<ul>
+<li>Inline descriptions of model attributes.</li>
+<li>All items are required by default.</li>
+<li>Excellent readability with fewer lines of code</li>
+<li>It is not possible to define an attribute without an example.</li>
+<li>You need to put a comma with metadata before a comment.</li>
+<li>There is a "macro" feature (not used in my example) allowing the reuse of different pieces of code (<a href="https://jsight.io/docs/api-examples/example07">here</a> is how it works).</li>
+<li>If you don't need to define huge models that are not reusable, you insert a JSON (even nested one) into a request and response body. See an <a href="https://github.com/averlarque/api-requirements-workshop/blob/main/definitions/add-employee-jsight.jst">example</a> from my online workshop. It is advantageous.</li>
+</ul>
+<p>JSight can also be converted to OpenAPI, but not vice versa. You can copy-paste my example to their <a href="https://editor.jsight.io/">playground</a> to see how they map on each other.</p>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>There are as many IDLs as other DSLs, probably the same number as the stars in the night sky.</p>
+<p>If you are dealing with API design, you are obliged to be somehow proficient in OpenAPI specification, but you are not obliged to use it. With the wide variety of tools, whether another IDL or node-code solution, you don't need to write hundreds of lines of code in YAML and JSON.</p>
+<p>I used a JSight-like syntax to design API contracts on an actual project. It was clear and straightforward, even to people unfamiliar with API specifics.</p>
+<p>In the next and last chapter of the series, we will look into more specialized DSLs to describe a flow that considers calling several API endpoints. </p></div>
 
 
 
