@@ -4,11 +4,61 @@
         <title>Ilya Zakharau - Product Strategy &amp; Digital Experience</title>
         <link>https://ilyazakharau.com/blog</link>
         <description>Strategic insights on product management, experience architecture, and digital transformation</description>
-        <lastBuildDate>Wed, 11 Jun 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 02 Jul 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>Copyright © 2021-2025 Ilya Zakharau</copyright>
+        <item>
+            <title><![CDATA[How to Build and Maintain Stakeholder Trust as a Product Owner]]></title>
+            <link>https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner</link>
+            <guid>https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner</guid>
+            <pubDate>Wed, 02 Jul 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Learn proven strategies for building stakeholder trust in any situation - from new projects to damaged relationships. Discover practical tips for managing expectations, practicing transparency, and turning around failed projects.]]></description>
+            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="AI-generated" src="https://ilyazakharau.com/assets/images/build-stakeholder-trust-adb421faeac7843fa402700a218b5ec9.png" width="1590" height="1348" class="img_ev3q"></p>
+<p>Any stakeholder management framework is ineffective if there is no trust between you, as a product owner, and your stakeholders. Trust is challenging to gain, resourceful to maintain, and very easy to lose.</p>
+<p>For stakeholders, you represent your team, your product, and your organization. If they don't trust you and consider you an unreliable partner, then it is a chain effect with a downward spiral.</p>
+<p>How to build and then maintain that trust? It is straightforward - deliver expectations. If you can't deliver, then manage those expectations.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-your-starting-position">Understanding Your Starting Position<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#understanding-your-starting-position" class="hash-link" aria-label="Direct link to Understanding Your Starting Position" title="Direct link to Understanding Your Starting Position">​</a></h2>
+<p>To establish trust, you must first understand your current baseline position. It depends on the current state of affairs and your starting position in it.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-new-project-scenario">The New Project Scenario<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#the-new-project-scenario" class="hash-link" aria-label="Direct link to The New Project Scenario" title="Direct link to The New Project Scenario">​</a></h3>
+<p>If it is a new project, then you have some credit for future trust. Everyone is new to each other. Initially, everyone is more optimistic about future endeavors.</p>
+<p>You can utilize that capital to build trust and then make it good enough to maintain it. A trick is that such optimism often leads to higher but unfulfilled expectations when things become rough. And things will become rough after the honeymoon, when a few program increments have passed and things no longer look so promising.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="taking-over-a-successful-project">Taking Over a Successful Project<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#taking-over-a-successful-project" class="hash-link" aria-label="Direct link to Taking Over a Successful Project" title="Direct link to Taking Over a Successful Project">​</a></h3>
+<p>Another case is when you jump into an ongoing project where a person in your previous role, or the project team itself, has gained considerable trust. Now your job is not to break things. You are thoroughly observed, as stakeholders are suspicious because they don't know you.</p>
+<p>Managing expectations, you can set a low bar, taking the time for onboarding. But that is limited, and if you still use it as an excuse after several months, that will damage your relationship with stakeholders.</p>
+<p>Also, if everything worked well before you arrived, you are not expected to start breaking things and make changes to suit your preferences. As individuals, we are often reluctant to change, especially when the change seems unnecessary.</p>
+<p>Making drastic changes in a stable environment undermines the work of the previous person. Plus, it puts you in a vulnerable position if such changes backfire. You can't afford even a little bit of failure with your new world order, as stakeholders quickly downgrade your credibility.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="the-damaged-trust-scenario">The Damaged Trust Scenario<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#the-damaged-trust-scenario" class="hash-link" aria-label="Direct link to The Damaged Trust Scenario" title="Direct link to The Damaged Trust Scenario">​</a></h3>
+<p>The worst situation you may encounter is joining an ongoing project where trust has already been broken. That could include a demotivated team, nervous program management, and frustrated customers, among other issues. Sometimes, more often than we would like, software implementation projects take a wrong turn.</p>
+<p>You might be seen as someone who can get things back on track. I have one main piece of advice for you: <strong>don't act like Jesus Christ</strong>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="avoid-the-superhero-complex">Avoid the Superhero Complex<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#avoid-the-superhero-complex" class="hash-link" aria-label="Direct link to Avoid the Superhero Complex" title="Direct link to Avoid the Superhero Complex">​</a></h2>
+<p>Don't overestimate yourself as a superhero who will immediately save the day. People who were and still are on the project are not stupid. Sometimes you can have brilliant minds in the room, but things don't go as expected.</p>
+<p>Simple rule: if something seems to be easy, it's more likely that it isn't.</p>
+<p>Be humble, don't rush with quick, unchecked solutions. Those might have been tried before. If they didn't work, that doesn't mean they wouldn't work again. Take time to analyze the pretext, actions, and consequences.</p>
+<p>With rushing, you can quickly exhaust your credit of trust.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="strategies-for-building-trust">Strategies for Building Trust<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#strategies-for-building-trust" class="hash-link" aria-label="Direct link to Strategies for Building Trust" title="Direct link to Strategies for Building Trust">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="start-small-and-be-consistent">Start Small and Be Consistent<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#start-small-and-be-consistent" class="hash-link" aria-label="Direct link to Start Small and Be Consistent" title="Direct link to Start Small and Be Consistent">​</a></h3>
+<p>How to gain the trust back? Start with little things. Pay attention to small promises. If you said you would return with an update the next day, you would return with an update the next day. Even if there is nothing to say and there are only "no updates, I will reach out to you ASAP when something appears."</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="practice-extreme-transparency">Practice Extreme Transparency<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#practice-extreme-transparency" class="hash-link" aria-label="Direct link to Practice Extreme Transparency" title="Direct link to Practice Extreme Transparency">​</a></h3>
+<p>Practice extreme transparency. I follow the "Clarity over comfort" principle, which I found in Matt LeMay's book. Be transparent about blockers and dependencies. Articulate your expectations from other parties clearly &amp; loudly, and in a documented manner.</p>
+<p>If something is your fault or the fault of your team, be ready to take responsibility and learn from it.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="avoid-the-blame-game">Avoid the Blame Game<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#avoid-the-blame-game" class="hash-link" aria-label="Direct link to Avoid the Blame Game" title="Direct link to Avoid the Blame Game">​</a></h3>
+<p>Don't blame others. That is a reference to a key point: if a trust between parties goes awry due to complex issues, blaming one party (even if that party is not present) is a poor move. Finding a scapegoat can drive some quick alignment, but in the long term, it is a bad strategy. First, someone can be offended by that and cause unexpected consequences in the future. Second, some people may find this behavior unprofessional. Third, you can quickly become one to blame if you introduce the "blaming" culture.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="listen-actively-and-be-helpful">Listen Actively and Be Helpful<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#listen-actively-and-be-helpful" class="hash-link" aria-label="Direct link to Listen Actively and Be Helpful" title="Direct link to Listen Actively and Be Helpful">​</a></h3>
+<p>Be helpful and listen carefully. Sometimes you only need to listen. Some people simply talk without listening to others. In this case, those who are not listened to will soon stop expressing their thoughts, as they no longer have trust. Why talk then? If it were to happen, that trend would be tough to reverse.</p>
+<p>My other obvious advice: shut up and listen. When stakeholders trust you, they provide additional information that allows you to learn more about them, which in turn fosters stronger bonds. That might be something personal or about the industry, other products, stakeholders, and so on.</p>
+<p>That may seem trivial, but for a decade, I have seen people trying to dominate and push their agendas instead of simply listening to stakeholders.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="go-the-extra-mile-strategically">Go the Extra Mile (Strategically)<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#go-the-extra-mile-strategically" class="hash-link" aria-label="Direct link to Go the Extra Mile (Strategically)" title="Direct link to Go the Extra Mile (Strategically)">​</a></h3>
+<p>Do extra steps. If you asked for help, but it falls outside your usual responsibilities, do anything to help. Some limitations: (1) Be very selective about whom to do that extra help by enabling your political sense. (2) Keep it transactional: I do something for you, expecting something from you in the future. If such a rule is broken, the game changes.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="build-personal-connections">Build Personal Connections<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#build-personal-connections" class="hash-link" aria-label="Direct link to Build Personal Connections" title="Direct link to Build Personal Connections">​</a></h3>
+<p>Use every opportunity to go out with stakeholders with whom you need to build or regain trust. Consuming beverages together (coffee, beer, anything else) is the strongest bonding thing humanity has invented so far. But practice that wisely.</p>
+<hr>
+<p><strong>Key Takeaway</strong>: Trust in stakeholder relationships isn't built through grand gestures or quick fixes. It's earned through consistent delivery, transparent communication, and genuine care for stakeholder success. Whether you're starting fresh or rebuilding damaged relationships, focus on small wins, active listening, and maintaining integrity in every interaction.</p>]]></content:encoded>
+            <category>Product Strategy</category>
+            <category>Stakeholder Management</category>
+            <category>Leadership</category>
+        </item>
         <item>
             <title><![CDATA[To Tease a Future Feature or Not to Tease?]]></title>
             <link>https://ilyazakharau.com/blog/to-tease-a-future-feature-or-not-to-tease</link>
@@ -812,92 +862,6 @@
 <p>Ilya</p>]]></content:encoded>
             <category>Community &amp; Insights</category>
             <category>Archive</category>
-        </item>
-        <item>
-            <title><![CDATA[Firefighting in the Dependency Hell: a Case Study]]></title>
-            <link>https://ilyazakharau.com/blog/firefighting-depencies-case-study</link>
-            <guid>https://ilyazakharau.com/blog/firefighting-depencies-case-study</guid>
-            <pubDate>Sun, 07 Apr 2024 10:00:00 GMT</pubDate>
-            <description><![CDATA[Disclaimer]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="disclaimer">Disclaimer<a href="https://ilyazakharau.com/blog/firefighting-depencies-case-study#disclaimer" class="hash-link" aria-label="Direct link to Disclaimer" title="Direct link to Disclaimer">​</a></h2>
-<p>The following case study focuses on dependency management, omitting other details that are irrelevant to the topic or might be sensitive to share publicly.</p>
-<p>I do not necessarily speak on my behalf. Let's assume some Product Owner (The PO) appeared in such a situation and acted a certain way to resolve the dependencies.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="background-context">Background context<a href="https://ilyazakharau.com/blog/firefighting-depencies-case-study#background-context" class="hash-link" aria-label="Direct link to Background context" title="Direct link to Background context">​</a></h2>
-<p>There are a few details to be mentioned to provide context:</p>
-<ul>
-<li>PO joined an ongoing project at its critical stage. Thus, there was no room for cross-organizational changes.</li>
-<li>PO had a flexible number of responsibilities, which might vary considerably from that of the vanilla Scrum product owner.</li>
-<li>PO had a great team; it would be impossible without them.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="dependencies-structure">Dependencies structure<a href="https://ilyazakharau.com/blog/firefighting-depencies-case-study#dependencies-structure" class="hash-link" aria-label="Direct link to Dependencies structure" title="Direct link to Dependencies structure">​</a></h2>
-<p>This is what the team topology looks like, approximately. And that impacted how dependencies are distributed.</p>
-<p><img decoding="async" loading="lazy" src="https://ilyazakharau.com/assets/images/picture-1-61627a8f52e2bee3d8833609454bf2b6.png" width="1200" height="1310" class="img_ev3q"></p>
-<p>Three organizations are involved, each with their own development teams and management. It is obvious that each side pursues its own goals in accordance with contractual obligations.</p>
-<p>There are five architecture layers, with a number of teams on each layer. It is not described on the diagram (to keep it simple), but a team within the layer might belong to a different specialization, responsible for one or several microservices. Each specialization has its respective PO, Architect, Delivery Manager, QAs, BAs, etc. They have their own scope, backlog, and priorities.</p>
-<p>They are, from bottom to top:</p>
-<ul>
-<li>The Platform layer provides the core capabilities of a system. It exists outside the project.</li>
-<li>The Feature layer uses, customizes, and extends the core capabilities.</li>
-<li>The API layer that exposes RESTful API to be consumed by upstream layers.</li>
-<li>The Integration layers consume those APIs and provide data enrichment from 3rd party services.</li>
-<li>The Customer layer utilizes the final output for its own purpose.</li>
-</ul>
-<p>Our heroic PO is trapped in the middle, being on the frontline of their organization and managing the API backlog for two teams. We will look at dependency management from that perspective.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="horizontal-and-vertical-dependencies">Horizontal and vertical dependencies<a href="https://ilyazakharau.com/blog/firefighting-depencies-case-study#horizontal-and-vertical-dependencies" class="hash-link" aria-label="Direct link to Horizontal and vertical dependencies" title="Direct link to Horizontal and vertical dependencies">​</a></h2>
-<p><img decoding="async" loading="lazy" src="https://ilyazakharau.com/assets/images/picture-2-741b444af19701995d375cfab9d268f0.png" width="1450" height="1110" class="img_ev3q"></p>
-<p>There are 3-week Scrum sprints, so a feature path through each layer takes much time. From the horizontal perspective, there are some scenarios:</p>
-<ol>
-<li>
-<p>Core functionality without deviation: starts from the API layer.</p>
-</li>
-<li>
-<p>Core functionality with customization: starts from the Feature layer.</p>
-</li>
-<li>
-<p>New Core functionality: starts from the Platform layer.</p>
-</li>
-</ol>
-<p>The Platform has its own per-quarter release cycle with an option to provide intermediate releases on-demand within a quarter. However, there is an additional buffer time (aka upgrade) to deliver a Platform release and ensure it works with the existing customizations.</p>
-<p>So, case 3 is more unpredictable and depends on multiple criteria. Case 2 is the most common, so our story focuses on it.</p>
-<p>Starting from the Feature layers, it takes four sprints (12 weeks) to deliver a feature to the top. Plus, we consider end-to-end testing and other production readiness procedures. So it might take even more time.</p>
-<p>We also consider the Horizontal dependencies within the team in the same layer. They could work in parallel, but sometimes, they must wait for their peers. So delivery might be postponed even further.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="shrinking-the-gap">Shrinking the gap<a href="https://ilyazakharau.com/blog/firefighting-depencies-case-study#shrinking-the-gap" class="hash-link" aria-label="Direct link to Shrinking the gap" title="Direct link to Shrinking the gap">​</a></h2>
-<p>The first step will be prioritizing work based on the above-mentioned scenarios. First of all, the PO decides to identify and prioritize what is already available without any downstream dependencies. Next is what is available from the core but requires customization of the feature layer. And last, what is not present in the core must be delivered by the Platform.</p>
-<p>Secondly, we need to parallel the work to shrink the delivery timeline as much as possible.</p>
-<p><img decoding="async" loading="lazy" src="https://ilyazakharau.com/assets/images/picture-3-37324053e25d7bd92adc7c6cb5a2aa7e.png" width="1450" height="1110" class="img_ev3q"></p>
-<p>In this case, it is possible for the API and Integration to work in parallel: the API teams provide an API contract for each future-coming  API endpoint or expected changes for the existing one. Teams can implement based on the contracts but not merge into the main branch.</p>
-<p>An alternative strategy would be exposing a mock API (i.e., API with mock data). That was a meaningful decision by engineering leads not to merge any mock code. We later discuss what downsides it would cause.</p>
-<p>At some point, due to some postponements and waiting for new Platform core pieces, three layers are forced to work in parallel.</p>
-<p><img decoding="async" loading="lazy" src="https://ilyazakharau.com/assets/images/picture-4-a2169807ec01617da54f0aadf412118a.png" width="1450" height="1110" class="img_ev3q"></p>
-<p>The API and Feature layers align on the API contract between them. And that is not the same API contract that exists. So, the PO has to manage two types of API contracts across the parties.</p>
-<p>An advantage here is that all four upstream layers act as a Platform's customers, so they request a design that does not require customization and skip the feature layer. However, the Platform, having many customers, has the right to provide a generic solution, not a custom feature that suits one customer but another one.</p>
-<p>Even though they managed to pack an <strong>ideal</strong> delivery timeline across four technology and organizational layers, the cost is high:</p>
-<ul>
-<li>Excessive communication and efforts to manage parallel work.</li>
-<li>Inevitable reworks and last-minute changes in the API contracts.</li>
-<li>Communicating and enforcing all parties to keep the API contracts.</li>
-<li>"Communal" testing that leads to multiple bugs.</li>
-<li>Late coming or missed requirements.</li>
-<li>Fighting "who owns what" as each organization pushes its own agenda.</li>
-</ul>
-<p>That parallel work looks pretty good on paper, but that is a fragile construct that is far from smooth operation.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="art-of-extreme-facilitation">Art of extreme facilitation<a href="https://ilyazakharau.com/blog/firefighting-depencies-case-study#art-of-extreme-facilitation" class="hash-link" aria-label="Direct link to Art of extreme facilitation" title="Direct link to Art of extreme facilitation">​</a></h2>
-<p>The API layer has to identify requirements from the upstream layers and pass them to the downstream for further gap analysis to see whether a query fits one of three scenarios. The API team lacks the specialization knowledge that the Feature team does, and they both lack the Platform knowledge.</p>
-<p>Being responsible for requirements, the API layer's PO has to communicate vertically between up and downstream to come up with a design that satisfies everyone and the server business needs of the customer. That means bringing everyone to one table and facilitating all parties to be productive and reach a particular conclusion.</p>
-<p>Along with that, horizontal communication across teams in the same layers must be managed and facilitated as well. Different specializations often cannot align on something without a 3rd party facilitator, and the API folks fit that role.</p>
-<p>After concluding the design, the next step is to make sure it is prioritized accordingly, both vertically and horizontally, and closely monitor any deviation from the plan. Those deviations are inevitable.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-if">What if...<a href="https://ilyazakharau.com/blog/firefighting-depencies-case-study#what-if" class="hash-link" aria-label="Direct link to What if..." title="Direct link to What if...">​</a></h2>
-<p>The PO thinks the main problem is the team structure, which complicates communication. Having five layers, where one layer is a bottleneck, is too far from being effective.</p>
-<p><img decoding="async" loading="lazy" src="https://ilyazakharau.com/assets/images/picture-5-a8c7bd5c7415ff9c92116fe493fa455b.png" width="1200" height="729" class="img_ev3q"></p>
-<p>The Customer layer should merge with the Integration, and API with Features should make the cross-functional dedicated team serve API and core customization within the required specialization. That would require additional training and learning from each other, but it would benefit everyone.</p>
-<p>The PO thinks that a dedicated API team is bullshit. And I can't agree more after reading the Team Topologies book (I wrote about it <a href="https://ilyazakharau.com/team-topologies/" target="_blank" rel="noopener noreferrer">here</a>).</p>
-<p>The Platform remains a constant as it exists beyond the project, and there is not much to do with it from that perspective.</p>
-<p>The PO would also proceed with mock API instead of API contracts even though it considers some additional development and testing efforts (make a mock, test it, replace it with the actual implementation, and test it again) and risks of forgetting to remove mocks. In the end, maintaining and communicating API contracts takes the same effort, if not more.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="https://ilyazakharau.com/blog/firefighting-depencies-case-study#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
-<p>The current case study explores how having multiple layers complicates effective delivery and causes multiple dependency downsides and demanding commitments to the upstream. Any changes to improve the process with good intentions mainly intensify the agony and firefighting to communicate with all parties to resolve dependency in time.</p>
-<p>The management should carefully structure teams before the project starts and consider some flexibility for further changes down the line. Major restructuring in the late stages would put the project at risk. Decide wisely.</p>]]></content:encoded>
-            <category>Product Strategy</category>
-            <category>Backlog Management</category>
         </item>
     </channel>
 </rss>
