@@ -2,12 +2,60 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ilyazakharau.com/blog</id>
     <title>Ilya Zakharau - Product Strategy &amp; Digital Experience</title>
-    <updated>2025-07-02T00:00:00.000Z</updated>
+    <updated>2025-07-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ilyazakharau.com/blog"/>
     <subtitle>Strategic insights on product management, experience architecture, and digital transformation</subtitle>
     <icon>https://ilyazakharau.com/img/favicon.ico</icon>
     <rights>Copyright © 2021-2025 Ilya Zakharau</rights>
+    <entry>
+        <title type="html"><![CDATA[Resolving Chronic Systemic Problems is Not Helpful for Your Career]]></title>
+        <id>https://ilyazakharau.com/blog/systemic-problems-career-risk</id>
+        <link href="https://ilyazakharau.com/blog/systemic-problems-career-risk"/>
+        <updated>2025-07-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How AI is enabling sub-optimization and making systemic problem-solving a career risk in today's employment market]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="AI-generated" src="https://ilyazakharau.com/assets/images/systemic-problems-career-0579c911933c50c40926443ad5a5dec9.png" width="785" height="385" class="img_ev3q"></p>
+<p>There are complex issues at many organizational and technical layers, whose resolution requires considerable planning and cross-team effort. Individuals who possess the ability to resolve such matters must be valuable to an organization.</p>
+<p>However, with recent changes in the employment market and the rise of AI, that is no longer relevant to you personally. Let me explain what I mean here.</p>
+<hr>
+<p>Regarding the range of problems we are trying to solve, whether we are discussing a product, product portfolio, or the organization as a whole, there is a spectrum from low-hanging fruit to systemic problems.</p>
+<p>First are those that can be resolved relatively easily. That usually appears as an insight and results in a quick fix or new feature in one place. A benefit here is evident and immediate.</p>
+<p>System issues are related to a specific system or a set of components in a system. Systemic issues spread across several systems. That requires a broader perspective to define the problem itself. Sometimes (almost always) it is a complicated matter.</p>
+<p>After defining the problem, achieving a resolution requires changes across various systems related to the system of interest. The knowledge of how those system behaves is a must. Gaining that knowledge is about building the right expertise.</p>
+<p>Then, coordinating and resolving the issue at different levels requires considerable dedication, effort, and time. Attempting to solve a systemic issue only at one layer is a sub-optimization and may lead to unforeseen consequences, ultimately worsening the problem.</p>
+<hr>
+<p>Recently, I have had such a situation (I'll try to be quite abstract to avoid sharing the details):</p>
+<p>There is an issue across all business domains in the organization that has existed for a long time due to a lack of an engineering culture. Let's call it a tech debt. Resolving this requires determination and cross-team coordination.</p>
+<p>A few years ago, I identified a root cause, prepared guidelines, and started communicating with each party to resolve the issue. The issue doesn't impact my layer of responsibility. I am only interested in that because resolving that issue will indirectly improve the user experience of one of my products.</p>
+<p>All parties have acknowledged that this issue is important. However, due to the existing debt lasting for so long, limited capacity, and other business-critical priorities, progress has been limited in general. As a product manager, I can't dictate to other business areas what to do. Be honest, I don't have any executive power to dictate anything to anyone, as most PMs do.</p>
+<p>All those years, it was about begging other product and engineering managers, sometimes architects, and team leads, during common planning sessions to plan some work on resolving the issue. Some areas made good progress. However, as mentioned, it does not alter the entire picture.</p>
+<p>Rewinding to now, the brave new AI age.</p>
+<p>I can resolve the user experience issue at the product level with the help of AI. Not an ideal solution, but it works within my scope and doesn't involve cross-area dependencies. That tech debt will continue to exist, but that would no longer be my problem. And my users will be happy. Good deal if you ask me.</p>
+<p>I met resistance to that idea because of the very reason that we are not addressing the underlying systemic issue across the organization. So the idea has been parked.</p>
+<p>I was mad about it. However, that led me to certain conclusions I want to share with you.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-some-chronic-systemic-issues-may-never-be-fully-resolved">1) Some chronic systemic issues may never be fully resolved.<a href="https://ilyazakharau.com/blog/systemic-problems-career-risk#1-some-chronic-systemic-issues-may-never-be-fully-resolved" class="hash-link" aria-label="Direct link to 1) Some chronic systemic issues may never be fully resolved." title="Direct link to 1) Some chronic systemic issues may never be fully resolved.">​</a></h2>
+<p>If it falls into the quadrant of valuable-but-not-critical things, which require many resources and cross-area coordination, then welcome to the realm of Limbo.</p>
+<p>There will always be higher priorities and a shortage of people to do the needed, but not so critical, work right now.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-considering-the-current-job-market-it-may-not-be-worth-chasing">2) Considering the current job market, it may not be worth chasing.<a href="https://ilyazakharau.com/blog/systemic-problems-career-risk#2-considering-the-current-job-market-it-may-not-be-worth-chasing" class="hash-link" aria-label="Direct link to 2) Considering the current job market, it may not be worth chasing." title="Direct link to 2) Considering the current job market, it may not be worth chasing.">​</a></h2>
+<p>Nowadays, there is no such thing as long-term or even mid-term planning at your job. You might be fired at any point in time, despite how good you are.</p>
+<p>Instinctively, we feel that we need to prove ourselves as irreplaceable. And those complex limbo problems do not seem to be the right path to deliver consistent, visible results.</p>
+<p>The progress there is non-linear. So, the employee's logic here is: why do I need to do something so long-term with a postponed benefit, as I can be sacked at any moment?</p>
+<p>Someone else will take credit for your hard and dedicated work (if that resolution ever happens, of course). You can't add it to your CV as an "I tried so hard" item.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-ai-makes-sub-optimization-easier-and-more-likely">3) AI makes sub-optimization easier and more likely<a href="https://ilyazakharau.com/blog/systemic-problems-career-risk#3-ai-makes-sub-optimization-easier-and-more-likely" class="hash-link" aria-label="Direct link to 3) AI makes sub-optimization easier and more likely" title="Direct link to 3) AI makes sub-optimization easier and more likely">​</a></h2>
+<p>With LLM capabilities, we have a significant yet unstable tooling that can help us resolve issues more quickly than we previously considered. It is natural to start applying it in areas not currently considered a priority to achieve fast results.</p>
+<p>However, AI is not capable of immediately resolving cross-system problems. Even though it could provide great assistance that we did not have before.</p>
+<p>Thus, utilizing it under the pressure of quick results without careful consideration and delegating much to AI could have a negative outcome.</p>
+<p>I admit that in the example I shared, I prioritized my benefit over resolving the problem itself. I know that would work for my product, giving a better experience for my users. And probably make me a better product manager in the eyes of the public.</p>
+<p>However, I must also admit that I don't know what consequences could arise from worsening the general problem by creating such inconsistencies in the broader system layers.</p>
+<hr>
+<p>All those mentioned circumstances lead to an unhappy conclusion: focusing your efforts on chronic systemic issues might not be the best strategy for your career right now. If you are under pressure to provide quick and showable results, that wouldn't be helpful. Or even worse, that could be damaging to your career.</p>
+<p>Using AI is not a silver bullet and can make a situation worse in the future. Will you meet that future in that company? Do you even care about that future?</p>
+<p>Of course, that tendency is bad for organizations. Such chronic diseases, which have a non-trivial but feasible cure, are accumulating and could blow up, leading to unforeseen consequences.</p>
+<p>Now we have a bad combination of factors, so we use a cannon to kill mosquitoes. The only difference is that it could fire back at you.</p>
+<p>Big corporations have immense inertia, so even such a blast rarely kills them. Their goal is to generate income at the end of the day, not to be efficient.</p>]]></content>
+        <category label="Business Analysis" term="Business Analysis"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[How to Build and Maintain Stakeholder Trust as a Product Owner]]></title>
         <id>https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner</id>
@@ -839,27 +887,5 @@
 <p>Ilya</p>]]></content>
         <category label="BArszawa" term="BArszawa"/>
         <category label="Community & Insights" term="Community & Insights"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A new part of Requirements & API - Analysis is available!]]></title>
-        <id>https://ilyazakharau.com/blog/requirements-api-analysis</id>
-        <link href="https://ilyazakharau.com/blog/requirements-api-analysis"/>
-        <updated>2024-04-21T22:35:00.000Z</updated>
-        <summary type="html"><![CDATA[Last month, I started summarizing all my API-related posts, workshops, and webinars into extended and structured reading. That is usually a part of the Essays section, where you can find my recent Replacing Legacy series.]]></summary>
-        <content type="html"><![CDATA[<p>Last month, I started summarizing all my API-related posts, workshops, and webinars into extended and structured reading. That is usually a part of the Essays section, where you can find my recent <a href="https://ilyazakharau.com/essays/replacing-legacy">Replacing Legacy</a> series.</p>
-<p>Reflecting on my past materials about API, I realized they were disconnected and lacked a logical narrative. However, I am proud to share that I am starting anew, from simple concepts to in-depth reviews of various Interface Definition Languages, showing significant improvement in my approach.</p>
-<p>The new chapter, "<a href="https://ilyazakharau.com/essays/requirements-api/3-analysis">Analysis</a>," focuses on business analysis and aspects of requirements engineering. That was tough to write and edit, cutting pieces that did not fit and made text difficult to comprehend. Hopefully, I will get a satisfactory result.</p>
-<p>Previous chapters:</p>
-<ul>
-<li><a href="https://ilyazakharau.com/essays/requirements-api/2-definitions">Definitions</a>, the best place to start the journey.</li>
-<li><a href="https://ilyazakharau.com/essays/requirements-api/1-glossary">Glossary</a> that I keep up-to-date with terms and abbreviations.</li>
-<li><a href="https://ilyazakharau.com/essays/requirements-api">The index page</a> is where you can find a plan for future topics.</li>
-</ul>
-<p>At the same time, I am publishing it on my <a href="https://ilyazakharau.medium.com/" target="_blank" rel="noopener noreferrer">Medium</a> to reach a broader audience. I would appreciate your support there.</p>
-<p>Next time, we discuss HTTP protocol and API structure using OpenAPI as a reference.</p>
-<p>Stay tuned and take care,</p>
-<p>Ilya</p>]]></content>
-        <category label="Community & Insights" term="Community & Insights"/>
-        <category label="Archive" term="Archive"/>
     </entry>
 </feed>
