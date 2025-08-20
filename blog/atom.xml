@@ -2,12 +2,56 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ilyazakharau.com/blog</id>
     <title>Ilya Zakharau - Product Strategy &amp; Digital Experience</title>
-    <updated>2025-07-26T00:00:00.000Z</updated>
+    <updated>2025-08-20T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ilyazakharau.com/blog"/>
     <subtitle>Strategic insights on product management, experience architecture, and digital transformation</subtitle>
     <icon>https://ilyazakharau.com/img/favicon.ico</icon>
     <rights>Copyright © 2021-2025 Ilya Zakharau</rights>
+    <entry>
+        <title type="html"><![CDATA[Managing Noise: The Higher You Climb the Product Manager Ladder]]></title>
+        <id>https://ilyazakharau.com/blog/product-management-noise</id>
+        <link href="https://ilyazakharau.com/blog/product-management-noise"/>
+        <updated>2025-08-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Exploring the challenges product managers face as they advance: dealing with increasing noise, endless conversations, and distance from implementation details.]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="AI-generated title image" src="https://ilyazakharau.com/assets/images/product-management-noise-277ee71a8ed95e72182717495bfcf80d.png" width="1624" height="1036" class="img_ev3q"></p>
+<p>The higher you climb the product manager ladder, the more noise gathers around you.</p>
+<p>You hear multiple ideas and suggestions for improvements from various people. And that doesn't make much sense in the current picture. It would be nice to do in an ideal world, but we are too far from that.</p>
+<p>There is a tendency for companies to lay off people but don't cut down their expectations, trying to operate as if nothing had happened and the business goes as usual.</p>
+<p>They likely hope for AI to resolve that inconsistency between dreams and reality. But that is a gamble at the moment. It might pay off for some, but hurt others.</p>
+<p>The level of noise also depends on the area you are working in. In the API realm, very few people in an organization have the necessary competency. Or can admit they know something about API design.</p>
+<p>Plus API changes are a complex and stressful process. So, usually everyone tries to keep the status quo without asking to rebuild something because they have a different view on that.</p>
+<p>After moving to the UI realm, I quickly realized that I was surrounded by many experts. They are willing to share their ideas with me about how everything should work and look like. How lucky I am as a PO, you might think (a bit of irony there).</p>
+<p>UI is very subjective compared to API, even though we are talking about interfaces. We interact with it daily, bringing with us some expectations and biases. In particular, stakeholders (or just random people in an org) often attempt to introduce practices from B2C apps into B2B enterprises.</p>
+<p>B2B enterprise software should not be ugly (in most cases it is ugly as hell). However, there should be a clear line between the incredible user experience of swiping through content and the frustration of dealing with boring tables and unbearable filtering options.</p>
+<p>That is just an example.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="endless-conversations">Endless Conversations<a href="https://ilyazakharau.com/blog/product-management-noise#endless-conversations" class="hash-link" aria-label="Direct link to Endless Conversations" title="Direct link to Endless Conversations">​</a></h2>
+<p>The higher you climb, the more conversations you've been dragged into. At some point, you ask yourself, "What the heck am I doing on that call?"</p>
+<p>There are plenty of abstract conversations that appear from nothing and go nowhere. Sometimes they re-appear to make a full circle again.</p>
+<p>It's about initiatives that are good to implement, but not to prioritize over others. It's kind of nice to have if you have enough resources (which you don't obviously).</p>
+<p>Such initiatives have their advocates, but no one wants to commit. Everyone agrees it would be good to make it happen. Fast forward to the next year's roadmap planning, and here we go again.</p>
+<p>The worst kind is half-done-but-abandoned initiatives. They keep re-appearing, and no one has the political will to kill that thing or admit that it went wrong. But most likely it would be dragged further until totally forgotten (and then re-animated again).</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="distance-from-implementation">Distance from Implementation<a href="https://ilyazakharau.com/blog/product-management-noise#distance-from-implementation" class="hash-link" aria-label="Direct link to Distance from Implementation" title="Direct link to Distance from Implementation">​</a></h2>
+<p>The further you climb, the further you are from the implementation detail. When I was on a backlog refinement call with a team the same question: "what I am doing there?"</p>
+<p>The guys do a great job, they discuss tasks in such detail. Sometimes I ask a few clarification questions, address some high-level concerns, and that is it.</p>
+<p>I trust my team, but also I don't want them to feel abandoned. They need a figure to validate assumptions and provide direction and vision.</p>
+<p>When I skip a retro, I feel like I am betraying the team with whom I've been working for many years. At the same time, while feeling guilty, I know they are a mature product team who can handle themselves and reach out to me if my contribution is required.</p>
+<p>I need to let it go and learn how to delegate to cut the noise.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="managing-the-noise">Managing the Noise<a href="https://ilyazakharau.com/blog/product-management-noise#managing-the-noise" class="hash-link" aria-label="Direct link to Managing the Noise" title="Direct link to Managing the Noise">​</a></h2>
+<p>The noise distracts you from important things.</p>
+<p>You can't get rid of it completely. You can't ignore it, as it can bring some insights.</p>
+<p>First, you need to define what the noise is in your PO or PM job. To do that, you must understand your priorities. Without knowing your priorities, everything around becomes a loud noise.</p>
+<p>Second, you need to stop feeling sorry if you intentionally skip some conversations. Some meetings might be valuable to attend, but they are unlikely to give you something to achieve your current priorities. Just a distraction.</p>
+<p>So we get to the importance of saying No. Again, you can't say no to everything, but you must be very selective.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="practical-solutions">Practical Solutions<a href="https://ilyazakharau.com/blog/product-management-noise#practical-solutions" class="hash-link" aria-label="Direct link to Practical Solutions" title="Direct link to Practical Solutions">​</a></h2>
+<p>To master the noise, start talking with people individually rather than in groups. I found that it gives a lot more insight than having a group chat.</p>
+<p>That might sound counterintuitive: having 5 people on a call in an hour seems more straightforward than talking to each person separately. But the trick is that you don't need to speak with all of them. There are one or two key persons who you really need. And one-on-one, if you know how to plan the conversation, they are very productive.</p>
+<p>You can't avoid group calls, but you must be sure they are facilitated. I expect an organizer to facilitate a call, but you might need to step up.</p>
+<p>If you don't see an agenda for an upcoming call, it is a good point to apologize and skip it.</p>
+<p>If I feel I am not needed on a call and I can't contribute there, I apologize and leave. You feel guilt for missing something at the start, but then there is a relief, believe me.</p>
+<p>Document every outcome. If someone raises a previously abandoned topic again, send all the relevant materials to study, and then schedule a follow-up discussion.</p>]]></content>
+        <category label="Product Management" term="Product Management"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Resolving Chronic Systemic Problems is Not Helpful for Your Career]]></title>
         <id>https://ilyazakharau.com/blog/systemic-problems-career-risk</id>
@@ -860,32 +904,6 @@
 <hr>
 <p>That is my writing process in a nutshell. If this post gets enough traction, I will share some tips on using Obsidian in my day-to-day work as a product manager next time.</p>
 <p>Stay tuned, and take care!</p>]]></content>
-        <category label="Community & Insights" term="Community & Insights"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[BArszawa Blog - April'24 Edition is out!]]></title>
-        <id>https://ilyazakharau.com/blog/barszawa-blog-edition-04-2024</id>
-        <link href="https://ilyazakharau.com/blog/barszawa-blog-edition-04-2024"/>
-        <updated>2024-04-30T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A month has almost passed, so here is a new edition of the BArszawa blog, where I serve as a contributor and editor: BArszawa Blog - April’24 Edition]]></summary>
-        <content type="html"><![CDATA[<p>A month has almost passed, so here is a new edition of the BArszawa blog, where I serve as a contributor and editor: <a href="https://buymeacoffee.com/barszawaorg/barszawa-blog-april-24-edition" target="_blank" rel="noopener noreferrer">BArszawa Blog - April’24 Edition</a></p>
-<p>What is inside:</p>
-<ul>
-<li>Updates about recent offline and online events</li>
-<li>Announcements of exciting events happening in May (no BArszawa events yet, but that will come soon)</li>
-<li>Useful materials on a wide range of Business Analysis and related topics</li>
-<li>Exclusive review of a recent IREB Conference in Warsaw from Olga Rapoport</li>
-<li>Link to a survey to get feedback on our blog from our dear readers</li>
-</ul>
-<p>Previous BArszawa materials:</p>
-<ul>
-<li><a href="https://buymeacoffee.com/barszawaorg/barszawa-blog-march-24-edition" target="_blank" rel="noopener noreferrer">BArszawa Blog - March'24 Edition</a></li>
-<li><a href="https://www.buymeacoffee.com/barszawaorg/yudoyeyefe?utm_source=izblog&amp;utm_medium=post" target="_blank" rel="noopener noreferrer">BArszawa Blog - February’24 Edition</a></li>
-<li><a href="https://www.buymeacoffee.com/barszawaorg/zatetasexo?utm_source=izblog&amp;utm_medium=post" target="_blank" rel="noopener noreferrer">BArszawa Blog - January’24 Edition</a></li>
-</ul>
-<p>Take care,</p>
-<p>Ilya</p>]]></content>
-        <category label="BArszawa" term="BArszawa"/>
         <category label="Community & Insights" term="Community & Insights"/>
     </entry>
 </feed>
