@@ -45,7 +45,7 @@
 <p>Also, the guys asked me not to call it a framework, but I insisted that 'framework' is a good name for something we are not sure how to entitle. Just call any unknown and doubtful stuff a "framework" and people will love it.</p>
 <p>Now we have a tool that allows us to test cases across various models and come with their response evaluation. I would rather have such a solution when we started, as we might save much time on prompt engineering and model switching.</p>
 <p>You might have a question about why we build our own…</p>
-<h1>Tooling</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tooling">Tooling<a href="https://ilyazakharau.com/blog/ai-poc-to-mvp#tooling" class="hash-link" aria-label="Direct link to Tooling" title="Direct link to Tooling">​</a></h2>
 <p>Where there is gold digging, there are people who sell shovels. And sometimes a shovel can cost like gold. There is so much AI tooling that I would need another full-time job to keep up with every tool in the market.</p>
 <p>We proceed with building our tools because:</p>
 <ul>
@@ -56,7 +56,7 @@
 </ul>
 <p>We have built the previously mentioned evaluation framework and admin tool to manage prompts and configure models for various workflows. Those are internal tools we are not going to share outside the Team. This is an excellent case where vibecoding helps us increase productivity in line with our specific requirements and vision.</p>
 <p>That all started with a question about how we would manage…</p>
-<h1>Prompts</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prompts">Prompts<a href="https://ilyazakharau.com/blog/ai-poc-to-mvp#prompts" class="hash-link" aria-label="Direct link to Prompts" title="Direct link to Prompts">​</a></h2>
 <p>Prompt engineering (and a broader term, "context engineering") is a game-changer in how we approach the development process. We kind of separated good-old development and writing prompts.</p>
 <p>This is how our team dynamics works:</p>
 <ul>
