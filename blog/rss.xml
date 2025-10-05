@@ -4,11 +4,96 @@
         <title>Ilya Zakharau - Product Strategy &amp; Digital Experience</title>
         <link>https://ilyazakharau.com/blog</link>
         <description>Strategic insights on product management, experience architecture, and digital transformation</description>
-        <lastBuildDate>Wed, 20 Aug 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 05 Oct 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>Copyright © 2021-2025 Ilya Zakharau</copyright>
+        <item>
+            <title><![CDATA[Embedding AI Features: The Messy Middle Between POC and MVP]]></title>
+            <link>https://ilyazakharau.com/blog/ai-poc-to-mvp</link>
+            <guid>https://ilyazakharau.com/blog/ai-poc-to-mvp</guid>
+            <pubDate>Sun, 05 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[A PM's experience designing AI-based capabilities from proof-of-concept to MVP, covering model selection, testing, prompt engineering, and managing the unpredictable nature of LLMs.]]></description>
+            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="AI-generated" src="https://ilyazakharau.com/assets/images/ai-poc-to-mvp-82268a625ae5fb5bf2903b5b851ed60f.png" width="1660" height="960" class="img_ev3q"></p>
+<p>This article is a summary of my PM experience on designing an artificial intelligence (AI)-based capability for an existing product from the proof-of-concept (POC) stage to a minimal viable product (MVP).</p>
+<p>When you are adding an AI feature to an existing product, you can either:</p>
+<ul>
+<li>introduce an entirely new functionality</li>
+<li>extend existing functionality with AI possibilities.</li>
+</ul>
+<p>In my case, the latter is true: we aim to introduce AI search to enhance user experience. It sounds pretty trivial, I acknowledge that. The challenge is that search is the critical functionality for that product.</p>
+<p>Therefore, we need to introduce a new search method to provide users with more value than the existing one. If AI search works "just good enough," then a traditional one could be considered a failure.</p>
+<p>The improvement must be substantial, because of …</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-price">The Price<a href="https://ilyazakharau.com/blog/ai-poc-to-mvp#the-price" class="hash-link" aria-label="Direct link to The Price" title="Direct link to The Price">​</a></h2>
+<p>Product managers who previously worked on products that are primarily based on third-party integrations consider API costs for services like Google Maps and other providers as a key variable. Now, with the advent of AI, the rest of the PM world has become familiar with this concept.</p>
+<p>An existing, mature functionality has a low maintenance cost. Introducing the new method of utilizing it with AI, adding permanent costs for accessing Large Language Models (LLMs, further just referenced as Model). Whether your organization has its own infrastructure or uses an external provider, such as AWS or Azure, there are still costs to pay.</p>
+<p>In my case, I can't charge users an additional fee to cover AI costs. The only justification would be that users become more efficient with AI search, thereby increasing productivity and decreasing their time-to-market with our core system.</p>
+<p>That means that the value delivered by AI must exceed the costs. In my case, value is difficult to measure, especially from the beginning. My job is to keep AI costs as low as possible while still delivering value to justify those costs and "overcome" the existing functionality.</p>
+<p>That leads us…</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="model-selection">Model Selection<a href="https://ilyazakharau.com/blog/ai-poc-to-mvp#model-selection" class="hash-link" aria-label="Direct link to Model Selection" title="Direct link to Model Selection">​</a></h2>
+<p>The irony here is that you need to select a model first, but you don't know whether it is the best and cost-efficient solution. Relying on benchmarks helps to make the first choice.</p>
+<p>There is a natural inclination to consider open-source LLMs. It is easy to kick off with building a POC and following an MVP.</p>
+<p>A question you should keep in mind: «How do we go with that Model to production?". Having on-premise infrastructure within your organization requires not only purchasing and maintenance costs, but also expertise to support and scale it effectively. A cloud provider with an OSS model might be a better choice for the start.</p>
+<p>Paid LLMs are generally better than their OSS counterparts, even though we are seeing the closing of the gap. A year ago, Llama 3.1 was not performing well with structured data, such as JSON (although texts in PDF were fine). Newer releases have improved much.</p>
+<p>Also, a year ago, there was a concern about a context window (i.e., how many tokens can be consumed). Now it is a lesser problem with 200K and more tokens for popular models.</p>
+<p>So my strategy is to proceed with paid, but on the older version of an LLM from a cloud provider. I get a cheaper price for the API, along with good performance and stability. However, I am constantly seeking alternatives for lower costs.</p>
+<p>LLMs become cheaper, and their older versions become increasingly affordable. I believe that it won't last forever, and prices will eventually rise. The task is to avoid vendor lock and be flexible enough to switch the models easily.</p>
+<p>To achieve that, you need…</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="testing">Testing<a href="https://ilyazakharau.com/blog/ai-poc-to-mvp#testing" class="hash-link" aria-label="Direct link to Testing" title="Direct link to Testing">​</a></h2>
+<p>The main lesson I learned from the last 6 months: you need to think about testing long before you deliver the first pieces of AI functionality. We've built the initial capabilities and then thought about how we're going to test it.</p>
+<p>With a few attempts, I vibe-coded a thing I called "evaluation framework," allowing me to run a conversation with LLM and then estimate its response with another LLM using some subjective metric. That was a clunky solution, which was re-vibecoded into a more solid solution.</p>
+<p>Also, the guys asked me not to call it a framework, but I insisted that 'framework' is a good name for something we are not sure how to entitle. Just call any unknown and doubtful stuff a "framework" and people will love it.</p>
+<p>Now we have a tool that allows us to test cases across various models and come with their response evaluation. I would rather have such a solution when we started, as we might save much time on prompt engineering and model switching.</p>
+<p>You might have a question about why we build our own…</p>
+<h1>Tooling</h1>
+<p>Where there is gold digging, there are people who sell shovels. And sometimes a shovel can cost like gold. There is so much AI tooling that I would need another full-time job to keep up with every tool in the market.</p>
+<p>We proceed with building our tools because:</p>
+<ul>
+<li>Free tools are mostly (raw) shit</li>
+<li>We weren't sure about the paid tooling not being expensive shit</li>
+<li>In an enterprise, it takes time to onboard a new vendor. And we had a tight timeline.</li>
+<li>We can vibecode what we need pretty quickly.</li>
+</ul>
+<p>We have built the previously mentioned evaluation framework and admin tool to manage prompts and configure models for various workflows. Those are internal tools we are not going to share outside the Team. This is an excellent case where vibecoding helps us increase productivity in line with our specific requirements and vision.</p>
+<p>That all started with a question about how we would manage…</p>
+<h1>Prompts</h1>
+<p>Prompt engineering (and a broader term, "context engineering") is a game-changer in how we approach the development process. We kind of separated good-old development and writing prompts.</p>
+<p>This is how our team dynamics works:</p>
+<ul>
+<li>1 Dev is working on UI</li>
+<li>1 Dev is building a backend around LLM</li>
+<li>1 BA is working on requirements and prompts</li>
+<li>1 QA to test the outcome</li>
+<li>1 me as PM doing various stuff (that is a topic for another article)</li>
+</ul>
+<p>For us, it wouldn't be possible to fix everything with prompts, so we were developing a logic to help "guide" our workflow through various tools or sub-agents. We added writing prompts as a Definition-of-Done. That caused multiple situations that development has been ready for some time, but we are stuck writing "the right" prompt to proceed with testing.</p>
+<p>Sometimes changes in prompts broke already working test cases. Prompts tend to become bigger and unmanageable. Many times, we were stuck, wondering why things stopped working after changes in another unrelated part of the prompt. We went back and forth, trying various techniques, approaches, models, and even architectures.</p>
+<p>That made estimation difficult. Initially, we stopped providing estimates in story points, and after some time, we initiated development. We were learning Spring AI, how to build the chatbot UX from scratch, how to write prompts, how to test, and how to manage all that.</p>
+<p>We ended up estimating the "dev" part only, excluding the "prompt" part from any estimation, but time-framed within a sprint.</p>
+<p>The precise scope of MVP helped us to stay on track. We were confident that we could do that, and our approach, with a relaxed process, paid off.</p>
+<p>We end up with "Divide and conquer": many precise pieces of prompts tied to the steps of the workflow and some tools. From the outside, such prompt management might seem complicated, but that gives us a glimpse of control of the…</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="black-box">Black box&nbsp;<a href="https://ilyazakharau.com/blog/ai-poc-to-mvp#black-box" class="hash-link" aria-label="Direct link to Black box&nbsp;" title="Direct link to Black box&nbsp;">​</a></h2>
+<p>At the moment of the greatest despair, you should remember that it is an undeterministic thing outside your complete control. That is another game-changer all team members need to adapt to.</p>
+<p>There are good days when a selected LLM performs, and there are bad days. Bad days are usually those when you need to demo your AI feature.</p>
+<p>The outcome is not always consistent. That is the price we pay. There are techniques to achieve more consistent results, but they increase the price, as you need to call the LLM several times and compare the results (probably using another LLM).</p>
+<p>Sometimes, that black box surprises you with use cases you did not initially anticipate. You might sound like a classic "scope creep". And it is more tempting because the price of the "non-documented" feature is a few new lines in the system prompt.</p>
+<p>This is where a product vision is required, so everything stays on track.</p>
+<p>And the right data in your context is the most important. While developing our AI search, "Prompt engineering" was considered no longer relevant alone, and the newly emerging "Context engineering" has come to attention.</p>
+<p>It is the whole topic itself. My point here is that you need to prepare (preprocess) the structured data you want to utilize to decrease noise, which could mislead the LLM.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="https://ilyazakharau.com/blog/ai-poc-to-mvp#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
+<p>Here is a summary of what I am trying to share with you:</p>
+<ol>
+<li>Cheaper but good-enough LLM is a better long-term choice.</li>
+<li>Be ready to change LLMs frequently.</li>
+<li>Start thinking about testing from the start.</li>
+<li>Relax the processes while you are learning.</li>
+<li>Context is the king: it is still the same good-old "trash in - trash out".</li>
+<li>Don't invent your own chatbot UX. I didn't mention it before, but beware: use existing UI frameworks. Designing chatbots is not as straightforward as it may seem.</li>
+</ol>]]></content:encoded>
+            <category>Product Management</category>
+            <category>AI</category>
+        </item>
         <item>
             <title><![CDATA[Managing Noise: The Higher You Climb the Product Manager Ladder]]></title>
             <link>https://ilyazakharau.com/blog/product-management-noise</link>
@@ -869,42 +954,6 @@
 <p>That piece was tough to write. But I feel relieved that I have closed that 3-year-long experience. There will be no year four or five. I literally don't know where I will be in a year. Nowadays, it is ridiculous to rely on a career plan.</p>
 <p>Thanks for being with me on that journey. Stay tuned, and take care!</p>]]></content:encoded>
             <category>Product Management</category>
-            <category>Community &amp; Insights</category>
-        </item>
-        <item>
-            <title><![CDATA[About My Writing Routine]]></title>
-            <link>https://ilyazakharau.com/blog/writing-routine</link>
-            <guid>https://ilyazakharau.com/blog/writing-routine</guid>
-            <pubDate>Tue, 14 May 2024 09:00:00 GMT</pubDate>
-            <description><![CDATA[A detailed guide to professional writing workflow using Obsidian, Zettelkasten method, and Canvas for content organization. Learn practical tips for research, structuring, editing with Grammarly, and publishing across Medium, LinkedIn, and personal blogs.]]></description>
-            <content:encoded><![CDATA[<p>Here is my writing routine: the way how I structure my research on various topics and then write an article.</p>
-<p>It is not my usual type of content, but it might be helpful to someone. And yes, I need to fill the vacuum while working on two new writing pieces: a book review and a new topic.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="writing-tools">Writing Tools<a href="https://ilyazakharau.com/blog/writing-routine#writing-tools" class="hash-link" aria-label="Direct link to Writing Tools" title="Direct link to Writing Tools">​</a></h2>
-<p>I use <a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer">Obsidian</a> as a knowledge base and content management. It is free, keeps your data in your hands, not in a vendor cloud, uses Markdown for formatting, and has a variety of great plugins.&nbsp;</p>
-<p>The latter is handy as my blog&nbsp;is also built&nbsp;with the <a href="https://www.mkdocs.org/" target="_blank" rel="noopener noreferrer">MkDocs</a> engine based on the Markdown format. So, I keep writing and editing in Markdown, which is very convenient. I don't particularly appreciate it when each tool tries to reinvent the wheel with its custom formatting, which is incompatible with anyone else. With Markdown files stored on my local machine and my cloud storage, I can quickly grab them and migrate them to another tool.</p>
-<p>I use the <a href="https://zettelkasten.de/overview/" target="_blank" rel="noopener noreferrer">Zettelkasten</a> technique in Obsidian when I research something and need to document some information and my thoughts to reference it later. You can find a lot of information about this approach. I keep my notes connected with tags and internal references where possible. Obsidian provides a nice graph where I can filter out some notes and track references.</p>
-<p>Once a year, I clean up by editing, merging, or even deleting some notes. So, I try to keep the number of my Markdown notes from spreading. You can see a part of the notes graph in the attached image below.</p>
-<p><img decoding="async" loading="lazy" alt="Graph view" src="https://ilyazakharau.com/assets/images/writing-routine-1-0537d97464c51b5cd82ca5259abe62f9.png" width="3316" height="2042" class="img_ev3q"></p>
-<p>I still use <a href="https://www.notion.so/" target="_blank" rel="noopener noreferrer">Notion</a>, even though its performance problem a few years ago forced me to try Obsidian and stay with it. I don't synchronize my notes between Obsidian and Notion, as I use them for different cases. Obsidian doesn't have built-in databases like Notion does. Even though there are community plugins to address, I keep Notion for that purpose.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="writing-process">Writing Process<a href="https://ilyazakharau.com/blog/writing-routine#writing-process" class="hash-link" aria-label="Direct link to Writing Process" title="Direct link to Writing Process">​</a></h2>
-<p>When I start to work on an article, I combine my thoughts, ideas, and relevant Zettelkasten notes in <a href="https://obsidian.md/canvas" target="_blank" rel="noopener noreferrer">Canvas</a>. It is a recently added Obsidian feature that is a mind map you can combine from new and existing notes. I waited long for someone to implement that by uniting a knowledge base and mind maps.</p>
-<p>I used to start writing in a separate MD file, but the more complex topics appeared, the more time I spent on editing and restructuring. Now, I structure everything in Canvas, reshuffling pieces of content to have a logical and straightforward narrative.</p>
-<p>Below, you can find images of how my recent API article and upcoming writing about Composability looks like in Canvas. I also started copying articles I gathered to prepare material to keep everything in one place. That really helps to focus.</p>
-<p><img decoding="async" loading="lazy" alt="API Analysis article" src="https://ilyazakharau.com/assets/images/writing-routine-2-ee9d41d5311323d6ba91e87dd5dcc76f.png" width="3316" height="2040" class="img_ev3q"></p>
-<p><img decoding="async" loading="lazy" alt="Upcoming Compasibility piece" src="https://ilyazakharau.com/assets/images/writing-routine-3-39da76e81dc225f5f612cdbdbc5971f3.png" width="3328" height="2050" class="img_ev3q"></p>
-<p>In the next step, I finally put everything in a single document and proceed with a first round of editing, literally "adding meat to the bones." Then, I use <a href="https://www.grammarly.com/" target="_blank" rel="noopener noreferrer">Grammarly</a> to help edit and fix spelling and syntax issues.</p>
-<p>I pay yearly for a Grammarly Premium subscription, and I am delighted about that. Before, I spent a lot of time editing and fixing issues, and now that has gone.</p>
-<p>I tried ChatGPT for editing, but the styling and word choice usually concern me. My specialization was Literary translation at the university. Thus, I know a bit about the topic and what I consider my writing style. And "delve" is not a part of it, sorry. So, I stay with Grammarly as a happy customer.</p>
-<p>Back to track. I do two rounds of editing with Grammarly to clean up the text. In parallel, I search for images or draw diagrams by myself. I use <a href="https://www.lucidchart.com/" target="_blank" rel="noopener noreferrer">Lucidchart</a> because I have a license from work, but I can also switch to <a href="https://www.drawio.com/" target="_blank" rel="noopener noreferrer">draw.io</a> anytime.</p>
-<p>Then, I combine a draft and&nbsp;usually&nbsp;ask my wife to read a piece before publication. She is not an expert in the domains I am writing about, but her linguistic capabilities exceed mine. So she can say what sounds too incomprehensible and whether the text is OK.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="publishing">Publishing<a href="https://ilyazakharau.com/blog/writing-routine#publishing" class="hash-link" aria-label="Direct link to Publishing" title="Direct link to Publishing">​</a></h2>
-<p>I push an MD file with a new article to a GitHub repository with my blog, so in a few minutes, it is available. Then I go to Medium and automatically import my new article there. It works flawlessly, so I have to do a little editing.</p>
-<p>If I send my Medium article to the Analyst's Corner, some time&nbsp;is required&nbsp;for a review and publishing, but not so long.</p>
-<p>Then, it's time to write a post for LinkedIn with a link to my article. And that is it. I tried to post that on Twitter and Instagram but then dropped. They are not my platform because I like to write long texts or don't know how to work with them (or I simply don't care).</p>
-<p>Ultimately, I relax watching LinkedIn, Medium, and Google Analytics stats on my blog. The Medium audience is steadily growing, and that makes me happy. LinkedIn is also doing fine.</p>
-<hr>
-<p>That is my writing process in a nutshell. If this post gets enough traction, I will share some tips on using Obsidian in my day-to-day work as a product manager next time.</p>
-<p>Stay tuned, and take care!</p>]]></content:encoded>
             <category>Community &amp; Insights</category>
         </item>
     </channel>
