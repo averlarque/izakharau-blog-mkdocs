@@ -1,0 +1,113 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Scattered data points (representing fragmented information) -->
+  <g opacity="0.3">
+    <circle cx="150" cy="100" r="3" fill="#3b82f6"/>
+    <circle cx="280" cy="150" r="2" fill="#8b5cf6"/>
+    <circle cx="200" cy="200" r="2.5" fill="#3b82f6"/>
+    <circle cx="100" cy="250" r="2" fill="#8b5cf6"/>
+    <circle cx="320" cy="280" r="3" fill="#3b82f6"/>
+    <circle cx="180" cy="350" r="2" fill="#8b5cf6"/>
+    <circle cx="90" cy="420" r="2.5" fill="#3b82f6"/>
+    <circle cx="250" cy="480" r="2" fill="#8b5cf6"/>
+    
+    <circle cx="950" cy="120" r="2.5" fill="#3b82f6"/>
+    <circle cx="1080" cy="180" r="2" fill="#8b5cf6"/>
+    <circle cx="1020" cy="240" r="3" fill="#3b82f6"/>
+    <circle cx="1120" cy="300" r="2" fill="#8b5cf6"/>
+    <circle cx="970" cy="380" r="2.5" fill="#3b82f6"/>
+    <circle cx="1100" cy="450" r="2" fill="#8b5cf6"/>
+    <circle cx="1050" cy="520" r="3" fill="#3b82f6"/>
+  </g>
+  
+  <!-- Connection lines flowing to center (representing context gathering) -->
+  <g opacity="0.2" stroke="url(#accentGradient)" stroke-width="1.5" fill="none">
+    <path d="M 150 100 Q 300 200 500 315" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" from="0" to="10" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 280 150 Q 400 220 500 315" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" from="0" to="10" dur="1.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 100 250 Q 300 280 500 315" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" from="0" to="10" dur="0.9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 180 350 Q 350 330 500 315" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" from="0" to="10" dur="1.1s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M 950 120 Q 750 200 700 315" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" from="0" to="10" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 1080 180 Q 900 240 700 315" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" from="0" to="10" dur="1.3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 1020 240 Q 850 280 700 315" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" from="0" to="10" dur="0.95s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 970 380 Q 820 350 700 315" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" from="0" to="10" dur="1.15s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Central node (the Context Dealer) -->
+  <g filter="url(#glow)">
+    <circle cx="600" cy="315" r="80" fill="none" stroke="url(#accentGradient)" stroke-width="3" opacity="0.6"/>
+    <circle cx="600" cy="315" r="60" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.4">
+      <animate attributeName="r" values="60;65;60" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="315" r="40" fill="url(#accentGradient)" opacity="0.8"/>
+    
+    <!-- Icon representation - simplified brain/network hybrid -->
+    <g transform="translate(600, 315)" fill="#ffffff">
+      <circle cx="-15" cy="-10" r="5"/>
+      <circle cx="15" cy="-10" r="5"/>
+      <circle cx="-15" cy="10" r="5"/>
+      <circle cx="15" cy="10" r="5"/>
+      <circle cx="0" cy="0" r="6"/>
+      <line x1="-15" y1="-10" x2="0" y2="0" stroke="#ffffff" stroke-width="2"/>
+      <line x1="15" y1="-10" x2="0" y2="0" stroke="#ffffff" stroke-width="2"/>
+      <line x1="-15" y1="10" x2="0" y2="0" stroke="#ffffff" stroke-width="2"/>
+      <line x1="15" y1="10" x2="0" y2="0" stroke="#ffffff" stroke-width="2"/>
+    </g>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="480" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="52" font-weight="700" fill="#ffffff" text-anchor="middle">
+    From Product Manager
+  </text>
+  <text x="600" y="540" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="52" font-weight="700" fill="url(#accentGradient)" text-anchor="middle">
+    to Context Dealer
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="585" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle" opacity="0.8">
+    How AI Transformed My Role
+  </text>
+  
+  <!-- Decorative code brackets -->
+  <text x="50" y="80" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="48" fill="#3b82f6" opacity="0.3" font-weight="300">{</text>
+  <text x="1130" y="580" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="48" fill="#8b5cf6" opacity="0.3" font-weight="300">}</text>
+</svg>
