@@ -2,12 +2,67 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ilyazakharau.com/blog</id>
     <title>Ilya Zakharau - Product Strategy &amp; Platform Experience</title>
-    <updated>2025-11-30T00:00:00.000Z</updated>
+    <updated>2025-12-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ilyazakharau.com/blog"/>
     <subtitle>Strategic insights on product management, experience architecture, and digital transformation</subtitle>
     <icon>https://ilyazakharau.com/img/favicon.ico</icon>
     <rights>Copyright © 2021-2025 Ilya Zakharau</rights>
+    <entry>
+        <title type="html"><![CDATA[2025 Reflections & 2026 Plans]]></title>
+        <id>https://ilyazakharau.com/blog/2025-reflections-2026-plans</id>
+        <link href="https://ilyazakharau.com/blog/2025-reflections-2026-plans"/>
+        <updated>2025-12-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Annual writing review: 12 articles, platform performance analysis, and content plans for 2026]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="cover" src="https://ilyazakharau.com/assets/images/2025-reflections-title-862519fb286621d1cd4a29513cbb6f05.png" width="1200" height="630" class="img_ev3q"></p>
+<p>Annually, I summarize my writing and review plans for the upcoming year. But before doing this, I want to thank all of you for being my readers. Whether you have been following me for a few years or just joined after my recent posts (welcome, by the way), thank you!</p>
+<p>Writing and observing how people react to it is my source of dopamine. It really motivates me to keep going and do my best. I am learning by reflecting on and writing about my experience, and I want everyone to learn from it too.</p>
+<p>Now, let's take a look at my journey as a writer in 2025.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2025-by-the-numbers">2025 by the Numbers<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#2025-by-the-numbers" class="hash-link" aria-label="Direct link to 2025 by the Numbers" title="Direct link to 2025 by the Numbers" translate="no">​</a></h2>
+<p>On "<a href="https://ilyazakharau.com/blog/2024-reflections-2025-plans" target="_blank" rel="noopener noreferrer" class="">2024 Reflection &amp; 2025 Plans</a>," I said that in 2025, there will be 12 articles vs. 24 I wrote in 2024. You are currently reading that 12th article in 2025, so I kept my promise.</p>
+<p>Less content led to a greater impact, but not across all platforms. Medium is on the rise, LinkedIn is almost dead compared to previous years, and my Blog is thriving.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="blog-performance">Blog Performance<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#blog-performance" class="hash-link" aria-label="Direct link to Blog Performance" title="Direct link to Blog Performance" translate="no">​</a></h3>
+<p>For the Blog, there are 1.9K unique visitors vs 700 in 2024 and 300 in 2023 on ilyazakharau.com. The growing readership spans continents, with substantial numbers coming from Southeast Asia. I am very glad that the geography of my readers is growing.</p>
+<p>I changed the blog engine (for the 4th time, <a href="https://ilyazakharau.com/blog/new-mkdocs-blog-version" target="_blank" rel="noopener noreferrer" class="">see my previous journey here</a>) to Docusaurus. With vibe-coding, I was able to migrate all the content from MKDocs in one day and then arrange the blog redesign.</p>
+<p>Also, I launched my own email subscription to maintain some independence from publishing platforms. The subscription numbers are not staggering, but slowly growing, and I am happy about that.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="medium-growth">Medium Growth<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#medium-growth" class="hash-link" aria-label="Direct link to Medium Growth" title="Direct link to Medium Growth" translate="no">​</a></h3>
+<p>On Medium, the number of followers doubled, and the number of email subscribers tripled. I put my last Medium articles behind a paywall (keeping them free on my blog), so I started earning real money from them. Not a large amount, but it is pleasant to start getting something out of it.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="linkedin-reality-check">LinkedIn Reality Check<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#linkedin-reality-check" class="hash-link" aria-label="Direct link to LinkedIn Reality Check" title="Direct link to LinkedIn Reality Check" translate="no">​</a></h3>
+<p>LinkedIn plunged because I wasn't posting consistently. Even those occasional posts had fewer engagements than before. I followed the advice to clean up your network to remove dead weight periodically. I conducted a thorough LinkedIn purge of recruiters, salespeople, people from my university, and others.</p>
+<p>And it did work. My posts, which mainly contain text and links to my other resources, are not well-liked by the algorithm and receive low but stable engagement. Maybe because of that, traffic from LinkedIn to my blog and Medium increased by 20%, even though engagement with the platform is not impressive.</p>
+<p>But I am satisfied with that.</p>
+<p>Most people agree that LinkedIn has become a trash can, but we still need to keep using it. So I don't have any intention of investing my time there except for announcement posts.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-worked-in-2025">What Worked in 2025<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#what-worked-in-2025" class="hash-link" aria-label="Direct link to What Worked in 2025" title="Direct link to What Worked in 2025" translate="no">​</a></h2>
+<p>Most of that success was due to my recent articles on AI. In 2025, I worked to deploy a proof-of-concept AI-based feature into production. I did not plan to write about it mainly because I did not want to be part of the AI hype train.</p>
+<p>I completed my successful Requirements &amp; API series and planned to write mainly about product management and design systems. But I felt the need to reflect on that recent writing experience, which resulted in a first, pretty generic article, "<a href="https://ilyazakharau.com/blog/ai-poc-to-mvp" target="_blank" rel="noopener noreferrer" class="">Embedding AI Features: The Messy Middle Between POC and MVP</a>". Then I decided to change my strategy and share more personal, practical stories in "<a href="https://ilyazakharau.com/blog/product-manager-to-context-dealer" target="_blank" rel="noopener noreferrer" class="">From Product Manager to Context Dealer: How AI Changed My Role</a>" and "<a href="https://ilyazakharau.com/blog/ai-evals-pm" target="_blank" rel="noopener noreferrer" class="">How I stopped doing Product Management and became obsessed with AI evals</a>," instead of abstract theorisation. They got a boost on Medium and got a little moment of glory.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hidden-gems-worth-revisiting">Hidden Gems Worth Revisiting<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#hidden-gems-worth-revisiting" class="hash-link" aria-label="Direct link to Hidden Gems Worth Revisiting" title="Direct link to Hidden Gems Worth Revisiting" translate="no">​</a></h2>
+<p>However, I think there is a bunch of overlooked articles I will be glad you give a first or second chance:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-product-managers-view-on-composability">The Product Manager's View on Composability<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#the-product-managers-view-on-composability" class="hash-link" aria-label="Direct link to The Product Manager's View on Composability" title="Direct link to The Product Manager's View on Composability" translate="no">​</a></h3>
+<p>(<a href="https://ilyazakharau.com/blog/the-product-managers-view-on-composability" target="_blank" rel="noopener noreferrer" class="">Blog</a> / <a href="https://medium.com/analysts-corner/the-product-managers-view-on-composability-cee41c321aa3" target="_blank" rel="noopener noreferrer" class="">Medium</a>)</p>
+<p>My take on MACH (Microservices, API-first, Cloud native, Headless) &amp; Composable architecture approaches. That is an interesting topic on which I spent a lot of time researching. When published, it underperformed widely. It is still a worthy material, so give it a try.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-build-and-maintain-stakeholder-trust-as-a-product-owner">How to Build and Maintain Stakeholder Trust as a Product Owner<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#how-to-build-and-maintain-stakeholder-trust-as-a-product-owner" class="hash-link" aria-label="Direct link to How to Build and Maintain Stakeholder Trust as a Product Owner" title="Direct link to How to Build and Maintain Stakeholder Trust as a Product Owner" translate="no">​</a></h3>
+<p>(<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner" target="_blank" rel="noopener noreferrer" class="">Blog</a> / <a href="https://medium.com/analysts-corner/how-to-build-and-maintain-stakeholder-trust-as-a-product-owner-9a5967f4fafd?source=friends_link&amp;sk=b56ac441f3390587314cc92eda32a556" target="_blank" rel="noopener noreferrer" class="">Medium</a>)</p>
+<p>It is a follow-up to the highly successful "Stakeholder Alignment: The Underrated Skill Every Product Manager Needs," offering practical advice on rebuilding and maintaining trust among stakeholders on your project. It didn't meet the expectations of its predecessor, but it's still a great article.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resolving-chronic-systemic-problems-is-not-helpful-for-your-career">Resolving Chronic Systemic Problems is Not Helpful for Your Career<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#resolving-chronic-systemic-problems-is-not-helpful-for-your-career" class="hash-link" aria-label="Direct link to Resolving Chronic Systemic Problems is Not Helpful for Your Career" title="Direct link to Resolving Chronic Systemic Problems is Not Helpful for Your Career" translate="no">​</a></h3>
+<p>(<a href="https://ilyazakharau.com/blog/systemic-problems-career-risk" target="_blank" rel="noopener noreferrer" class="">Blog</a> / <a href="https://medium.com/analysts-corner/resolving-chronic-systemic-problems-is-not-helpful-for-your-career-4f086b5c886c?source=friends_link&amp;sk=e8e0083652477743923bfe5ec9c11b14" target="_blank" rel="noopener noreferrer" class="">Medium</a>)</p>
+<p>My thoughts on focusing solely on resolving systemic, complex business problems may leave me with nothing and hinder your career. It is one of the best pieces of my writing to date.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-coming-in-2026">What's Coming in 2026<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#whats-coming-in-2026" class="hash-link" aria-label="Direct link to What's Coming in 2026" title="Direct link to What's Coming in 2026" translate="no">​</a></h2>
+<p>The content strategy will be the same: an article per month. They will be published as free content on my blog via email subscription and on Medium, behind a paywall.</p>
+<p>I want to grow my subscriber base: my target number is 100 readers on both.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="planned-topics">Planned Topics<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#planned-topics" class="hash-link" aria-label="Direct link to Planned Topics" title="Direct link to Planned Topics" translate="no">​</a></h3>
+<p>In terms of the content itself:</p>
+<ul>
+<li class=""><strong>Prompt Pipelines</strong> - There is one more AI-related article on building prompt pipelines. Initially planned for 2025, but I couldn't make it.</li>
+<li class=""><strong>Impact-First Book Review</strong> - I have some thoughts to share about Matt LeMay's recent book "Impact-first Product Teams".</li>
+<li class=""><strong>UI Design Systems</strong> - Last year, I teased one or two articles on UI Design Systems. I still stick to that idea.</li>
+<li class=""><strong>Career Reflections</strong> - There will be at least one related to my future career prospects.</li>
+<li class=""><strong>Requirements &amp; API E-book</strong> - And I will be back to the API! I want to expand and repackage my "Requirements &amp; API" series as an e-book and give it away at a symbolic price.</li>
+</ul>
+<p>So I have some plans for the first half of 2026 and then see what happens next.</p>
+<hr>
+<p>Again, thanks for reading me this year. I wish you Merry Christmas and a Happy New Year! See you in 2026. Take care.</p>]]></content>
+        <category label="Community & Insights" term="Community & Insights"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[How I stopped doing Product Management and became obsessed with AI evals]]></title>
         <id>https://ilyazakharau.com/blog/ai-evals-pm</id>
@@ -913,117 +968,6 @@
 <p>Is this book an advertisement for the <a href="https://www.svpg.com/" target="_blank" rel="noopener noreferrer" class="">SVPG</a> consultant services? No, it is not.</p>
 <p>It is a tool to popularize the Product Operating Model, a form of evangelism to encourage organizations to change their ways of creating valuable and commercially successful products. No certification is required to start applying those principles.</p>
 <p>Only time will tell whether that model will spread around the world and scale, changing the way products are designed, developed, and delivered. Meanwhile, enjoy the book!</p>]]></content>
-        <category label="Books" term="Books"/>
-        <category label="Product Management" term="Product Management"/>
-        <category label="Product Strategy" term="Product Strategy"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Best Book I Read in My Career - "Product Management in Practice" by Matt LeMay]]></title>
-        <id>https://ilyazakharau.com/blog/product-management-in-practice</id>
-        <link href="https://ilyazakharau.com/blog/product-management-in-practice"/>
-        <updated>2024-06-17T21:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ The "Product Management in Practice" by Matt LeMay is 100% in the top 5 product management books written so far. Must read, even if you are not a product manager but are interested in the topic. I suggest that brilliant book.]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="Book cover" src="https://ilyazakharau.com/assets/images/pm_in_practice-25258a01f6565ca4d1db4b953b5165c1.jpg" width="667" height="1000" class="img_ev3q"></p>
-<p>It was a sunny day in 2019 when I found myself in the largest bookstore in Dubai, surrounded by a sea of books. I had three hours to choose my next read, a decision that would shape my professional journey. After careful consideration, I picked up "Product Management in Practice" by Matt LeMay, a choice I've never regretted, even though <a href="https://ilyazakharau.com/reading-product-management-in-enterprise/" target="_blank" rel="noopener noreferrer" class="">"Building Products for the Enterprise"</a> was a close contender.</p>
-<p>Even though I read and appreciated both books in the end, that choice impacted my career without any doubt. At that time, I was a business analyst in an outsourcing software development company who desperately wanted to become a product manager in a product organization.</p>
-<p>I can't say that the book made me a product manager. But it definitely impacted me as the professional I am today - for better or worse (I hope for the better). I read it 3 or 4 times while transitioning from a business analyst to acting as a PM. Each time, I was surprised at how much wisdom was placed in that slim book and how differently I looked at some things throughout the years. It is like a peaceful harbor, and you want a return after fighting yourself through multiple storms.</p>
-<p>In 2024, I realized that the 2nd edition was published in 2022, so before writing this piece, I enjoyed reading it. There are many changes compared to the previous version, but it is the same brilliant book. Here, I will talk about the 2nd edition.</p>
-<p>If it is not the best, then it is one of the best books about product management. Below, I will prove my point.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="dealing-with-ambiguity">Dealing with ambiguity<a href="https://ilyazakharau.com/blog/product-management-in-practice#dealing-with-ambiguity" class="hash-link" aria-label="Direct link to Dealing with ambiguity" title="Direct link to Dealing with ambiguity" translate="no">​</a></h2>
-<blockquote>
-<p>The skill of actually figuring out what you need is probably as important as what you do after you figure it out.</p>
-</blockquote>
-<p>Brainstorming solution details with the team, working on wireframes, and putting a new business process into diagrams are a fancy part of the job. But before that, you usually go through hell and back, <strong>trying to crystallize an understanding of what you need to do</strong>.</p>
-<p>Someone may be surprised that being a product manager is not about generating ideas and making other people implement them. It is about navigating through senior stakeholders, facilitating and communicating various points of view and agendas to serve business and customer needs. With a lot of responsibility but very little authority.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="you-are-responsible-for-doing-whatever-needs-to-get-done-to-ensure-the-success-of-your-team-and-your-product">You are responsible for doing whatever needs to get done to ensure the success of your team and your product<a href="https://ilyazakharau.com/blog/product-management-in-practice#you-are-responsible-for-doing-whatever-needs-to-get-done-to-ensure-the-success-of-your-team-and-your-product" class="hash-link" aria-label="Direct link to You are responsible for doing whatever needs to get done to ensure the success of your team and your product" title="Direct link to You are responsible for doing whatever needs to get done to ensure the success of your team and your product" translate="no">​</a></h2>
-<blockquote>
-<p>It is your job to identify, evaluate, prioritize, and address anything that might affect your team's ability to deliver on its goals—whether or not you're explicitly told to do so.</p>
-</blockquote>
-<p>That was a part of my work ethic before the reading, but it only enforced that. People who worked with me know that I can do everything I am capable of for my team and product. I am not writing code (actually, I do, but not for production) and not doing DevOps stuff. However, if needed, I can figure that out.</p>
-<p>I am not replacing my team, and that is impossible. But I do everything I can to serve them to do their job the best way possible. <strong>Sometimes, that means keeping your hands dirty and diving into things outside of the area of your interests.</strong> That involves unpleasant conversations with people who have no interest in helping you, driving prioritization of dependencies, reading someone else code to understand those words, and many other things.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="dealing-with-insecurity">Dealing with insecurity<a href="https://ilyazakharau.com/blog/product-management-in-practice#dealing-with-insecurity" class="hash-link" aria-label="Direct link to Dealing with insecurity" title="Direct link to Dealing with insecurity" translate="no">​</a></h2>
-<blockquote>
-<p>Product management can be a brutal and relentless trigger for insecurity, and insecurity can bring out the worst in all of us.</p>
-</blockquote>
-<p>Dealing with ambiguity and not having a clear path to success causes a growing feeling of insecurity. For instance, I feel angry when someone asks whether my team and I are doing something relevant, as a vendor might easily replace it. I immediately switch to passive-aggressive mode. I am experienced enough to control that feeling and not cast fireballs at my opponent. But I need some time to calm down.</p>
-<p><strong>I just accept the fact that such criticism triggers deep insecurity.</strong> I take time to keep myself away from writing or saying something I would regret later.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="clarity-over-comfort">Clarity over comfort<a href="https://ilyazakharau.com/blog/product-management-in-practice#clarity-over-comfort" class="hash-link" aria-label="Direct link to Clarity over comfort" title="Direct link to Clarity over comfort" translate="no">​</a></h2>
-<blockquote>
-<p>Great product managers not only tolerate, but actively enjoy, the challenge of creating alignment and understanding between different people with different experiences and perspectives.</p>
-</blockquote>
-<p>That one really hurts. You don't want to put yourself in the spotlight by asking to clarify something that is apparently clear for all people in a room / a call but not for you. It is too uncomfortable, but you get used to it.</p>
-<p>Whether I am a unique idiot who doesn't reach the intellectual heights of other people in a conversation (hiring me was a mistake, my apologies), or <strong>I can take a chance and clarify something for people who don't want to put themselves in the spotlight</strong>.</p>
-<p>Each time, it is an internal dialogue: "I will look stupid." - "I better experience those 5 minutes of shame rather than deal with the consequences of that misunderstanding". - "F*ck it!"</p>
-<p>People are primarily OK with explaining things to you again, and that is a beneficial exercise to bring everyone on the same page.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="make-yourself-obsolete">Make yourself obsolete<a href="https://ilyazakharau.com/blog/product-management-in-practice#make-yourself-obsolete" class="hash-link" aria-label="Direct link to Make yourself obsolete" title="Direct link to Make yourself obsolete" translate="no">​</a></h2>
-<blockquote>
-<p>Product managers who excel at organization work with their teams to organize people, processes, and tools into self-sustaining systems that do not require their moment-to-moment participation or oversight.</p>
-</blockquote>
-<p>That one is counterintuitive. One product manager I deeply respect once said: "If you don't need me, then I am doing my work right." It took me a while to understand that. And reading the same thought in that book made me think about it. We all want to be "needed," which is where micromanagement comes from. That is a bad way to deal with your insecurity.</p>
-<p><strong>If you, as PM, can take a step away from the details and let your team figure that out, you've built an empowered-Marty-Cagan-product team.</strong> It does not mean they don't need you anymore. But they don't need you to decide how a button should look like. That allows focusing on research and the bigger picture.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="curiosity-is-important">Curiosity is important<a href="https://ilyazakharau.com/blog/product-management-in-practice#curiosity-is-important" class="hash-link" aria-label="Direct link to Curiosity is important" title="Direct link to Curiosity is important" translate="no">​</a></h2>
-<blockquote>
-<p>"I'm curious to learn more about the work that you do" is the most powerful sentence at your disposal as a product manager, whether it's your first day or you've been working in the field for decades.</p>
-</blockquote>
-<p><strong>Curiosity is a must-have trait for a product manager, which should drive them towards discovering new things.</strong> That applies when talking to senior stakeholders, users, and team members. That helps develop hard skills because once you start, you will pursue learning new things. For example, I don't need to master Docker and Kubernetes. Still, my curiosity pushed me to watch a few YouTube videos on the topic and then build a local image and run a container locally. I could do my job without that knowledge. But now I understand more about that: enough to understand what tech folks are discussing.</p>
-<p>That is about being interested in what people are doing outside your current team: reading release notes, watching demos, and trying new things. You can learn something new or discover new ideas. It is the same for keeping up with industry updates and sharing them to spread curiosity among colleagues.</p>
-<p>So, curiosity is essential, and I am looking for that trait when hiring people. A person can lack some hard skills, but a natural curiosity mitigates that.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="your-defensiveness">Your Defensiveness<a href="https://ilyazakharau.com/blog/product-management-in-practice#your-defensiveness" class="hash-link" aria-label="Direct link to Your Defensiveness" title="Direct link to Your Defensiveness" translate="no">​</a></h2>
-<blockquote>
-<p>Perhaps the hardest single lesson I've learned in my product career is that literally every single attempt I've made to defend something has actually wound up harming that thing.</p>
-</blockquote>
-<p>As a result of insecurity, unclear path to success, and indirect impact on things, you might first be defensive about your ideas and whether you are solving them correctly. Again, being a product manager is not about generating ideas. It takes time to learn to incorporate other views and be able to change your view.</p>
-<p><strong>I always have my opinion, but I am ready to drop it to find a better resolution to a problem.</strong> I made a final decision, but the path to that decision was not straightforward. I know that 98% of my own ideas are shit, so I encourage my team and other stakeholders to contribute. By the way, unwelcome and unexpected contributions can be frustrating but valuable.</p>
-<p>That also concerns what is already implemented or in development at the moment. It is harsh to admit, "I thought the solution was right, but actually, it wasn't the case." Sometimes, you have to remove or redo some stuff. Even though you are backed with data, customer and stakeholder support, and 100% сertainty, the final result might not be delivered. You never know until you finish, so you can mitigate this risk, but chances cannot always be in your favor.</p>
-<p>It hurts, but I learned to accept it as a part of the game. Every product manager has a hidden graveyard of "that didn't work out." To calm yourself down, here is a <a href="https://killedbygoogle.com/" target="_blank" rel="noopener noreferrer" class="">graveyard of Google products</a>. I bet your case is not so bad.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="other-peoples-defensiveness">Other people's defensiveness<a href="https://ilyazakharau.com/blog/product-management-in-practice#other-peoples-defensiveness" class="hash-link" aria-label="Direct link to Other people's defensiveness" title="Direct link to Other people's defensiveness" translate="no">​</a></h2>
-<blockquote>
-<p>But, as many product managers have learned the hard way, you are not likely to generate much goodwill by being the person who goes around asking everybody, "WHY ARE YOU DOING THAT?"</p>
-</blockquote>
-<p>We want to look smart for others, not realizing we might try too hard to impress with our expertise. It is also counterintuitive that showing how good we are can push people away. The first impression matters, and making it as a high-minded jerk will complicate things further.</p>
-<p>That concerns both users and other stakeholders. <strong>People can go defensive if you push or try to dominate and/or seem to be smarter than they, even unintentionally, with goodwill.</strong> Breaking such a defense can be a difficult and time-consuming affair. It is easier to prevent that and respect other people's egos.</p>
-<p>People really love to talk about what and how they are doing. That topic is rarely discussed in their home and their day-to-day job. So they are excited to explain everything to you in detail. No one usually asks them, and we like to discuss and share our expertise.</p>
-<p>You need a gentle push and a little trust to make that work.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="no-blaming-yourselfeveryone-else">No blaming yourself/everyone else<a href="https://ilyazakharau.com/blog/product-management-in-practice#no-blaming-yourselfeveryone-else" class="hash-link" aria-label="Direct link to No blaming yourself/everyone else" title="Direct link to No blaming yourself/everyone else" translate="no">​</a></h2>
-<blockquote>
-<p>If you take everything that goes wrong as your own personal failure, you are depriving your team of a critical opportunity to learn and grow.</p>
-</blockquote>
-<p>That is a continuation of insecurity and defensiveness. Matt describes such a type of product manager as a "product martyr" who takes all the blame. Such a person thinks they protect the team. But in reality, it doesn't.</p>
-<p>It is similar to blaming others: bad company strategy, stupid dependencies, failed dependencies delivery. It is very easy to find a scapegoat.</p>
-<p>As always, the truth is in between. <strong>As I mentioned before, we must accept the rules of the game and the fact that we can lose. We need to stand up and keep forward.</strong></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="communication-is-your-jobdont-apologize-for-doing-your-job">Communication Is Your Job—Don't Apologize for Doing Your Job<a href="https://ilyazakharau.com/blog/product-management-in-practice#communication-is-your-jobdont-apologize-for-doing-your-job" class="hash-link" aria-label="Direct link to Communication Is Your Job—Don't Apologize for Doing Your Job" title="Direct link to Communication Is Your Job—Don't Apologize for Doing Your Job" translate="no">​</a></h2>
-<blockquote>
-<p>Effective product management requires asking lots of different people for lots of time, which can leave product managers feeling like the annoying jerks who drag everybody away from their "real" work and force them to attend meeting after meeting after meeting or answer email after email after email.</p>
-</blockquote>
-<p>I tended to sound apologetic when I reach some person with a question or request something. Also, during a daily stand-up, I would say, "Today, I did nothing useful - just communication."</p>
-<p>When you write a code or requirements specification, you have physical evidence of your job. As a product manager, you must accept that <strong>communication is your primary job</strong>: to align different parties to produce a desired outcome.</p>
-<p>So, I stopped sounding apologetic when contacting other people. I am doing my job.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="no-surprises-for-senior-stakeholders">No surprises for senior stakeholders<a href="https://ilyazakharau.com/blog/product-management-in-practice#no-surprises-for-senior-stakeholders" class="hash-link" aria-label="Direct link to No surprises for senior stakeholders" title="Direct link to No surprises for senior stakeholders" translate="no">​</a></h2>
-<p>One of the most helpful advice is establishing and maintaining trust with senior stakeholders. If you want to present something to a higher-up audience, you must consult with the most influential persons or who manage you.</p>
-<p>You don't know all the context they know, so you should not make yourself look stupid or make your manager look silly. That might be a career-sensitive failure.</p>
-<p>If something happens or you have a bold idea, ensure that senior stakeholders with whom you worked closely are aware and provide their feedback before going public. <strong>They don't like surprises like that.</strong></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices-myth">Best practices myth<a href="https://ilyazakharau.com/blog/product-management-in-practice#best-practices-myth" class="hash-link" aria-label="Direct link to Best practices myth" title="Direct link to Best practices myth" translate="no">​</a></h2>
-<blockquote>
-<p>Most case studies about "best-in-class" companies are, to put it bluntly, recruiting propaganda.</p>
-</blockquote>
-<p>After 10 years in the industry, I can say that everyone suffers from similar issues while developing a software product. Someone can do better, some worse. The number of problems depends on the scale of the enterprise. But generally, it is the same old story about poor strategy, planning, and execution.</p>
-<p>It is about selling an image; you can't sell a not-so-successful image. You must radiate confidence to keep shareholders' value growing.</p>
-<p><strong>It is not about lying. It is about interpreting facts in someone's favor when the public can't see the whole picture.</strong> On an in-detail view, the picture may not be so fancy.</p>
-<p>So breathe out. You are not alone with unclear strategy and hard-to-deal-with stakeholders, etc. We all do, including those guys.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="adapt-process-changes-thoroughly">Adapt process changes thoroughly<a href="https://ilyazakharau.com/blog/product-management-in-practice#adapt-process-changes-thoroughly" class="hash-link" aria-label="Direct link to Adapt process changes thoroughly" title="Direct link to Adapt process changes thoroughly" translate="no">​</a></h2>
-<p>I am guilty of rushing process changes in how teams operated in the past. If I have an idea of improvements, I want to implement them immediately without much retrospective of my current process.</p>
-<p>I learned the hard way if something works, even in the best way, there are reasons why it is that, and the history of past decisions impacted that. So now I would take time to research and understand the flow. <strong>Consider a process as a river. Drastic changes can cause a flood or drying up. On the other hand, minor changes may be drawn and have no impact.</strong></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="dealing-with-roadmaps">Dealing with roadmaps<a href="https://ilyazakharau.com/blog/product-management-in-practice#dealing-with-roadmaps" class="hash-link" aria-label="Direct link to Dealing with roadmaps" title="Direct link to Dealing with roadmaps" translate="no">​</a></h2>
-<blockquote>
-<p>The best product managers treat roadmaps the same way they treat all documentation: as a helpful conversation starter for their team rather than a sacred monument to their own hard work and importance.</p>
-</blockquote>
-<p>I don't have much to say except that the book teaches how to approach roadmaps. It is a gradual learning process, starting from an unrealistic plan and moving to a flexible map that shows a direction rather than a commitment to reach some destination.</p>
-<p>Of course, stakeholders would like to have a committed plan. <strong>So, you also need to teach them how to treat and read a roadmap.</strong></p>
-<p>Combining a roadmap is an extensive topic I will cover in the future.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="final-words">Final words<a href="https://ilyazakharau.com/blog/product-management-in-practice#final-words" class="hash-link" aria-label="Direct link to Final words" title="Direct link to Final words" translate="no">​</a></h2>
-<p>I mentioned only one-tenth of the great insights from that book. I made myself cut some pieces, not create a mini-book covering "Product Management in Practice" and comparing its editions.</p>
-<p>That book is 100% in the top 5 product management books written so far. If you see some top without mentioning it, I question that top.</p>
-<p>Must read, even if you are not a product manager but are interested in the topic. I suggest that brilliant book.</p>]]></content>
         <category label="Books" term="Books"/>
         <category label="Product Management" term="Product Management"/>
         <category label="Product Strategy" term="Product Strategy"/>
