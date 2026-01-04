@@ -1,0 +1,1 @@
+(self.webpackChunkizakharau_blog_docusaurus=self.webpackChunkizakharau_blog_docusaurus||[]).push([[5741],{5741:()=>{}}]);
