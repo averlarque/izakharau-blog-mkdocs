@@ -4,11 +4,95 @@
         <title>Ilya Zakharau - Product Strategy &amp; Platform Experience</title>
         <link>https://ilyazakharau.com/blog</link>
         <description>Strategic insights on product management, experience architecture, and digital transformation</description>
-        <lastBuildDate>Mon, 22 Dec 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 Jan 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>Copyright © 2021-2026 Ilya Zakharau</copyright>
+        <item>
+            <title><![CDATA[My Main AI PM Concern is Maintaining Prompts, not Writing Them]]></title>
+            <link>https://ilyazakharau.com/blog/ai-pm-maintaining-prompts</link>
+            <guid>https://ilyazakharau.com/blog/ai-pm-maintaining-prompts</guid>
+            <pubDate>Mon, 26 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Managing prompts throughout the development and operational lifecycle becomes a larger, unanticipated problem than writing them. Learn which issues you might encounter when pushing your AI agent from MVP to Production.]]></description>
+            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="cover" src="https://ilyazakharau.com/assets/images/ai-pm-maintaining-prompts-9da173062a53688fc4eb44bb8b8419c8.png" width="1200" height="630" class="img_ev3q"></p>
+<p>When my team started working on the AI feature, I was mostly concerned with writing clear, precise prompts. As shown, maintaining them throughout the development and operational lifecycle becomes a larger, unanticipated problem.</p>
+<p>You will learn which issues with updating prompts you might encounter when you push your AI agent from MVP to Production. Below, I am sharing my findings on the operational side of the prompt management.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-inevitable-growth-trajectory">The inevitable growth trajectory<a href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts#the-inevitable-growth-trajectory" class="hash-link" aria-label="Direct link to The inevitable growth trajectory" title="Direct link to The inevitable growth trajectory" translate="no">​</a></h2>
+<p>Usually, you start with a single, relatively short Markdown file put under Git. Then it reaches 300 lines, and life becomes less vibrant. After that, there is a "Divide and Conquer" stage of prompt decomposition, followed by rapid growth through new workflows. At the end, you might end up with a dozen prompts with 100-300 lines each, and a shrinking understanding of what went wrong if something went wrong.</p>
+<p>On the other side of the picture, several people are working on prompts simultaneously. We need to avoid overrides and follow the same strategy to achieve some level of consistency and control. That requires an entirely new process and tools you need to identify, establish, and make everyone follow them.</p>
+<p>Welcome to the third and (probably) final act of PM struggles with building AI features.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="from-code-artifact-to-runtime-nightmare">From code artifact to runtime nightmare<a href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts#from-code-artifact-to-runtime-nightmare" class="hash-link" aria-label="Direct link to From code artifact to runtime nightmare" title="Direct link to From code artifact to runtime nightmare" translate="no">​</a></h2>
+<p>Prompts are a development artifact first and foremost. So it must be versioned alongside other code and kept under version control. No doubt it.</p>
+<p>But if we treat prompt as code, that means recompiling/redeploying an app every time you update a sentence. If you proceed with multiple consecutive changes, testing becomes challenging and time-consuming. Using a local dev environment as a workaround. But I doubt that is a scalable option that suits everywhere.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Explained</div><div class="admonitionContent_BuS1"><p>Design-time means prompts are treated as source code with its versioning, with changes applied after merge/build/deploy. Run-time means prompts are treated as configuration, without versioning, and can be updated while the application is running.</p></div></div>
+<p>So very soon after we started, it became clear that prompts needed to be configurable at run time. After tweaking Spring AI, we exposed API endpoints to get and update prompts. So now we can make an API call to update the prompt without restarting.</p>
+<p>That solution caused a bunch of new problems to be resolved:</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-1-the-editing-experience-breaks-down">Problem 1: The editing experience breaks down<a href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts#problem-1-the-editing-experience-breaks-down" class="hash-link" aria-label="Direct link to Problem 1: The editing experience breaks down" title="Direct link to Problem 1: The editing experience breaks down" translate="no">​</a></h2>
+<p>When working with APIs, you can use Swagger UI, Postman, or competitors (I personally recommend Bruno). Despite the client, the formatting is an issue: the API returns a JSON object where Markdown text is stored as a string attribute. That is not very convenient to edit.</p>
+<p>If you work with prompts as code, you most likely use VS Code or another editor with fine Markdown formatting. To keep the editing experience reasonable, we developed a local VS Code plugin that, with a command, uploads prompts via the API to the required environment.</p>
+<p>So now we are comfortable working with prompts in the familiar environment. However, that even intensifies the problem</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-2-living-in-two-paradigms-simultaneously">Problem 2: Living in two paradigms simultaneously<a href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts#problem-2-living-in-two-paradigms-simultaneously" class="hash-link" aria-label="Direct link to Problem 2: Living in two paradigms simultaneously" title="Direct link to Problem 2: Living in two paradigms simultaneously" translate="no">​</a></h2>
+<p>Managing prompts and uploading them to any environment for testing sounds great, except for one tiny detail. In reality, it is a great trade-off: now prompts exist in 2 paradigms, both in design and runtimes.</p>
+<p>That could create many conflicts. For example:</p>
+<p><strong>Case A: I deployed prompt changes as code to a testing environment. Then, someone updated that prompt via API.</strong></p>
+<p>And I don't know about those changes, and there's no additional mechanism to notify about them. I can manually retrieve those prompts via the API for that environment and compare them with the version I recently deployed. That is not something you will do all the time.</p>
+<p>So you can get unexpected results when running the AI evals (I recommend reading my previous article) without knowing the prompt isn't the one you expected.</p>
+<p><strong>Case B: While redeploying the application, you refresh the runtime.</strong></p>
+<p>When deploying new changes to prompts-as-code, you also override your non-default runtime configuration with the uploaded prompts. So it is easy to accidentally erase someone's work.</p>
+<p><strong>Case C: Uncontrollable spreading across environments</strong></p>
+<p>Since you can upload any prompt update to any environment with a running application, you can accidentally upload it to a non-target environment. Then you will be surprised to find out why evals are failing in pre-prod but work well in dev testing.</p>
+<p>Resolving such conflicts is annoying and time-consuming. We could try to fix that with some advanced enhancements or 3rd-party tools. But on our small scale, that seemed like overhead. We had such issues along the way. We resolved them by agreeing on a process and closer collaboration. That was cheaper than adding and maintaining new functionality for that.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="when-prompts-multiply-analysis-becomes-impossible">When prompts multiply, analysis becomes impossible<a href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts#when-prompts-multiply-analysis-becomes-impossible" class="hash-link" aria-label="Direct link to When prompts multiply, analysis becomes impossible" title="Direct link to When prompts multiply, analysis becomes impossible" translate="no">​</a></h2>
+<p>When the number of workflows and their complexity increase, it becomes easy to lose track of which prompt changes are efficient and which are not.</p>
+<p>There are the typical problems:</p>
+<ul>
+<li class="">High token consumption due to the number and size</li>
+<li class="">Updates are not working as expected (e.g., not consistently providing correct responses to users )</li>
+<li class="">Updates are working, but they affect other aspects of a workflow.</li>
+</ul>
+<p>First and foremost, you must have AI evals. I dedicated an entire article to that, so check it out if you missed it. Without those, it is impossible to scale and maintain any kind of quality.</p>
+<p>Then you need to associate a prompt change with the eval's outcome. It is exhausting to visually compare every test, checking whether there is a regression or improvement in a certain aspect. Thus, it is an obvious case for automation.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-llm-optimization-dream-vs-reality">The LLM optimization dream vs. reality<a href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts#the-llm-optimization-dream-vs-reality" class="hash-link" aria-label="Direct link to The LLM optimization dream vs. reality" title="Direct link to The LLM optimization dream vs. reality" translate="no">​</a></h2>
+<p>At a certain point, I, as a human, ran out of ideas for how to improve/rewrite the prompts to address issues that keep appearing during development. You see your prompt, precise, with advanced techniques, which seems perfect. But it does not behave consistently, even though the prompts explicitly asked about it.</p>
+<p>The problem is hidden in the burden of multiple prompts and contexts. That is a good case to employ a "smarter" LLM to optimize prompts for a sibling. For example, I use Opus to optimize Haiku prompts.</p>
+<p>Here you can build a dream pipeline:</p>
+<ol>
+<li class="">You collect logs, evals results, prompts, and define a problem.</li>
+<li class="">You put everything into a smarter LLM and ask it to optimize the prompts.</li>
+<li class="">Optimized prompts are deployed to a test environment.</li>
+<li class="">AI evals are run on those prompts.</li>
+<li class="">New evals results, prompts, and logs, and compared vs previous ones</li>
+<li class="">If a regression is found, repeat the cycle.</li>
+</ol>
+<p>It sounds great on paper to delegate all that to LLM. But in reality, just after a few iterations, it will be trapped in a vicious sub-optimization cycle. There must be a human (that mythical AI PM or another lucky person) in the middle to guide that process.</p>
+<p>Remember, even a super-optimized prompt may fail once real users start using the agent.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="build-vs-buy-why-we-vibecoded-our-own-tools">Build vs. buy: Why we vibecoded our own tools<a href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts#build-vs-buy-why-we-vibecoded-our-own-tools" class="hash-link" aria-label="Direct link to Build vs. buy: Why we vibecoded our own tools" title="Direct link to Build vs. buy: Why we vibecoded our own tools" translate="no">​</a></h2>
+<p>Managing prompts reveals many previously unseen issues. But those issues are resolvable when there is the right tooling and the process.</p>
+<p>During the gold rush, there should also be a lot of shovels. There are many prompt management and testing tools on the market. But anyway, we decided to build our own internal tooling.</p>
+<p>It sounds like reinventing the wheel, but here are the reasons why we hadn't considered a tool from the market:</p>
+<ul>
+<li class="">Such market research and trials take a huge amount of time</li>
+<li class="">We already learned the hard way that AI tools and frameworks could be pretty raw</li>
+<li class="">No trust in a bunch of unknown vendors</li>
+<li class="">Even if found, there is a long compliance and adoption cycle in an enterprise</li>
+<li class="">We can simply vibecode what we need</li>
+</ul>
+<p>Anyway, it took several iterations to understand exactly what we needed, and with a few more cycles, we vibecoded our own internal admin panel to manage prompts and handle other servicing tasks. Our testing framework is not integrated, and that might be a difference that a vendor solution could address.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-real-lesson-process-over-perfection">The real lesson: Process over perfection<a href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts#the-real-lesson-process-over-perfection" class="hash-link" aria-label="Direct link to The real lesson: Process over perfection" title="Direct link to The real lesson: Process over perfection" translate="no">​</a></h2>
+<p>In reality, I don't think we need it. It works just well enough to make remarks like, 'We could improve it someday,' and put it on a shelf.</p>
+<p>We can vibe code it any time.</p>]]></content:encoded>
+            <category>Product Management</category>
+            <category>AI</category>
+        </item>
         <item>
             <title><![CDATA[2025 Reflections & 2026 Plans]]></title>
             <link>https://ilyazakharau.com/blog/2025-reflections-2026-plans</link>
@@ -936,40 +1020,6 @@
 </ul>
 <p><em>Take care</em>,</p>
 <p><em>Ilya</em></p>]]></content:encoded>
-            <category>Product Management</category>
-            <category>Product Strategy</category>
-        </item>
-        <item>
-            <title><![CDATA[TRANSFORMED - Some Thoughts After Reading]]></title>
-            <link>https://ilyazakharau.com/blog/transformed-book</link>
-            <guid>https://ilyazakharau.com/blog/transformed-book</guid>
-            <pubDate>Tue, 27 Aug 2024 21:00:00 GMT</pubDate>
-            <description><![CDATA[I finished reading 'TRANSFORMED: Moving to the Product Operating Model' by Marty Cagan. This is not my usual a few thousand-word review—rather, it is a few aftermath thoughts.]]></description>
-            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="Book cover" src="https://ilyazakharau.com/assets/images/transformed_book-40b93275714fa1b2c030e52baf2a6eb0.jpg" width="678" height="1000" class="img_ev3q"></p>
-<p>I finished reading <a href="https://a.co/d/7XSpHm6" target="_blank" rel="noopener noreferrer" class="">"TRANSFORMED: Moving to the Product Operating Model"</a> by Marty Cagan. This is not my usual a few thousand-word review—rather, it is a few aftermath thoughts.</p>
-<p>You, as a reader, need to set the right expectations. If you read "INSPIRED" and "EMPOWERED," plus follow the SVPG (Silicon Valley Product Group) blog and watch Marty's interviews (which is my case), then you will find nothing new here.</p>
-<p>This book is a logical continuation of Marty Cagan's previous works, focusing on organizational transformation. It streamlines the recent SVPG narrative into a single digestible source, empowering you with comprehensive knowledge.</p>
-<p>With all that in mind, I consider "TRANSFORMED" a worthwhile and valuable reading.</p>
-<p>If you are not familiar with Caganverse, I can still recommend it. However, you must read the previous books to get the complete picture. It touches on many topics that were explained before but without self-quotation. So this is an excellent point at which to start the journey.</p>
-<p>I need to mention a shitty feeling you might have after reading those books:</p>
-<ul>
-<li class="">"INSPIRED" trials, whether I am doing product manager work or a masked backlog administrator.</li>
-<li class="">"EMPOWERED" makes you question your product leadership and whether you can become such a product leader.</li>
-<li class="">"TRANSFORMED" questions the integrity of your organization and its capability to undergo such a transformation</li>
-</ul>
-<p>I am convinced that triggering those feelings is intentional. I reflect a lot while reading, so it takes me longer to complete these books.</p>
-<p>The "Product Operating Model" is a set of principles, not a framework or guideline, to transform your organization into something more innovative in shiny armor. That book is also for product coaches and others interested in the org-level transformation by:</p>
-<ul>
-<li class="">Changing how you build</li>
-<li class="">Changing how you solve problems</li>
-<li class="">Changing how you decide which problems</li>
-</ul>
-<p>These 3 points are enough to characterize the model and the book.</p>
-<p>I like the transformation stories, especially ones told by people who participated in them, and the chapter about overcoming objections from different parties. While reading, I was also trying to put myself into an executive shoes who wants to transform a large enterprise. The author says it is a tough endeavor where external help is needed.</p>
-<p>Is this book an advertisement for the <a href="https://www.svpg.com/" target="_blank" rel="noopener noreferrer" class="">SVPG</a> consultant services? No, it is not.</p>
-<p>It is a tool to popularize the Product Operating Model, a form of evangelism to encourage organizations to change their ways of creating valuable and commercially successful products. No certification is required to start applying those principles.</p>
-<p>Only time will tell whether that model will spread around the world and scale, changing the way products are designed, developed, and delivered. Meanwhile, enjoy the book!</p>]]></content:encoded>
-            <category>Books</category>
             <category>Product Management</category>
             <category>Product Strategy</category>
         </item>
