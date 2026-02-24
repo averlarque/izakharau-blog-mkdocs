@@ -2,12 +2,69 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ilyazakharau.com/blog</id>
     <title>Ilya Zakharau - Product Strategy &amp; Platform Experience</title>
-    <updated>2026-01-26T00:00:00.000Z</updated>
+    <updated>2026-02-24T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ilyazakharau.com/blog"/>
     <subtitle>Strategic insights on product management, experience architecture, and digital transformation</subtitle>
     <icon>https://ilyazakharau.com/img/favicon.ico</icon>
     <rights>Copyright © 2021-2026 Ilya Zakharau</rights>
+    <entry>
+        <title type="html"><![CDATA[Can I Get a Senior Management Job by 40? Unlikely, but Let's Speculate]]></title>
+        <id>https://ilyazakharau.com/blog/senior-pm-career-outlook</id>
+        <link href="https://ilyazakharau.com/blog/senior-pm-career-outlook"/>
+        <updated>2026-02-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A personal reflection on where the PM career ladder goes when AI reshapes roles, mass layoffs hollow out middle management, and the traditional corporate path closes off.]]></summary>
+        <content type="html"><![CDATA[<p>Up until that moment, I had a clear vision of my career track. After graduation, I became an L1 Support Engineer, dreaming of landing a product management role. That gap was too large to cover, so the role of a business analyst seemed like a reasonable intermediate step.</p>
+<p>I also had a precise timeline: transition from support to business analysis by 24, then become a PM by my thirties. That plan worked out, even though the path itself was neither always obvious nor easy.</p>
+<p>Now, I am near 35 and a senior product manager. Dream came true. The problem is, I don't know which career goal to target next. Or if I need to target anything at all.</p>
+<p>And yes, here I will talk about how PM roles have changed due to AI and the broader economic shakeup. But in the context of my own career plans. Sounds egoistic? Yes, it is. But allow me some thought experiments. Maybe that will be helpful for you.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-plan-that-worked--until-it-didnt">The Plan That Worked — Until It Didn't<a href="https://ilyazakharau.com/blog/senior-pm-career-outlook#the-plan-that-worked--until-it-didnt" class="hash-link" aria-label="Direct link to The Plan That Worked — Until It Didn't" title="Direct link to The Plan That Worked — Until It Didn't" translate="no">​</a></h2>
+<p>The context of the PM role greatly varies, so I need to answer a critical question first:</p>
+<p><img decoding="async" loading="lazy" alt="cover" src="https://ilyazakharau.com/assets/images/senior-pm-career-outlook-000-9528dcc6051fec0c801aec1047a64ba1.png" width="1536" height="1024" class="img_ev3q"></p>
+<p>My short response: "I am a Platform/Technical Product Manager."</p>
+<p>A longer response:</p>
+<blockquote>
+<p>"I am a Platform/Technical Product Manager. But I am not as technical as my peers with an engineering background. And for more traditional PMs — the ones with A/B tests, PRDs, AARs, and many other fancy buzzwords — I am that nerdy guy who builds platforms for building platforms."</p>
+</blockquote>
+<p>Not a comprehensive answer, but I need to start from somewhere. So, what are my next career development options?</p>
+<p>Before we proceed, let's address the elephant in the room. To further my career, I need to navigate the now-traditional waves of layoffs.</p>
+<p>Here is AI reshaping the PM role, and corporations that discovered mass layoffs increase capitalization. I'll leave speculation on how those factors interdepend — let's focus on the AI aspect.</p>
+<p>From my perspective, Tech PMs in enterprises in heavy B2B industries like finance and insurance are feeling better than their B2C colleagues. It does not mean they are not impacted or will not be affected in the near future. However, deeper specialization in complex, legally liable industries at least delays execution.</p>
+<p>But I would say, surviving layoffs is mostly a matter of luck.</p>
+<p>Let's assume I am a lucky one — so what are the options to push my career forward?</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="corporate-ladder-gone">Corporate Ladder (Gone)<a href="https://ilyazakharau.com/blog/senior-pm-career-outlook#corporate-ladder-gone" class="hash-link" aria-label="Direct link to Corporate Ladder (Gone)" title="Direct link to Corporate Ladder (Gone)" translate="no">​</a></h2>
+<p>Junior positions are extinct. There is no fresh blood to push the career system forward. I wrote a piece about the exodus of junior business analyst positions almost a year ago.</p>
+<p>Middle management is severely cut, leaving a handful of ICs (individual contributors) with so-called "leadership." That means there is no longer space to manoeuvre horizontally. The door to the top is not widely open either.</p>
+<p>Senior management seems less affected. Of course, there are some sacrifices in the name of optimization. But those folks won't hurt themselves, will they?</p>
+<p><img decoding="async" loading="lazy" alt="AI sailing while Senior PM drowns" src="https://ilyazakharau.com/assets/images/senior-pm-career-outlook-001-6819d065eccfefc75a0b873ba1fb4129.png" width="1536" height="1024" class="img_ev3q"></p>
+<p>There is not much space at the top. As the economic situation is shaky, some of them won't take the risk to hop for another senior management position elsewhere or go rogue with their own startup. Those who are competent enough will stay where they are — even though a decade ago the preferable option might have been to retire and free a position for someone younger.</p>
+<p>Here is a thought experiment of what the career trap in the middle looks like. It might be a case for me. It might be a case for you. All coincidences with real people are just coincidences.</p>
+<p>Let's take switching to another business domain within the organization as an example:</p>
+<p>You are a highly effective <strong>IC leader A</strong> in your domain, with deep expertise. You'd like to explore another domain within your organization — maybe you're bored, or you see some prospects elsewhere.</p>
+<p>In that domain, there is another super-efficient <strong>IC leader B</strong> with deeper expertise than yours. You can't join as their subordinate, because those positions were "restructured" away and super-efficient B absorbed the responsibilities. IC leader A, as a reasonable person, would not undermine their own position. They also understand that combining both domains leads to burnout and is unlikely to be compensated.</p>
+<p>And if the transition were to happen, IC leader B would have no opportunity to take a more senior position — they already report to a VP, since all middle layers were cut. So IC leader A is stuck, only hoping that something unexpected happens and IC leader B leaves on their own. And even if B leaves, A needs to prove they have enough experience to take B's place while also handing over their own domain to a new IC leader C.</p>
+<p>Otherwise, IC leader A becomes ultra-efficient by absorbing everything.</p>
+<p>Anyway, the overall idea is that planned internal growth is now difficult — unless you need to cover gaps caused by, well, you know what.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-that-for-me">What's That for Me?<a href="https://ilyazakharau.com/blog/senior-pm-career-outlook#whats-that-for-me" class="hash-link" aria-label="Direct link to What's That for Me?" title="Direct link to What's That for Me?" translate="no">​</a></h2>
+<p>Thinking about my career, I asked myself: can I become a senior manager figure and jump into that safe boat by 40?</p>
+<p>Very unlikely. Without internal promotion, there is, of course, the option to look outside. But we all know what the job market looks like right now.</p>
+<p>I could claim to become the same super-efficient (and AI-proficient) IC leader A in a different place — only if I get lucky, not spending 6 months on interviews and settling for a lower offer out of desperation. Any movement to claim another domain with little or no experience, or to jump to a top senior management job, would not yield much. There are plenty of strong candidates on the market with relevant experience. Some of them are desperate, and that's why they're dumping salaries. If you are not desperate, you basically can't compete.</p>
+<p>I also thought that getting an MBA would be a prerequisite for a future senior management job — a way to become more visible to my current employer and bid higher in the job market. Obviously, it is no longer as big an advantage as it might have been before. Not counting the trash MBA courses, which were never relevant.</p>
+<p>Any course from the top 50 MBA programs costs a significant amount of money. I decided to put those funds toward a mortgage down payment.</p>
+<p>It was once said that gaining an MBA is a better investment than real estate. With AI, the current job market state, and rising property prices, I don't think that is the case anymore. As with most of the other tools our predecessors used to advance their traditional careers.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="so-what-now">So What Now?<a href="https://ilyazakharau.com/blog/senior-pm-career-outlook#so-what-now" class="hash-link" aria-label="Direct link to So What Now?" title="Direct link to So What Now?" translate="no">​</a></h2>
+<p>Do I have any chance of significantly advancing in my career anytime soon? Actually, yes. There are a few options beyond the good-old climb on the enterprise career ladder.</p>
+<p>Maybe I will write another article on that.</p>
+<p>Meanwhile, I continue to deepen my expertise and become a more super AI-efficient senior IC. To care less about job prospects in my 40s, I started a new hobby of painting Warhammer 40K miniatures.</p>
+<p><img decoding="async" loading="lazy" alt="Warhammer 40K Space Marine miniature in progress" src="https://ilyazakharau.com/assets/images/senior-pm-career-outlook-002-eaa7740a7c7720b01447c5f4ab9c5a19.png" width="3024" height="1534" class="img_ev3q"></p>
+<p>Take care.</p>]]></content>
+        <category label="Product Management" term="Product Management"/>
+        <category label="Community & Insights" term="Community & Insights"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[My Main AI PM Concern is Maintaining Prompts, not Writing Them]]></title>
         <id>https://ilyazakharau.com/blog/ai-pm-maintaining-prompts</id>
@@ -973,53 +1030,5 @@
 </ul>]]></content>
         <category label="BArszawa" term="BArszawa"/>
         <category label="Community & Insights" term="Community & Insights"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PM Onboarding - Same Organization, New Area]]></title>
-        <id>https://ilyazakharau.com/blog/pm-onboarding-horizontal</id>
-        <link href="https://ilyazakharau.com/blog/pm-onboarding-horizontal"/>
-        <updated>2024-09-10T06:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Onboarding is a crucial process when you are diving into a new product as a product manager. But if you take another product in the same organization that might sound not so challenging in comparison. But let's not underestimate that. I am experiencing a similar case, so I have something to reflect on. Follow me.]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="cover" src="https://ilyazakharau.com/assets/images/pm_onboarding-fa028b9d19f83592ce34236265f9a5be.jpg" width="1024" height="1024" class="img_ev3q"></p>
-<p>Onboarding is a crucial process of incorporating a new person into a team, product, or domain (for simplicity, let's generalize all that as "area"). The purpose is to align or increase performance as soon as possible after the unavoidable drop due to a structure change. If approached wrongly, it may cause substantial trouble, especially when you dive into a new area as a product manager (PM).</p>
-<p>Whether it is a new or same organization, new role, or new area - the approach to onboarding will vary. Here, we talk about horizontal growth within an organization, keeping your role but acquiring a new "area" (for simplicity, let's use this term to generalize one or several products, teams, lines of business, etc). That is the situation I am currently in, so I have something to reflect on. Also, most onboarding guides focus on vertical growth with a new role in another business. So, it is a good topic to uncover.</p>
-<p>I follow the patterns of 3 key knowledge types in product management suggested in the "Building Products for Enterprise" book (I wrote about it <a href="https://ilyazakharau.com/reading-product-management-in-enterprise/" target="_blank" rel="noopener noreferrer" class="">here</a>): organizational, product, and market knowledge. So, let's construct the onboarding strategy for each.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="organizational-knowledge---headstart">Organizational knowledge - Headstart<a href="https://ilyazakharau.com/blog/pm-onboarding-horizontal#organizational-knowledge---headstart" class="hash-link" aria-label="Direct link to Organizational knowledge - Headstart" title="Direct link to Organizational knowledge - Headstart" translate="no">​</a></h2>
-<p>When you start in another company, you must catch up quickly and demonstrate your best. When you move within the enterprise, you have a significant advantage.</p>
-<p>You know some people. Some people know you. Some people trust your expertise. You still need to prove that you can work in the new area. But your legacy will serve you, depending on your past success and prominence.</p>
-<p>You know and follow the established processes. You don't need to read boring brochures or watch uninspiring lectures.</p>
-<p>If you have worked there for some time, you understand the power dynamics. You also know your stakeholders and how to deal with them.</p>
-<p>Now, in the new area, you have new stakeholders. You need to build a bridge between you. They likely don't consider your successful legacy from the start. So please don't be arrogant.</p>
-<p>The team you joined (they are stakeholders, too) might have existed for a long time. The PM change is as stressful for them as any other change. You must be very cautious in presenting yourself and with your first actions.</p>
-<p>As a product manager, you have your tools and ways of doing things. First, quoting Matt LeMay's book (<a href="https://ilyazakharau.com/product-management-in-practice/" target="_blank" rel="noopener noreferrer" class="">here</a>), "Don't break the rules; change them." And change them with great patience by investing time in understanding how the team operates and why.</p>
-<p>Another trick is that you might inherit current stakeholders from a previous area. Even though you are the same people with the same relationships, now they probably have a different perspective on you.</p>
-<p>Spend time identifying that perspective with the implied expectations. Then, keep revisiting and re-arranging your interactions: some may play a more prominent role and have a more significant influence, and some may be less relevant, but you still need to be in touch with them.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="product-knowledge---free-from-bias-and-conflict-of-interest">Product knowledge - Free from bias and conflict of interest<a href="https://ilyazakharau.com/blog/pm-onboarding-horizontal#product-knowledge---free-from-bias-and-conflict-of-interest" class="hash-link" aria-label="Direct link to Product knowledge - Free from bias and conflict of interest" title="Direct link to Product knowledge - Free from bias and conflict of interest" translate="no">​</a></h2>
-<p>While working in an enterprise, there is a chance that you've already interacted with the area you are now in charge of. You might have biases towards that area depending on your experience of those interactions.</p>
-<p>You'd better not underestimate the complexity by expecting quickly rich success as soon as you arrive in shiny armor. If you do, lucky you - I want to learn that from you. For the rest, mere mortals, including me, reset your knowledge of the area and product and start from scratch, free from biases.</p>
-<p>You might also have been a stakeholder (or continue to be a stakeholder, as in my case) in that area before joining it as a PM, which can lead to a conflict of interest.</p>
-<p>You can prioritize your stakeholder interest or the interests of a stakeholder group you were part of. Of course, it is at the cost of the others. Even though that may lead to some short-term gains, it is damaging in the long term. And I am not mentioning spoiling relationships as a PM with your new stakeholders. Please avoid that by having a holistic view of such things.</p>
-<p>Beyond that, do the usual onboarding activities: learn a product by trying to use it (even though you may not be a target audience), read the documentation, ask questions to the team, talk to users, talk to experts, etc.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="market-knowledge---dont-pretend-to-know-something">Market knowledge - Don't pretend to know something<a href="https://ilyazakharau.com/blog/pm-onboarding-horizontal#market-knowledge---dont-pretend-to-know-something" class="hash-link" aria-label="Direct link to Market knowledge - Don't pretend to know something" title="Direct link to Market knowledge - Don't pretend to know something" translate="no">​</a></h2>
-<p>It's a similar situation here: having your previous experience, you might already know something about the new area's market. This is less likely if it is a new market and more likely if it is another line of business.</p>
-<p>The same advice applies here: don't be biased. The rules you know might not work here.</p>
-<p>For example, I move from API to UI platform as a new area. Even though they are both platforms for developers who build insurance products, they are different worlds. As different worlds, they speak different languages, have their own context and history, worship other things, and have different world views.</p>
-<p>My decade-old pet project experience as a Front-end developer does not give me any valuable knowledge, so I don't pretend I know something. I only admit there is a long way to go.</p>
-<p>Market knowledge takes the longest to acquire. You can't download all information about competitors, trends, and historical contexts and store it in your brain, so take your time.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="summary">Summary<a href="https://ilyazakharau.com/blog/pm-onboarding-horizontal#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary" translate="no">​</a></h2>
-<p>Acquiring a new area as a product manager within your current organization gives you an evident advantage over a new hire. However, you'd better use it wisely:</p>
-<ul>
-<li class="">Leverage your existing knowledge of an organization.</li>
-<li class="">Embrace new stakeholders and revisit your relationships with current ones.</li>
-<li class="">Don't be arrogant with the team; don't break things.</li>
-<li class="">Avoid conflict of interest.</li>
-<li class="">Learn how to use your new product and how others use it.</li>
-<li class="">Don't pretend you know something.</li>
-<li class="">Invest in market research.</li>
-</ul>
-<p><em>Take care</em>,</p>
-<p><em>Ilya</em></p>]]></content>
-        <category label="Product Management" term="Product Management"/>
-        <category label="Product Strategy" term="Product Strategy"/>
     </entry>
 </feed>
