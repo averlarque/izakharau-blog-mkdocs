@@ -4,11 +4,71 @@
         <title>Ilya Zakharau - Product Strategy &amp; Platform Experience</title>
         <link>https://ilyazakharau.com/blog</link>
         <description>Strategic insights on product management, experience architecture, and digital transformation</description>
-        <lastBuildDate>Tue, 24 Feb 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 05 Apr 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>Copyright © 2021-2026 Ilya Zakharau</copyright>
+        <item>
+            <title><![CDATA[AI Broke Product Planning and There Is No Obvious Way to Fix That]]></title>
+            <link>https://ilyazakharau.com/blog/ai-broke-product-planning</link>
+            <guid>https://ilyazakharau.com/blog/ai-broke-product-planning</guid>
+            <pubDate>Sun, 05 Apr 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[AI-assisted development has made effort estimation wildly unpredictable. Story points are losing their last foothold, roadmaps feel like tarot cards, and the industry has no consensus on what comes next.]]></description>
+            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="cover" src="https://ilyazakharau.com/assets/images/tarot_card_roadmap-0cac50cc9d28b00e0b8ec21c6ca85bd6.svg" width="680" height="820" class="img_ev3q"></p>
+<p>As a major PM responsibility, roadmap planning has become controversial over the years. As much as I enjoy short-sight planning for the next quarter, I hate yearly roadmap planning.</p>
+<p>The latter became a cargo-cult ritual that starts with whispering in October and, as a giant wave, hits everyone in a product organization, continuing in November until final approval in December each year. It sounds straightforward: prioritize a list of initiatives and put them on a timeline. The trick is to make it not look like a commitment.</p>
+<p>There are probably hundreds of books dedicated to that topic. The only thing I've learned over half a decade: despite the effort you put into planning, it will end up in the trash before Q1 ends.</p>
+<p>With all the unknowns driving a roadmap to a nonsensical outcome and keeping higher management under the illusion of control, we now have AI in the equation. It accelerates development output, pushing the bottleneck further down the line. With that change, estimating the whole thing becomes even more problematic.</p>
+<p>Some voices on LinkedIn have declared that AI has killed Agile, even though it had been declared dead more than a decade ago, and renegade voices claim it was never alive. I will skip that broader discussion and focus on planning.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-two-ways-story-points-were-never-quite-right">The two ways story points were never quite right<a href="https://ilyazakharau.com/blog/ai-broke-product-planning#the-two-ways-story-points-were-never-quite-right" class="hash-link" aria-label="Direct link to The two ways story points were never quite right" title="Direct link to The two ways story points were never quite right" translate="no">​</a></h2>
+<p>For the last 15 years, the industry has adopted story points as an abstract concept, loosely replacing the more traditional method of human-hours. I use "loosely" here intentionally because we never reached a global consensus on how to treat story points. And that is OK: the nature of a story point is to be an abstraction, adapted to someone's needs.</p>
+<p>However, as humanity tends to do, we took a good-on-paper concept and drove it to absurdity.</p>
+<p>I've encountered two main approaches:</p>
+<p><strong>1. Re-labeling human-hours as story points (the "ideal dev day" school)</strong></p>
+<p>Agile preachers in enterprise took a well-known method and repackaged it to sell their methodologies. I'm not blaming them: enterprise leaders needed something they could understand, standardize, quickly adopt, scale, and use to claim victory in becoming an Agile organization. All of which resulted in significant consequences for how the industry operates today. There is plenty of good writing criticizing enterprise Agile frameworks, but I'll leave that for your own consideration.</p>
+<p><strong>2. Measuring complexity with story points</strong></p>
+<p>At the dawn of my career, it took me some time to grasp how this could work. At the team level, it requires both skill and effort to develop a sound estimation process. The main issue is that complexity varies by team and does not always translate across a broader organization, which is precisely why re-labeling human-hours sells so well.</p>
+<p>An AI agent in software development has totally undermined the first approach and, for the latter, has made measuring complexity even more complex. The new variables added to any complexity assessment (which LLM you're using, how solid your prompts are, who's reviewing the output, whether a security review is required) sit on top of all the traditional ones and interact with them in ways that are hard to predict upfront.</p>
+<p>I don't have a recipe for fixing that. Instead, let's define the issues and their consequences. Then I'll continue looking for answers and keep you posted.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-human-made-estimation-framework-no-longer-works">The human-made estimation framework no longer works<a href="https://ilyazakharau.com/blog/ai-broke-product-planning#the-human-made-estimation-framework-no-longer-works" class="hash-link" aria-label="Direct link to The human-made estimation framework no longer works" title="Direct link to The human-made estimation framework no longer works" translate="no">​</a></h2>
+<p>That is almost an obvious statement at this point. We used to plan capacity based on projected human-hours for a time period (a 2-week sprint, say), estimate tasks in hours or days, and fit those numbers into available capacity. The number of completed points becomes velocity, lower or higher than capacity, but not wildly far from it.</p>
+<p>Now, a team with 30 SP capacity in a sprint can close 150 SP. But that number of completed story points doesn't indicate <em>what types of tasks</em> were completed. Nor is it a linear regression: completing 150 SP when your capacity is 30 doesn't mean you'll complete 600 SP next sprint.</p>
+<p>That number sounds like a profound achievement, and in the same way it signals that the estimation framework needs to be completely reframed.</p>
+<p>As developers delegate parts of their work to AI agents, they become less certain about when the outcome will arrive. When hundreds of lines of code can be generated in a moment, the conversation shifts from "when is the code written?" to "when will it be stabilized and production-ready?" A developer is still responsible for delivering a working improvement, just with less direct control over how it's done.</p>
+<p>So asking for an estimate in human-hours no longer makes sense when the human is not entirely the one in charge. Asking AI to provide the estimate instead? Please let me know if that works for you.</p>
+<p>I don't have solid numbers, and I am very suspicious of anyone who claims they do. Based on my observations, AI agents perform predictably well on relatively simple, monotonous, time-consuming tasks (updating documentation annotations, for example).</p>
+<p>But even simple tasks at scale become problematic. If you're updating documentation annotations across 100 repositories, you will inevitably spend time fixing hallucinations. How long does that take? Until it's done.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="complexity-estimation-needs-a-new-frame-too">Complexity estimation needs a new frame, too<a href="https://ilyazakharau.com/blog/ai-broke-product-planning#complexity-estimation-needs-a-new-frame-too" class="hash-link" aria-label="Direct link to Complexity estimation needs a new frame, too" title="Direct link to Complexity estimation needs a new frame, too" translate="no">​</a></h2>
+<p>So, estimates in hours or story points aren't reliable. But it's not straightforward to measure complexity either.</p>
+<p>Our perspective on complexity itself needs to change. Previously, we looked at tech stack, library and codebase familiarity, developer experience, the team's prior work on similar tasks, and other team-specific factors.</p>
+<p>Now, we also need to account for: which LLM we're using (Opus or Qwen), the quality and completeness of the prompt and context, who will review the code and how, what the testing strategy looks like, and what happens if we need to throw away the AI output and write from scratch. Plus: does this require a security review?</p>
+<p>No one has all the answers, and anyone claiming otherwise is selling something. Getting this right will require meticulous, team-by-team work. But I firmly believe we need to be estimating complexity, not hours.</p>
+<p>We just need some time to figure out how.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-this-means-for-roadmaps">What this means for roadmaps<a href="https://ilyazakharau.com/blog/ai-broke-product-planning#what-this-means-for-roadmaps" class="hash-link" aria-label="Direct link to What this means for roadmaps" title="Direct link to What this means for roadmaps" translate="no">​</a></h2>
+<p>All of that productivity shift affects how I, as a PM, construct product roadmaps from quarter to year.</p>
+<p>From a planning perspective, I've used two approaches:</p>
+<ol>
+<li class="">Decompose a big topic into smaller items, estimate them, sum it up, and apply a risk multiplier (30% is my standard).</li>
+<li class="">Assign a bulk of capacity and hope it's enough to cover a capability or initiative.</li>
+</ol>
+<p>Over the last five years, both have worked reasonably well. I'd break down whatever was decomposable and provide a guesstimate when requirements were too unclear for a thorough estimate. Neither approach holds up today.</p>
+<p>AI has given PMs the power to build prototypes and proofs of concept quickly. But it's also made building roadmaps feel like reading tarot cards. I can build almost anything very fast, but how long will it take to ship AI-generated code to a B2B enterprise customer at the expected quality and compliance level? It depends.</p>
+<p>And that's before mentioning the elephant in the room: the profound uncertainty about how AI is reshaping entire industries, on top of everything else happening in the world.</p>
+<p>The bottleneck has moved. Before, the question was when the code would be written. Now, the real constraint is stabilization: review, testing, integration, and making something production-ready. That's where time actually goes, and it's where planning needs to focus.</p>
+<p>The only practical advice I have right now is to stay as flexible as possible.</p>
+<hr>
+<p><em>This is the beginning of a longer inquiry. I'll keep exploring what estimation might look like in AI-assisted teams and report back.</em></p>]]></content:encoded>
+            <category>Product Management</category>
+            <category>AI</category>
+            <category>Agile</category>
+            <category>Planning</category>
+            <category>Estimation</category>
+        </item>
         <item>
             <title><![CDATA[Can I Get a Senior Management Job by 40? Unlikely, but Let's Speculate]]></title>
             <link>https://ilyazakharau.com/blog/senior-pm-career-outlook</link>
@@ -1007,30 +1067,6 @@
 </ul>]]></content:encoded>
             <category>Community &amp; Insights</category>
             <category>Archive</category>
-        </item>
-        <item>
-            <title><![CDATA[BArszawa Blog #6 (September'24)]]></title>
-            <link>https://ilyazakharau.com/blog/barszawa-blog-edition-06-2024</link>
-            <guid>https://ilyazakharau.com/blog/barszawa-blog-edition-06-2024</guid>
-            <pubDate>Mon, 07 Oct 2024 06:00:00 GMT</pubDate>
-            <description><![CDATA[Here is the next blog edition of our Business Analysis Community in Warsaw: BArszawa Blog #6 (September'24)]]></description>
-            <content:encoded><![CDATA[<p>Here is the next blog edition of our Business Analysis Community in Warsaw: <a href="https://buymeacoffee.com/barszawaorg/barszawa-blog-6-september-24" target="_blank" rel="noopener noreferrer" class="">BArszawa Blog #6 (September'24)</a></p>
-<p>What is inside:</p>
-<ul>
-<li class="">Community updates from recent events "Offer of the Dream" and "What's in the Box?".</li>
-<li class="">A mini-interview with insights about SAP implementations.</li>
-<li class="">A bunch of useful materials.</li>
-</ul>
-<p>Previous BArszawa editions:</p>
-<ul>
-<li class=""><a href="https://buymeacoffee.com/barszawaorg/barszawa-blog-5-may-24" target="_blank" rel="noopener noreferrer" class="">BArszawa Blog #5 (May'24)</a></li>
-<li class=""><a href="https://buymeacoffee.com/barszawaorg/barszawa-blog-april-24-edition" target="_blank" rel="noopener noreferrer" class="">BArszawa Blog - April'24 Edition</a></li>
-<li class=""><a href="https://buymeacoffee.com/barszawaorg/barszawa-blog-march-24-edition" target="_blank" rel="noopener noreferrer" class="">BArszawa Blog - March'24 Edition</a></li>
-<li class=""><a href="https://www.buymeacoffee.com/barszawaorg/yudoyeyefe?utm_source=izblog&amp;utm_medium=post" target="_blank" rel="noopener noreferrer" class="">BArszawa Blog - February'24 Edition</a></li>
-<li class=""><a href="https://www.buymeacoffee.com/barszawaorg/zatetasexo?utm_source=izblog&amp;utm_medium=post" target="_blank" rel="noopener noreferrer" class="">BArszawa Blog - January'24 Edition</a></li>
-</ul>]]></content:encoded>
-            <category>BArszawa</category>
-            <category>Community &amp; Insights</category>
         </item>
     </channel>
 </rss>
