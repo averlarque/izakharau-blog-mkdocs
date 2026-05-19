@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkizakharau_blog_docusaurus=self.webpackChunkizakharau_blog_docusaurus||[]).push([[9647],{7121:(u,a,s)=>{s.r(a),s.d(a,{default:()=>h});s(6540);var e=s(4164),r=s(5500),c=s(7559),l=s(2831),o=s(3544),d=s(4848);function h(u){return(0,d.jsx)(r.e3,{className:(0,e.A)(c.G.wrapper.docsPages),children:(0,d.jsx)(o.A,{children:(0,l.v)(u.route.routes)})})}}}]);
