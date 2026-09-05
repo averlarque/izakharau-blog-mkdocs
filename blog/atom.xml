@@ -1,46 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ilyazakharau.com/blog</id>
-    <title>Ilya Zakharau - Product Strategy &amp; Platform Experience</title>
-    <updated>2026-05-19T00:00:00.000Z</updated>
+    <title>Ilya Zakharau - Essays about Systems, People, and Interfaces in-between</title>
+    <updated>2026-09-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ilyazakharau.com/blog"/>
-    <subtitle>Strategic insights on product management, experience architecture, and digital transformation</subtitle>
+    <subtitle>Essays on product management, systems thinking, and the people and interfaces that connect them</subtitle>
     <icon>https://ilyazakharau.com/img/favicon.ico</icon>
     <rights>Copyright © 2021-2026 Ilya Zakharau</rights>
+    <entry>
+        <title type="html"><![CDATA[My Experience with AI-First Spec-Driven Development]]></title>
+        <id>https://ilyazakharau.com/blog/spec-driven-development-in-practice</id>
+        <link href="https://ilyazakharau.com/blog/spec-driven-development-in-practice"/>
+        <updated>2026-09-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A hands-on account of running Spec-Driven Development with OpenSpec on a production portal — the workflow, what worked, and where it breaks down.]]></summary>
+        <category label="Product Management" term="Product Management"/>
+        <category label="AI" term="AI"/>
+        <category label="Business Analysis" term="Business Analysis"/>
+        <category label="Requirements" term="Requirements"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[I dreamed about moving the requirements specification to code. Am I happy with Spec-Driven Development now?]]></title>
         <id>https://ilyazakharau.com/blog/spec-driven-development</id>
         <link href="https://ilyazakharau.com/blog/spec-driven-development"/>
         <updated>2026-05-19T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Spec-Driven Development promised to make requirements the center of software delivery. It did. Just not the way we expected.]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="cover" src="https://ilyazakharau.com/assets/images/spec-driven-development-a86c26244e3bc43bf4c92eb584a57606.png" width="690" height="390" class="img_ev3q"></p>
-<p>One problem with software development is (and still is) that related artifacts are distributed across various tools. Tasks are set in Jira, documentation in Confluence, and code in GitHub or GitLab. The requirements and documentation are unequivocally spread across those.</p>
-<p>If managed right, that is not a huge deal. Unfortunately, I rarely saw such cases in practice. Frequently, the requirements management on large enterprise projects goes rogue as soon as its initial owner/founder passes on. That contributes to a mental block that some developers had issues with (or simply don't like) reading requirements.</p>
-<p>And I could relate to that: the additional cognitive load of tracking all the task details from various sources and putting them into one picture. Plus, those requirements might be badly written. Some context might be missed, taken for granted, and so on.</p>
-<p>I understand those who ignore the specification and go directly to the source of truth or their proxy. Don't support, but understand.</p>
-<p>Fighting in the war for unification, I became an advocate for the docs-as-code approach where appropriate. Your service docs, as Markdown files, are under the same Git versioning as the source code. As a definition of done, the developer updates the docs along with the code. They no longer forget to update the docs. Plus, the docs are in code and are more clearly structured. At least, on my projects.</p>
-<p>That trick did not meet the requirement, though. I've never tried to implement that in practice; I only did a few thought experiments. My main issue is that, unlike the documentation, which aligns with the functional parts of an actual system, the requirements do not match the architectural design.</p>
-<p>Simply put, requirements may span multiple modules, so where the heck am I supposed to store them? And if they concern several repos? My thought experiment ended up with a separate Git repository for requirements, which is the worst idea, even compared to Confluence.</p>
-<p>Now, in 2026, docs are essential to the context for AI tools. So the proponents of docs-as-code had an advantage there, since they skipped a step involving Confluence MCP.</p>
-<p>AI also changes the perspective on requirements.</p>
-<p>The requirements specification quickly becomes irrelevant, regardless of the development work. Sometimes even quicker. And after that, the source code becomes the source of truth, the final outcome of the work.</p>
-<p>Now, code is disposable and can be easily regenerated by AI agents with a prompt and a single click. That shifts the industry to search for a source of truth elsewhere, something deterministic to rely on in the brave new undeterministic world.</p>
-<p>So, the Spec-Driven Development (SDD) approach takes the stage. And now everything is centered around the requirements. But it is not how we, the old guard of business analysis, expected it to be.</p>
-<hr>
-<p>Simply put, SDD is a paradigm where a structured specification drives code generation by AI agents. The approach itself is not new, as it has been widely used for interface definition and generation in formats such as OpenAPI and thousands of other Domain-Specific Languages.</p>
-<p>The spec is consumed by a machine that produces related code. The difference with AI is that the outcome is no longer deterministic, but the spec is. And the scale is different, as before, we could generate some layers using code generators. With AI agents, we can generate anything at any scale, limited only by the price of tokens.</p>
-<p>Developers no longer need to read requirements. They won. Kind of.</p>
-<hr>
-<p>Requirements engineering shifts to prompt and context engineering to put that machine-consumable contract into the black box and get the expected result. As much as expected, as is possible in its undeterministic nature.</p>
-<p>Now, requirements shall not be forgotten artifacts after the development is done. For large projects, it is essential to keep the spec as the source of truth, always up to date with the implementation, because it is the critical aspect of the context.</p>
-<p>To keep context concise, it is better to structure it and integrate it with the code (ideally with traceability). So my dream is coming true. Requirements move to code. Bye-bye Confluence and user stories in Jira.</p>
-<p>We can keep PRDs and BRDs for manager-humans to read for some time. But they'll likely put it into ChatGPT and ask it to summarize. Putting PRD into LLM for code generation, like all that vibecoding, is considered an antipattern. So those business-oriented artifacts, as we know them, may go away.</p>
-<hr>
-<p>Is that the future for requirements I was expecting? Obviously, not.</p>
-<p>But we live in strange times when companies try to ride the waves, imposing an illusion of control in the name of cost efficiency. And SDD was revived exactly for that purpose.</p>
-<p>There are dozens of tools like OpenSpec, MUSUBI, Spec-Kit, and Superpowers. In a year, the list might be entirely different.</p>
-<p>Oh, Brave New World!</p>]]></content>
         <category label="Product Management" term="Product Management"/>
         <category label="Business Analysis" term="Business Analysis"/>
         <category label="AI" term="AI"/>
@@ -52,54 +36,6 @@
         <link href="https://ilyazakharau.com/blog/ai-broke-product-planning"/>
         <updated>2026-04-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[AI-assisted development has made effort estimation wildly unpredictable. Story points are losing their last foothold, roadmaps feel like tarot cards, and the industry has no consensus on what comes next.]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="cover" src="https://ilyazakharau.com/assets/images/tarot_card_roadmap-0cac50cc9d28b00e0b8ec21c6ca85bd6.svg" width="680" height="820" class="img_ev3q"></p>
-<p>As a major PM responsibility, roadmap planning has become controversial over the years. As much as I enjoy short-sight planning for the next quarter, I hate yearly roadmap planning.</p>
-<p>The latter became a cargo-cult ritual that starts with whispering in October and, as a giant wave, hits everyone in a product organization, continuing in November until final approval in December each year. It sounds straightforward: prioritize a list of initiatives and put them on a timeline. The trick is to make it not look like a commitment.</p>
-<p>There are probably hundreds of books dedicated to that topic. The only thing I've learned over half a decade: despite the effort you put into planning, it will end up in the trash before Q1 ends.</p>
-<p>With all the unknowns driving a roadmap to a nonsensical outcome and keeping higher management under the illusion of control, we now have AI in the equation. It accelerates development output, pushing the bottleneck further down the line. With that change, estimating the whole thing becomes even more problematic.</p>
-<p>Some voices on LinkedIn have declared that AI has killed Agile, even though it had been declared dead more than a decade ago, and renegade voices claim it was never alive. I will skip that broader discussion and focus on planning.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-two-ways-story-points-were-never-quite-right">The two ways story points were never quite right<a href="https://ilyazakharau.com/blog/ai-broke-product-planning#the-two-ways-story-points-were-never-quite-right" class="hash-link" aria-label="Direct link to The two ways story points were never quite right" title="Direct link to The two ways story points were never quite right" translate="no">​</a></h2>
-<p>For the last 15 years, the industry has adopted story points as an abstract concept, loosely replacing the more traditional method of human-hours. I use "loosely" here intentionally because we never reached a global consensus on how to treat story points. And that is OK: the nature of a story point is to be an abstraction, adapted to someone's needs.</p>
-<p>However, as humanity tends to do, we took a good-on-paper concept and drove it to absurdity.</p>
-<p>I've encountered two main approaches:</p>
-<p><strong>1. Re-labeling human-hours as story points (the "ideal dev day" school)</strong></p>
-<p>Agile preachers in enterprise took a well-known method and repackaged it to sell their methodologies. I'm not blaming them: enterprise leaders needed something they could understand, standardize, quickly adopt, scale, and use to claim victory in becoming an Agile organization. All of which resulted in significant consequences for how the industry operates today. There is plenty of good writing criticizing enterprise Agile frameworks, but I'll leave that for your own consideration.</p>
-<p><strong>2. Measuring complexity with story points</strong></p>
-<p>At the dawn of my career, it took me some time to grasp how this could work. At the team level, it requires both skill and effort to develop a sound estimation process. The main issue is that complexity varies by team and does not always translate across a broader organization, which is precisely why re-labeling human-hours sells so well.</p>
-<p>An AI agent in software development has totally undermined the first approach and, for the latter, has made measuring complexity even more complex. The new variables added to any complexity assessment (which LLM you're using, how solid your prompts are, who's reviewing the output, whether a security review is required) sit on top of all the traditional ones and interact with them in ways that are hard to predict upfront.</p>
-<p>I don't have a recipe for fixing that. Instead, let's define the issues and their consequences. Then I'll continue looking for answers and keep you posted.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-human-made-estimation-framework-no-longer-works">The human-made estimation framework no longer works<a href="https://ilyazakharau.com/blog/ai-broke-product-planning#the-human-made-estimation-framework-no-longer-works" class="hash-link" aria-label="Direct link to The human-made estimation framework no longer works" title="Direct link to The human-made estimation framework no longer works" translate="no">​</a></h2>
-<p>That is almost an obvious statement at this point. We used to plan capacity based on projected human-hours for a time period (a 2-week sprint, say), estimate tasks in hours or days, and fit those numbers into available capacity. The number of completed points becomes velocity, lower or higher than capacity, but not wildly far from it.</p>
-<p>Now, a team with 30 SP capacity in a sprint can close 150 SP. But that number of completed story points doesn't indicate <em>what types of tasks</em> were completed. Nor is it a linear regression: completing 150 SP when your capacity is 30 doesn't mean you'll complete 600 SP next sprint.</p>
-<p>That number sounds like a profound achievement, and in the same way it signals that the estimation framework needs to be completely reframed.</p>
-<p>As developers delegate parts of their work to AI agents, they become less certain about when the outcome will arrive. When hundreds of lines of code can be generated in a moment, the conversation shifts from "when is the code written?" to "when will it be stabilized and production-ready?" A developer is still responsible for delivering a working improvement, just with less direct control over how it's done.</p>
-<p>So asking for an estimate in human-hours no longer makes sense when the human is not entirely the one in charge. Asking AI to provide the estimate instead? Please let me know if that works for you.</p>
-<p>I don't have solid numbers, and I am very suspicious of anyone who claims they do. Based on my observations, AI agents perform predictably well on relatively simple, monotonous, time-consuming tasks (updating documentation annotations, for example).</p>
-<p>But even simple tasks at scale become problematic. If you're updating documentation annotations across 100 repositories, you will inevitably spend time fixing hallucinations. How long does that take? Until it's done.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="complexity-estimation-needs-a-new-frame-too">Complexity estimation needs a new frame, too<a href="https://ilyazakharau.com/blog/ai-broke-product-planning#complexity-estimation-needs-a-new-frame-too" class="hash-link" aria-label="Direct link to Complexity estimation needs a new frame, too" title="Direct link to Complexity estimation needs a new frame, too" translate="no">​</a></h2>
-<p>So, estimates in hours or story points aren't reliable. But it's not straightforward to measure complexity either.</p>
-<p>Our perspective on complexity itself needs to change. Previously, we looked at tech stack, library and codebase familiarity, developer experience, the team's prior work on similar tasks, and other team-specific factors.</p>
-<p>Now, we also need to account for: which LLM we're using (Opus or Qwen), the quality and completeness of the prompt and context, who will review the code and how, what the testing strategy looks like, and what happens if we need to throw away the AI output and write from scratch. Plus: does this require a security review?</p>
-<p>No one has all the answers, and anyone claiming otherwise is selling something. Getting this right will require meticulous, team-by-team work. But I firmly believe we need to be estimating complexity, not hours.</p>
-<p>We just need some time to figure out how.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-this-means-for-roadmaps">What this means for roadmaps<a href="https://ilyazakharau.com/blog/ai-broke-product-planning#what-this-means-for-roadmaps" class="hash-link" aria-label="Direct link to What this means for roadmaps" title="Direct link to What this means for roadmaps" translate="no">​</a></h2>
-<p>All of that productivity shift affects how I, as a PM, construct product roadmaps from quarter to year.</p>
-<p>From a planning perspective, I've used two approaches:</p>
-<ol>
-<li class="">Decompose a big topic into smaller items, estimate them, sum it up, and apply a risk multiplier (30% is my standard).</li>
-<li class="">Assign a bulk of capacity and hope it's enough to cover a capability or initiative.</li>
-</ol>
-<p>Over the last five years, both have worked reasonably well. I'd break down whatever was decomposable and provide a guesstimate when requirements were too unclear for a thorough estimate. Neither approach holds up today.</p>
-<p>AI has given PMs the power to build prototypes and proofs of concept quickly. But it's also made building roadmaps feel like reading tarot cards. I can build almost anything very fast, but how long will it take to ship AI-generated code to a B2B enterprise customer at the expected quality and compliance level? It depends.</p>
-<p>And that's before mentioning the elephant in the room: the profound uncertainty about how AI is reshaping entire industries, on top of everything else happening in the world.</p>
-<p>The bottleneck has moved. Before, the question was when the code would be written. Now, the real constraint is stabilization: review, testing, integration, and making something production-ready. That's where time actually goes, and it's where planning needs to focus.</p>
-<p>The only practical advice I have right now is to stay as flexible as possible.</p>
-<hr>
-<p><em>This is the beginning of a longer inquiry. I'll keep exploring what estimation might look like in AI-assisted teams and report back.</em></p>]]></content>
         <category label="Product Management" term="Product Management"/>
         <category label="AI" term="AI"/>
         <category label="Agile" term="Agile"/>
@@ -112,54 +48,6 @@
         <link href="https://ilyazakharau.com/blog/senior-pm-career-outlook"/>
         <updated>2026-02-24T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[A personal reflection on where the PM career ladder goes when AI reshapes roles, mass layoffs hollow out middle management, and the traditional corporate path closes off.]]></summary>
-        <content type="html"><![CDATA[<p>Up until that moment, I had a clear vision of my career track. After graduation, I became an L1 Support Engineer, dreaming of landing a product management role. That gap was too large to cover, so the role of a business analyst seemed like a reasonable intermediate step.</p>
-<p>I also had a precise timeline: transition from support to business analysis by 24, then become a PM by my thirties. That plan worked out, even though the path itself was neither always obvious nor easy.</p>
-<p>Now, I am near 35 and a senior product manager. Dream came true. The problem is, I don't know which career goal to target next. Or if I need to target anything at all.</p>
-<p>And yes, here I will talk about how PM roles have changed due to AI and the broader economic shakeup. But in the context of my own career plans. Sounds egoistic? Yes, it is. But allow me some thought experiments. Maybe that will be helpful for you.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-plan-that-worked--until-it-didnt">The Plan That Worked — Until It Didn't<a href="https://ilyazakharau.com/blog/senior-pm-career-outlook#the-plan-that-worked--until-it-didnt" class="hash-link" aria-label="Direct link to The Plan That Worked — Until It Didn't" title="Direct link to The Plan That Worked — Until It Didn't" translate="no">​</a></h2>
-<p>The context of the PM role greatly varies, so I need to answer a critical question first:</p>
-<p><img decoding="async" loading="lazy" alt="cover" src="https://ilyazakharau.com/assets/images/senior-pm-career-outlook-000-9528dcc6051fec0c801aec1047a64ba1.png" width="1536" height="1024" class="img_ev3q"></p>
-<p>My short response: "I am a Platform/Technical Product Manager."</p>
-<p>A longer response:</p>
-<blockquote>
-<p>"I am a Platform/Technical Product Manager. But I am not as technical as my peers with an engineering background. And for more traditional PMs — the ones with A/B tests, PRDs, AARs, and many other fancy buzzwords — I am that nerdy guy who builds platforms for building platforms."</p>
-</blockquote>
-<p>Not a comprehensive answer, but I need to start from somewhere. So, what are my next career development options?</p>
-<p>Before we proceed, let's address the elephant in the room. To further my career, I need to navigate the now-traditional waves of layoffs.</p>
-<p>Here is AI reshaping the PM role, and corporations that discovered mass layoffs increase capitalization. I'll leave speculation on how those factors interdepend — let's focus on the AI aspect.</p>
-<p>From my perspective, Tech PMs in enterprises in heavy B2B industries like finance and insurance are feeling better than their B2C colleagues. It does not mean they are not impacted or will not be affected in the near future. However, deeper specialization in complex, legally liable industries at least delays execution.</p>
-<p>But I would say, surviving layoffs is mostly a matter of luck.</p>
-<p>Let's assume I am a lucky one — so what are the options to push my career forward?</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="corporate-ladder-gone">Corporate Ladder (Gone)<a href="https://ilyazakharau.com/blog/senior-pm-career-outlook#corporate-ladder-gone" class="hash-link" aria-label="Direct link to Corporate Ladder (Gone)" title="Direct link to Corporate Ladder (Gone)" translate="no">​</a></h2>
-<p>Junior positions are extinct. There is no fresh blood to push the career system forward. I wrote a piece about the exodus of junior business analyst positions almost a year ago.</p>
-<p>Middle management is severely cut, leaving a handful of ICs (individual contributors) with so-called "leadership." That means there is no longer space to manoeuvre horizontally. The door to the top is not widely open either.</p>
-<p>Senior management seems less affected. Of course, there are some sacrifices in the name of optimization. But those folks won't hurt themselves, will they?</p>
-<p><img decoding="async" loading="lazy" alt="AI sailing while Senior PM drowns" src="https://ilyazakharau.com/assets/images/senior-pm-career-outlook-001-6819d065eccfefc75a0b873ba1fb4129.png" width="1536" height="1024" class="img_ev3q"></p>
-<p>There is not much space at the top. As the economic situation is shaky, some of them won't take the risk to hop for another senior management position elsewhere or go rogue with their own startup. Those who are competent enough will stay where they are — even though a decade ago the preferable option might have been to retire and free a position for someone younger.</p>
-<p>Here is a thought experiment of what the career trap in the middle looks like. It might be a case for me. It might be a case for you. All coincidences with real people are just coincidences.</p>
-<p>Let's take switching to another business domain within the organization as an example:</p>
-<p>You are a highly effective <strong>IC leader A</strong> in your domain, with deep expertise. You'd like to explore another domain within your organization — maybe you're bored, or you see some prospects elsewhere.</p>
-<p>In that domain, there is another super-efficient <strong>IC leader B</strong> with deeper expertise than yours. You can't join as their subordinate, because those positions were "restructured" away and super-efficient B absorbed the responsibilities. IC leader A, as a reasonable person, would not undermine their own position. They also understand that combining both domains leads to burnout and is unlikely to be compensated.</p>
-<p>And if the transition were to happen, IC leader B would have no opportunity to take a more senior position — they already report to a VP, since all middle layers were cut. So IC leader A is stuck, only hoping that something unexpected happens and IC leader B leaves on their own. And even if B leaves, A needs to prove they have enough experience to take B's place while also handing over their own domain to a new IC leader C.</p>
-<p>Otherwise, IC leader A becomes ultra-efficient by absorbing everything.</p>
-<p>Anyway, the overall idea is that planned internal growth is now difficult — unless you need to cover gaps caused by, well, you know what.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-that-for-me">What's That for Me?<a href="https://ilyazakharau.com/blog/senior-pm-career-outlook#whats-that-for-me" class="hash-link" aria-label="Direct link to What's That for Me?" title="Direct link to What's That for Me?" translate="no">​</a></h2>
-<p>Thinking about my career, I asked myself: can I become a senior manager figure and jump into that safe boat by 40?</p>
-<p>Very unlikely. Without internal promotion, there is, of course, the option to look outside. But we all know what the job market looks like right now.</p>
-<p>I could claim to become the same super-efficient (and AI-proficient) IC leader A in a different place — only if I get lucky, not spending 6 months on interviews and settling for a lower offer out of desperation. Any movement to claim another domain with little or no experience, or to jump to a top senior management job, would not yield much. There are plenty of strong candidates on the market with relevant experience. Some of them are desperate, and that's why they're dumping salaries. If you are not desperate, you basically can't compete.</p>
-<p>I also thought that getting an MBA would be a prerequisite for a future senior management job — a way to become more visible to my current employer and bid higher in the job market. Obviously, it is no longer as big an advantage as it might have been before. Not counting the trash MBA courses, which were never relevant.</p>
-<p>Any course from the top 50 MBA programs costs a significant amount of money. I decided to put those funds toward a mortgage down payment.</p>
-<p>It was once said that gaining an MBA is a better investment than real estate. With AI, the current job market state, and rising property prices, I don't think that is the case anymore. As with most of the other tools our predecessors used to advance their traditional careers.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="so-what-now">So What Now?<a href="https://ilyazakharau.com/blog/senior-pm-career-outlook#so-what-now" class="hash-link" aria-label="Direct link to So What Now?" title="Direct link to So What Now?" translate="no">​</a></h2>
-<p>Do I have any chance of significantly advancing in my career anytime soon? Actually, yes. There are a few options beyond the good-old climb on the enterprise career ladder.</p>
-<p>Maybe I will write another article on that.</p>
-<p>Meanwhile, I continue to deepen my expertise and become a more super AI-efficient senior IC. To care less about job prospects in my 40s, I started a new hobby of painting Warhammer 40K miniatures.</p>
-<p><img decoding="async" loading="lazy" alt="Warhammer 40K Space Marine miniature in progress" src="https://ilyazakharau.com/assets/images/senior-pm-career-outlook-002-eaa7740a7c7720b01447c5f4ab9c5a19.png" width="3024" height="1534" class="img_ev3q"></p>
-<p>Take care.</p>]]></content>
         <category label="Product Management" term="Product Management"/>
         <category label="Community & Insights" term="Community & Insights"/>
     </entry>
@@ -169,81 +57,6 @@
         <link href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts"/>
         <updated>2026-01-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Managing prompts throughout the development and operational lifecycle becomes a larger, unanticipated problem than writing them. Learn which issues you might encounter when pushing your AI agent from MVP to Production.]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="cover" src="https://ilyazakharau.com/assets/images/ai-pm-maintaining-prompts-9da173062a53688fc4eb44bb8b8419c8.png" width="1200" height="630" class="img_ev3q"></p>
-<p>When my team started working on the AI feature, I was mostly concerned with writing clear, precise prompts. As shown, maintaining them throughout the development and operational lifecycle becomes a larger, unanticipated problem.</p>
-<p>You will learn which issues with updating prompts you might encounter when you push your AI agent from MVP to Production. Below, I am sharing my findings on the operational side of the prompt management.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-inevitable-growth-trajectory">The inevitable growth trajectory<a href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts#the-inevitable-growth-trajectory" class="hash-link" aria-label="Direct link to The inevitable growth trajectory" title="Direct link to The inevitable growth trajectory" translate="no">​</a></h2>
-<p>Usually, you start with a single, relatively short Markdown file put under Git. Then it reaches 300 lines, and life becomes less vibrant. After that, there is a "Divide and Conquer" stage of prompt decomposition, followed by rapid growth through new workflows. At the end, you might end up with a dozen prompts with 100-300 lines each, and a shrinking understanding of what went wrong if something went wrong.</p>
-<p>On the other side of the picture, several people are working on prompts simultaneously. We need to avoid overrides and follow the same strategy to achieve some level of consistency and control. That requires an entirely new process and tools you need to identify, establish, and make everyone follow them.</p>
-<p>Welcome to the third and (probably) final act of PM struggles with building AI features.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="from-code-artifact-to-runtime-nightmare">From code artifact to runtime nightmare<a href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts#from-code-artifact-to-runtime-nightmare" class="hash-link" aria-label="Direct link to From code artifact to runtime nightmare" title="Direct link to From code artifact to runtime nightmare" translate="no">​</a></h2>
-<p>Prompts are a development artifact first and foremost. So it must be versioned alongside other code and kept under version control. No doubt it.</p>
-<p>But if we treat prompt as code, that means recompiling/redeploying an app every time you update a sentence. If you proceed with multiple consecutive changes, testing becomes challenging and time-consuming. Using a local dev environment as a workaround. But I doubt that is a scalable option that suits everywhere.</p>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Explained</div><div class="admonitionContent_BuS1"><p>Design-time means prompts are treated as source code with its versioning, with changes applied after merge/build/deploy. Run-time means prompts are treated as configuration, without versioning, and can be updated while the application is running.</p></div></div>
-<p>So very soon after we started, it became clear that prompts needed to be configurable at run time. After tweaking Spring AI, we exposed API endpoints to get and update prompts. So now we can make an API call to update the prompt without restarting.</p>
-<p>That solution caused a bunch of new problems to be resolved:</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-1-the-editing-experience-breaks-down">Problem 1: The editing experience breaks down<a href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts#problem-1-the-editing-experience-breaks-down" class="hash-link" aria-label="Direct link to Problem 1: The editing experience breaks down" title="Direct link to Problem 1: The editing experience breaks down" translate="no">​</a></h2>
-<p>When working with APIs, you can use Swagger UI, Postman, or competitors (I personally recommend Bruno). Despite the client, the formatting is an issue: the API returns a JSON object where Markdown text is stored as a string attribute. That is not very convenient to edit.</p>
-<p>If you work with prompts as code, you most likely use VS Code or another editor with fine Markdown formatting. To keep the editing experience reasonable, we developed a local VS Code plugin that, with a command, uploads prompts via the API to the required environment.</p>
-<p>So now we are comfortable working with prompts in the familiar environment. However, that even intensifies the problem</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="problem-2-living-in-two-paradigms-simultaneously">Problem 2: Living in two paradigms simultaneously<a href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts#problem-2-living-in-two-paradigms-simultaneously" class="hash-link" aria-label="Direct link to Problem 2: Living in two paradigms simultaneously" title="Direct link to Problem 2: Living in two paradigms simultaneously" translate="no">​</a></h2>
-<p>Managing prompts and uploading them to any environment for testing sounds great, except for one tiny detail. In reality, it is a great trade-off: now prompts exist in 2 paradigms, both in design and runtimes.</p>
-<p>That could create many conflicts. For example:</p>
-<p><strong>Case A: I deployed prompt changes as code to a testing environment. Then, someone updated that prompt via API.</strong></p>
-<p>And I don't know about those changes, and there's no additional mechanism to notify about them. I can manually retrieve those prompts via the API for that environment and compare them with the version I recently deployed. That is not something you will do all the time.</p>
-<p>So you can get unexpected results when running the AI evals (I recommend reading my previous article) without knowing the prompt isn't the one you expected.</p>
-<p><strong>Case B: While redeploying the application, you refresh the runtime.</strong></p>
-<p>When deploying new changes to prompts-as-code, you also override your non-default runtime configuration with the uploaded prompts. So it is easy to accidentally erase someone's work.</p>
-<p><strong>Case C: Uncontrollable spreading across environments</strong></p>
-<p>Since you can upload any prompt update to any environment with a running application, you can accidentally upload it to a non-target environment. Then you will be surprised to find out why evals are failing in pre-prod but work well in dev testing.</p>
-<p>Resolving such conflicts is annoying and time-consuming. We could try to fix that with some advanced enhancements or 3rd-party tools. But on our small scale, that seemed like overhead. We had such issues along the way. We resolved them by agreeing on a process and closer collaboration. That was cheaper than adding and maintaining new functionality for that.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="when-prompts-multiply-analysis-becomes-impossible">When prompts multiply, analysis becomes impossible<a href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts#when-prompts-multiply-analysis-becomes-impossible" class="hash-link" aria-label="Direct link to When prompts multiply, analysis becomes impossible" title="Direct link to When prompts multiply, analysis becomes impossible" translate="no">​</a></h2>
-<p>When the number of workflows and their complexity increase, it becomes easy to lose track of which prompt changes are efficient and which are not.</p>
-<p>There are the typical problems:</p>
-<ul>
-<li class="">High token consumption due to the number and size</li>
-<li class="">Updates are not working as expected (e.g., not consistently providing correct responses to users )</li>
-<li class="">Updates are working, but they affect other aspects of a workflow.</li>
-</ul>
-<p>First and foremost, you must have AI evals. I dedicated an entire article to that, so check it out if you missed it. Without those, it is impossible to scale and maintain any kind of quality.</p>
-<p>Then you need to associate a prompt change with the eval's outcome. It is exhausting to visually compare every test, checking whether there is a regression or improvement in a certain aspect. Thus, it is an obvious case for automation.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-llm-optimization-dream-vs-reality">The LLM optimization dream vs. reality<a href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts#the-llm-optimization-dream-vs-reality" class="hash-link" aria-label="Direct link to The LLM optimization dream vs. reality" title="Direct link to The LLM optimization dream vs. reality" translate="no">​</a></h2>
-<p>At a certain point, I, as a human, ran out of ideas for how to improve/rewrite the prompts to address issues that keep appearing during development. You see your prompt, precise, with advanced techniques, which seems perfect. But it does not behave consistently, even though the prompts explicitly asked about it.</p>
-<p>The problem is hidden in the burden of multiple prompts and contexts. That is a good case to employ a "smarter" LLM to optimize prompts for a sibling. For example, I use Opus to optimize Haiku prompts.</p>
-<p>Here you can build a dream pipeline:</p>
-<ol>
-<li class="">You collect logs, evals results, prompts, and define a problem.</li>
-<li class="">You put everything into a smarter LLM and ask it to optimize the prompts.</li>
-<li class="">Optimized prompts are deployed to a test environment.</li>
-<li class="">AI evals are run on those prompts.</li>
-<li class="">New evals results, prompts, and logs, and compared vs previous ones</li>
-<li class="">If a regression is found, repeat the cycle.</li>
-</ol>
-<p>It sounds great on paper to delegate all that to LLM. But in reality, just after a few iterations, it will be trapped in a vicious sub-optimization cycle. There must be a human (that mythical AI PM or another lucky person) in the middle to guide that process.</p>
-<p>Remember, even a super-optimized prompt may fail once real users start using the agent.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="build-vs-buy-why-we-vibecoded-our-own-tools">Build vs. buy: Why we vibecoded our own tools<a href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts#build-vs-buy-why-we-vibecoded-our-own-tools" class="hash-link" aria-label="Direct link to Build vs. buy: Why we vibecoded our own tools" title="Direct link to Build vs. buy: Why we vibecoded our own tools" translate="no">​</a></h2>
-<p>Managing prompts reveals many previously unseen issues. But those issues are resolvable when there is the right tooling and the process.</p>
-<p>During the gold rush, there should also be a lot of shovels. There are many prompt management and testing tools on the market. But anyway, we decided to build our own internal tooling.</p>
-<p>It sounds like reinventing the wheel, but here are the reasons why we hadn't considered a tool from the market:</p>
-<ul>
-<li class="">Such market research and trials take a huge amount of time</li>
-<li class="">We already learned the hard way that AI tools and frameworks could be pretty raw</li>
-<li class="">No trust in a bunch of unknown vendors</li>
-<li class="">Even if found, there is a long compliance and adoption cycle in an enterprise</li>
-<li class="">We can simply vibecode what we need</li>
-</ul>
-<p>Anyway, it took several iterations to understand exactly what we needed, and with a few more cycles, we vibecoded our own internal admin panel to manage prompts and handle other servicing tasks. Our testing framework is not integrated, and that might be a difference that a vendor solution could address.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-real-lesson-process-over-perfection">The real lesson: Process over perfection<a href="https://ilyazakharau.com/blog/ai-pm-maintaining-prompts#the-real-lesson-process-over-perfection" class="hash-link" aria-label="Direct link to The real lesson: Process over perfection" title="Direct link to The real lesson: Process over perfection" translate="no">​</a></h2>
-<p>In reality, I don't think we need it. It works just well enough to make remarks like, 'We could improve it someday,' and put it on a shelf.</p>
-<p>We can vibe code it any time.</p>]]></content>
         <category label="Product Management" term="Product Management"/>
         <category label="AI" term="AI"/>
     </entry>
@@ -253,53 +66,6 @@
         <link href="https://ilyazakharau.com/blog/2025-reflections-2026-plans"/>
         <updated>2025-12-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Annual writing review: 12 articles, platform performance analysis, and content plans for 2026]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="cover" src="https://ilyazakharau.com/assets/images/2025-reflections-title-862519fb286621d1cd4a29513cbb6f05.png" width="1200" height="630" class="img_ev3q"></p>
-<p>Annually, I summarize my writing and review plans for the upcoming year. But before doing this, I want to thank all of you for being my readers. Whether you have been following me for a few years or just joined after my recent posts (welcome, by the way), thank you!</p>
-<p>Writing and observing how people react to it is my source of dopamine. It really motivates me to keep going and do my best. I am learning by reflecting on and writing about my experience, and I want everyone to learn from it too.</p>
-<p>Now, let's take a look at my journey as a writer in 2025.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2025-by-the-numbers">2025 by the Numbers<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#2025-by-the-numbers" class="hash-link" aria-label="Direct link to 2025 by the Numbers" title="Direct link to 2025 by the Numbers" translate="no">​</a></h2>
-<p>On "<a href="https://ilyazakharau.com/blog/2024-reflections-2025-plans" target="_blank" rel="noopener noreferrer" class="">2024 Reflection &amp; 2025 Plans</a>," I said that in 2025, there will be 12 articles vs. 24 I wrote in 2024. You are currently reading that 12th article in 2025, so I kept my promise.</p>
-<p>Less content led to a greater impact, but not across all platforms. Medium is on the rise, LinkedIn is almost dead compared to previous years, and my Blog is thriving.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="blog-performance">Blog Performance<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#blog-performance" class="hash-link" aria-label="Direct link to Blog Performance" title="Direct link to Blog Performance" translate="no">​</a></h3>
-<p>For the Blog, there are 1.9K unique visitors vs 700 in 2024 and 300 in 2023 on ilyazakharau.com. The growing readership spans continents, with substantial numbers coming from Southeast Asia. I am very glad that the geography of my readers is growing.</p>
-<p>I changed the blog engine (for the 4th time, <a href="https://ilyazakharau.com/blog/new-mkdocs-blog-version" target="_blank" rel="noopener noreferrer" class="">see my previous journey here</a>) to Docusaurus. With vibe-coding, I was able to migrate all the content from MKDocs in one day and then arrange the blog redesign.</p>
-<p>Also, I launched my own email subscription to maintain some independence from publishing platforms. The subscription numbers are not staggering, but slowly growing, and I am happy about that.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="medium-growth">Medium Growth<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#medium-growth" class="hash-link" aria-label="Direct link to Medium Growth" title="Direct link to Medium Growth" translate="no">​</a></h3>
-<p>On Medium, the number of followers doubled, and the number of email subscribers tripled. I put my last Medium articles behind a paywall (keeping them free on my blog), so I started earning real money from them. Not a large amount, but it is pleasant to start getting something out of it.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="linkedin-reality-check">LinkedIn Reality Check<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#linkedin-reality-check" class="hash-link" aria-label="Direct link to LinkedIn Reality Check" title="Direct link to LinkedIn Reality Check" translate="no">​</a></h3>
-<p>LinkedIn plunged because I wasn't posting consistently. Even those occasional posts had fewer engagements than before. I followed the advice to clean up your network to remove dead weight periodically. I conducted a thorough LinkedIn purge of recruiters, salespeople, people from my university, and others.</p>
-<p>And it did work. My posts, which mainly contain text and links to my other resources, are not well-liked by the algorithm and receive low but stable engagement. Maybe because of that, traffic from LinkedIn to my blog and Medium increased by 20%, even though engagement with the platform is not impressive.</p>
-<p>But I am satisfied with that.</p>
-<p>Most people agree that LinkedIn has become a trash can, but we still need to keep using it. So I don't have any intention of investing my time there except for announcement posts.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-worked-in-2025">What Worked in 2025<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#what-worked-in-2025" class="hash-link" aria-label="Direct link to What Worked in 2025" title="Direct link to What Worked in 2025" translate="no">​</a></h2>
-<p>Most of that success was due to my recent articles on AI. In 2025, I worked to deploy a proof-of-concept AI-based feature into production. I did not plan to write about it mainly because I did not want to be part of the AI hype train.</p>
-<p>I completed my successful Requirements &amp; API series and planned to write mainly about product management and design systems. But I felt the need to reflect on that recent writing experience, which resulted in a first, pretty generic article, "<a href="https://ilyazakharau.com/blog/ai-poc-to-mvp" target="_blank" rel="noopener noreferrer" class="">Embedding AI Features: The Messy Middle Between POC and MVP</a>". Then I decided to change my strategy and share more personal, practical stories in "<a href="https://ilyazakharau.com/blog/product-manager-to-context-dealer" target="_blank" rel="noopener noreferrer" class="">From Product Manager to Context Dealer: How AI Changed My Role</a>" and "<a href="https://ilyazakharau.com/blog/ai-evals-pm" target="_blank" rel="noopener noreferrer" class="">How I stopped doing Product Management and became obsessed with AI evals</a>," instead of abstract theorisation. They got a boost on Medium and got a little moment of glory.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="hidden-gems-worth-revisiting">Hidden Gems Worth Revisiting<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#hidden-gems-worth-revisiting" class="hash-link" aria-label="Direct link to Hidden Gems Worth Revisiting" title="Direct link to Hidden Gems Worth Revisiting" translate="no">​</a></h2>
-<p>However, I think there is a bunch of overlooked articles I will be glad you give a first or second chance:</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-product-managers-view-on-composability">The Product Manager's View on Composability<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#the-product-managers-view-on-composability" class="hash-link" aria-label="Direct link to The Product Manager's View on Composability" title="Direct link to The Product Manager's View on Composability" translate="no">​</a></h3>
-<p>(<a href="https://ilyazakharau.com/blog/the-product-managers-view-on-composability" target="_blank" rel="noopener noreferrer" class="">Blog</a> / <a href="https://medium.com/analysts-corner/the-product-managers-view-on-composability-cee41c321aa3" target="_blank" rel="noopener noreferrer" class="">Medium</a>)</p>
-<p>My take on MACH (Microservices, API-first, Cloud native, Headless) &amp; Composable architecture approaches. That is an interesting topic on which I spent a lot of time researching. When published, it underperformed widely. It is still a worthy material, so give it a try.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-build-and-maintain-stakeholder-trust-as-a-product-owner">How to Build and Maintain Stakeholder Trust as a Product Owner<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#how-to-build-and-maintain-stakeholder-trust-as-a-product-owner" class="hash-link" aria-label="Direct link to How to Build and Maintain Stakeholder Trust as a Product Owner" title="Direct link to How to Build and Maintain Stakeholder Trust as a Product Owner" translate="no">​</a></h3>
-<p>(<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner" target="_blank" rel="noopener noreferrer" class="">Blog</a> / <a href="https://medium.com/analysts-corner/how-to-build-and-maintain-stakeholder-trust-as-a-product-owner-9a5967f4fafd?source=friends_link&amp;sk=b56ac441f3390587314cc92eda32a556" target="_blank" rel="noopener noreferrer" class="">Medium</a>)</p>
-<p>It is a follow-up to the highly successful "Stakeholder Alignment: The Underrated Skill Every Product Manager Needs," offering practical advice on rebuilding and maintaining trust among stakeholders on your project. It didn't meet the expectations of its predecessor, but it's still a great article.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resolving-chronic-systemic-problems-is-not-helpful-for-your-career">Resolving Chronic Systemic Problems is Not Helpful for Your Career<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#resolving-chronic-systemic-problems-is-not-helpful-for-your-career" class="hash-link" aria-label="Direct link to Resolving Chronic Systemic Problems is Not Helpful for Your Career" title="Direct link to Resolving Chronic Systemic Problems is Not Helpful for Your Career" translate="no">​</a></h3>
-<p>(<a href="https://ilyazakharau.com/blog/systemic-problems-career-risk" target="_blank" rel="noopener noreferrer" class="">Blog</a> / <a href="https://medium.com/analysts-corner/resolving-chronic-systemic-problems-is-not-helpful-for-your-career-4f086b5c886c?source=friends_link&amp;sk=e8e0083652477743923bfe5ec9c11b14" target="_blank" rel="noopener noreferrer" class="">Medium</a>)</p>
-<p>My thoughts on focusing solely on resolving systemic, complex business problems may leave me with nothing and hinder your career. It is one of the best pieces of my writing to date.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-coming-in-2026">What's Coming in 2026<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#whats-coming-in-2026" class="hash-link" aria-label="Direct link to What's Coming in 2026" title="Direct link to What's Coming in 2026" translate="no">​</a></h2>
-<p>The content strategy will be the same: an article per month. They will be published as free content on my blog via email subscription and on Medium, behind a paywall.</p>
-<p>I want to grow my subscriber base: my target number is 100 readers on both.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="planned-topics">Planned Topics<a href="https://ilyazakharau.com/blog/2025-reflections-2026-plans#planned-topics" class="hash-link" aria-label="Direct link to Planned Topics" title="Direct link to Planned Topics" translate="no">​</a></h3>
-<p>In terms of the content itself:</p>
-<ul>
-<li class=""><strong>Prompt Pipelines</strong> - There is one more AI-related article on building prompt pipelines. Initially planned for 2025, but I couldn't make it.</li>
-<li class=""><strong>Impact-First Book Review</strong> - I have some thoughts to share about Matt LeMay's recent book "Impact-first Product Teams".</li>
-<li class=""><strong>UI Design Systems</strong> - Last year, I teased one or two articles on UI Design Systems. I still stick to that idea.</li>
-<li class=""><strong>Career Reflections</strong> - There will be at least one related to my future career prospects.</li>
-<li class=""><strong>Requirements &amp; API E-book</strong> - And I will be back to the API! I want to expand and repackage my "Requirements &amp; API" series as an e-book and give it away at a symbolic price.</li>
-</ul>
-<p>So I have some plans for the first half of 2026 and then see what happens next.</p>
-<hr>
-<p>Again, thanks for reading me this year. I wish you Merry Christmas and a Happy New Year! See you in 2026. Take care.</p>]]></content>
         <category label="Community & Insights" term="Community & Insights"/>
     </entry>
     <entry>
@@ -308,101 +74,6 @@
         <link href="https://ilyazakharau.com/blog/ai-evals-pm"/>
         <updated>2025-11-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[A product manager's practical journey through building AI evaluation frameworks - from manual Excel scoring to automated testing, and learning to live with non-deterministic outputs.]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="AI-generated" src="https://ilyazakharau.com/assets/images/ai-evals-social-cbe200a482028d6e33c1eda102dfd461.png" width="1200" height="630" class="img_ev3q"></p>
-<p>That title isn't clickbait: it's what actually happened. Over the last three months, I've spent 90% of my time obsessing over whether our AI search returns the right results. Not writing PRDs. Not in stakeholder meetings. Just testing, scoring, and re-testing AI outputs.</p>
-<p>Only recently did I learn that there is a trending term for what I am doing: AI evals. I thought that was "quality assurance" or "testing". But AI Evals is a sexier name for selling courses.</p>
-<p>Jokes aside. The main reason the industry began separating it from traditional QA frameworks is the non-deterministic nature of the output. Different results from the same input were considered as the definition of madness.</p>
-<p>Now it is our new reality.</p>
-<p>There is another question to explore: why are AI evals considered a new critical skill for product managers? (to sell some courses, of course).</p>
-<p>I won't give you a theory about AI evals. Instead, I will summarize my experience evaluating AI-based search capabilities using the RAG architecture.</p>
-<p>Even though I didn't know such fancy words at that moment.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-three-dimensions-of-ai-evaluation">The Three Dimensions of AI Evaluation<a href="https://ilyazakharau.com/blog/ai-evals-pm#the-three-dimensions-of-ai-evaluation" class="hash-link" aria-label="Direct link to The Three Dimensions of AI Evaluation" title="Direct link to The Three Dimensions of AI Evaluation" translate="no">​</a></h2>
-<p>Let's start with definitions.</p>
-<p>Selecting the right provider and LLM is an essential question you need to answer when developing an AI feature. There are three main aspects:</p>
-<ul>
-<li class=""><strong>cost</strong></li>
-<li class=""><strong>quality</strong></li>
-<li class=""><strong>speed</strong></li>
-</ul>
-<p><strong>Cost</strong> is the amount of money you pay a vendor for API calls and for using its infrastructure. It could also be specific spending on the internal infrastructure if using on-prem. I shared my thoughts on cost vs. value in a <a href="https://ilyazakharau.com/blog/ai-poc-to-mvp" target="_blank" rel="noopener noreferrer" class="">previous article</a>, so that I won't repeat myself here.</p>
-<p><strong>Quality</strong> means a model covers all required use cases: it returns the expected output for a given input.</p>
-<p><strong>Speed</strong> means how quickly an LLM processes and responds to user queries. That might be critical for some applications. In my case, speed is not a concern, so my evals focus on cost and quality.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="from-manual-chaos-to-structured-testing">From Manual Chaos to Structured Testing<a href="https://ilyazakharau.com/blog/ai-evals-pm#from-manual-chaos-to-structured-testing" class="hash-link" aria-label="Direct link to From Manual Chaos to Structured Testing" title="Direct link to From Manual Chaos to Structured Testing" translate="no">​</a></h2>
-<p>I needed to verify use cases for each LLM we believed had the right cost/quality balance. I created a few test cases covering every use case.</p>
-<p>A test case looked like:</p>
-<ul>
-<li class="">user prompt</li>
-<li class="">A list of expected search results pulled from a database</li>
-<li class="">Expected response message</li>
-</ul>
-<p>The next obvious step was to automate the test run, so you can document and later compare them. API calls in Postman are a good starting point (even though I personally recommend Bruno).</p>
-<p>Simple request-response is not enough, so you need to build a trace that includes:</p>
-<ul>
-<li class="">user prompt</li>
-<li class="">system prompts</li>
-<li class="">data pulled into the context from the DB</li>
-<li class="">info about which agentic tool is called (or which step of the workflow)</li>
-<li class="">number of input and output tokens</li>
-</ul>
-<p>I ran those test cases via the API across several models, documented the results in Excel, and visually compared them. Comparing search results from the DB is easy, especially when you have a unique identifier for each data object that is consistent across all environments. If I expected two objects but got one, then it is 5 out of 10. If both came, it is 10 points. No matches: no score, so the test is considered as failed.</p>
-<p>LLM messages I subjectively scored from 1 to 10, from worst to best. The message is secondary to the search result. But if it is lower than 4, it is a failure.</p>
-<p>As a result, I scored each test result based on those (quite subjective) points, along with calculated token consumption. Based on that data, we decided which LLM to proceed with.</p>
-<p>Not ideal, however, the criteria used in the initial model evaluation serve as a foundation for comprehensive "AI evals".</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="building-an-evaluation-framework">Building an Evaluation Framework<a href="https://ilyazakharau.com/blog/ai-evals-pm#building-an-evaluation-framework" class="hash-link" aria-label="Direct link to Building an Evaluation Framework" title="Direct link to Building an Evaluation Framework" translate="no">​</a></h2>
-<p>Firing several dozen API calls and comparing the results visually is not a scalable approach. We started extending our agentic workflow by adding new tools with their prompts. We need to test new features and make sure we do not introduce regressions.</p>
-<p>We tried to keep each step as isolated from the others as possible, so prompt changes to one step won't affect the others. But even so, any unintentional or poorly thought-out change to a prompt could corrupt the user case. Increasing complexity increases the likelihood of it happening.</p>
-<p>We had to build our own testing framework to ensure the quality of existing and upcoming features while keeping migration to newer models in mind.</p>
-<p>We've documented in an Excel spreadsheet a few dozen test cases, each associated with a specific use case and related to a particular type:</p>
-<ul>
-<li class=""><strong>simple case</strong> - simple successful transaction: request-response</li>
-<li class=""><strong>complex case</strong> - multiple transactions before success: request-clarification (some number of them)-response</li>
-<li class=""><strong>edge cases</strong> - out of the scope requests to check how the model handles such situations</li>
-</ul>
-<p>From them, we've selected a bunch for automation and converted them to JSON.</p>
-<p>Here is an example of a test case:</p>
-<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   </span><span class="token property" style="color:#36acaa">"testCaseId"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"TC_001"</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   </span><span class="token property" style="color:#36acaa">"description"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"Check simple request for customer creation with clarification"</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   </span><span class="token property" style="color:#36acaa">"testCaseType"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       </span><span class="token string" style="color:#e3116c">"simple_search"</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   </span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   </span><span class="token property" style="color:#36acaa">"userInput"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       </span><span class="token property" style="color:#36acaa">"query"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"create individual customer"</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       </span><span class="token property" style="color:#36acaa">"clarificationNeeded"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       </span><span class="token property" style="color:#36acaa">"clarificationText"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">           </span><span class="token string" style="color:#e3116c">"for X app, version Y"</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       </span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   </span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   </span><span class="token property" style="color:#36acaa">"expectedOutput"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       </span><span class="token property" style="color:#36acaa">"expectedResponse"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"Short message with 2-3 results about creating, updating customer account, or some customer details."</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       </span><span class="token property" style="color:#36acaa">"documentComplexIds"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">           </span><span class="token string" style="color:#e3116c">"07d17a43-2065-324e-a651-da8c966dd89b"</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">           </span><span class="token string" style="color:#e3116c">"6e5b6ea1-b04f-37e8-bba1-9cc619824a7a"</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">           </span><span class="token string" style="color:#e3116c">"f38194d0-72e8-3dcb-a46f-c8ceab7a929e"</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       </span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre></div></div>
-<p>My team created a tool that runs all or some of the selected test cases on a local machine, calling LLMs chosen from the list of providers defined in the configuration. It collects responses and writes them to test logs. Then it evaluates responses using another LLM and generates a CSV report.</p>
-<p>It is straightforward for a simple case with one transaction. But a user can provide incomplete information, and the chatbot will ask clarification questions. We have a particular "interview" step to request additional information to make the search more precise. There is a matrix in a prompt that says when enough information is provided.</p>
-<p>For test cases, we assume how many clarifications are required, then create a made-up dialog in which the model asks the questions we expect it to ask and responds with predefined responses.</p>
-<p>Here is how it works:</p>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Clarification Flow</div><div class="admonitionContent_BuS1"><p>The diagram shows the interview process flow, including decision points for when the system has enough information versus when it needs to ask clarification questions.</p></div></div>
-<p><img decoding="async" loading="lazy" alt="Clarification logic" src="https://ilyazakharau.com/assets/images/ai-evals-workflow-66a4b9003fb4da7508297d0966687014.png" width="2640" height="965" class="img_ev3q"></p>
-<p>The problem is that the model can ask for more clarification than expected. And we consider it a failure because we want a smooth experience, not an annoying chatbot. So that's one of our evals: "Not to ask too many and irrelevant questions."</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="three-types-of-evals-code-search-and-message">Three Types of Evals: Code, Search, and Message<a href="https://ilyazakharau.com/blog/ai-evals-pm#three-types-of-evals-code-search-and-message" class="hash-link" aria-label="Direct link to Three Types of Evals: Code, Search, and Message" title="Direct link to Three Types of Evals: Code, Search, and Message" translate="no">​</a></h2>
-<p>Other evals we can frame into large groups:</p>
-<ul>
-<li class="">Validating output structure</li>
-<li class="">Matching search results from DB</li>
-<li class="">Evaluating message</li>
-</ul>
-<p><strong>Output structure and search results validations</strong> are so-called "code-based" rules, which you can develop "traditionally". We check whether we receive a valid JSON structure from LLM. Within that structure, we validate whether the required data has been provided, depending on the workflow.</p>
-<p><strong>Search result matching</strong> is a trickier process. LLM analyzes the data it receives from the DB, but returns only a UUID to reference a data object. That helps:</p>
-<ol>
-<li class="">Quickly validate if that UUID is not made-up</li>
-<li class="">Match with UUIDs provided in test cases</li>
-<li class="">Save some output token: we look up data using the UUID, and the user sees the required data</li>
-</ol>
-<p>We went through several iterations to determine how to score LLM-provided search results against those we expect in test cases. The simplest is to set PASS if any UUID from a test case appears in a result. We tried to calculate a score based on how many results were returned vs. the number we expected. But that quickly becomes overhead, as it largely depends on interpretation.</p>
-<p>However, another eval notifies whether there are too many search results. For example, the LLM returned one result we expected from a test case (which is already PASSED) and 9 other results. We allow non-mentioned results to appear, as LLM might consider some related data valuable for the user. But 1 of 10 is too big a ratio, so it raises a warning for us to double-check.</p>
-<p><strong>In message evaluation</strong>, we went in a different direction from simplification to more complex criteria while using another LLM-as-judge. It is a de facto standard because human evaluation does not scale, and it is too difficult to do such a process by algorithms. Here we have three metrics:</p>
-<ul>
-<li class=""><strong>Accuracy</strong> - How accurate the message is to the initial user request</li>
-<li class=""><strong>Relevance</strong> - How relevant the message is to the returned search results</li>
-<li class=""><strong>Safety</strong> - Whether tone is formal, respectful, and not harmful</li>
-</ul>
-<p>All those are graded from 1 (the worst) to 5 (the best). All results below three do not pass.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="embracing-imperfection-the-non-deterministic-reality">Embracing Imperfection: The Non-Deterministic Reality<a href="https://ilyazakharau.com/blog/ai-evals-pm#embracing-imperfection-the-non-deterministic-reality" class="hash-link" aria-label="Direct link to Embracing Imperfection: The Non-Deterministic Reality" title="Direct link to Embracing Imperfection: The Non-Deterministic Reality" translate="no">​</a></h2>
-<p>Our approach, with three dozen cases and the custom evaluation we built, helps us with regression immensely. We can migrate to other LLMs and experiment with prompts, ensuring a required level of quality. Still, we have manual test cases as we haven't figured out how to automate some scenarios or postponed them as less relevant.</p>
-<p>We built rigorous test cases, and I spent hundreds of hours adjusting our prompts and driving implementation to achieve 100% success. After a few months, I gave up fighting, agreeing to loosen some of the cases and rebuild the evaluation criteria. The non-deterministic nature of the outcome made perfection unachievable.</p>
-<p>Out of 30 cases, three or four occasionally fail during test runs due to variations in LLM answers. On bad days, 30% may fail at some point due to LLM performance degradation for unknown reasons. The next day, everything works fine.</p>
-<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Paradigm Shift</div><div class="admonitionContent_BuS1"><p>The definition of quality as we knew from deterministic systems has gone. That drives me crazy, but I have to adapt as we all do.</p></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-this-became-a-pms-job">Why This Became a PM's Job<a href="https://ilyazakharau.com/blog/ai-evals-pm#why-this-became-a-pms-job" class="hash-link" aria-label="Direct link to Why This Became a PM's Job" title="Direct link to Why This Became a PM's Job" translate="no">​</a></h2>
-<p>I omit the cost question, but you must always keep it in mind. For LLM-as-judge, you can use a cheaper OSS model, but you still need to run cases and pay for tokens. Daily regressions might be too expensive for newer, more powerful LLMs.</p>
-<p>I have a joke: while trying to optimize token consumption by 10%, I ran so many regression tests that the ROI is now unachievable for years. There's truth in every joke. So take the cost aspect here seriously.</p>
-<p>In my decade-long career as a product person, I have never been so involved in defining evaluation criteria and testing. At some point, that was the only thing I was doing to make sure the AI search worked as expected.</p>
-<p>That is because a product manager has a deep knowledge of the product, its audience, and its requirements. That adds to deep involvement with context (as a <a href="https://ilyazakharau.com/blog/product-manager-to-context-dealer" target="_blank" rel="noopener noreferrer" class="">context dealer</a>) and prompt engineering. It put us in the middle of the storm, and while seeking a new definition of a product role, it is a great place to ensure customer value delivery.</p>
-<hr>
-<p><strong>What's your experience with AI evals? Have you faced similar challenges with non-deterministic outputs?</strong> Share your thoughts in the comments below or connect with me on <a href="https://linkedin.com/in/ilyazakharau" target="_blank" rel="noopener noreferrer" class="">LinkedIn</a>.</p>]]></content>
         <category label="Product Management" term="Product Management"/>
         <category label="AI" term="AI"/>
     </entry>
@@ -412,40 +83,6 @@
         <link href="https://ilyazakharau.com/blog/product-manager-to-context-dealer"/>
         <updated>2025-10-19T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The transformation of product management in the AI era - from writing BRDs to hunting for context and building POCs]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="AI-generated" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTIwMCA2MzAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPCEtLSBCYWNrZ3JvdW5kIGdyYWRpZW50IC0tPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJiZ0dyYWRpZW50IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzBmMTcyYTtzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMWUyOTNiO3N0b3Atb3BhY2l0eToxIiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIAogICAgPGxpbmVhckdyYWRpZW50IGlkPSJhY2NlbnRHcmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojM2I4MmY2O3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiM4YjVjZjY7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgCiAgICA8IS0tIEdsb3cgZWZmZWN0IC0tPgogICAgPGZpbHRlciBpZD0iZ2xvdyI+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjQiIHJlc3VsdD0iY29sb3JlZEJsdXIiLz4KICAgICAgPGZlTWVyZ2U+CiAgICAgICAgPGZlTWVyZ2VOb2RlIGluPSJjb2xvcmVkQmx1ciIvPgogICAgICAgIDxmZU1lcmdlTm9kZSBpbj0iU291cmNlR3JhcGhpYyIvPgogICAgICA8L2ZlTWVyZ2U+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgCiAgPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjMwIiBmaWxsPSJ1cmwoI2JnR3JhZGllbnQpIi8+CiAgCiAgPCEtLSBTY2F0dGVyZWQgZGF0YSBwb2ludHMgKHJlcHJlc2VudGluZyBmcmFnbWVudGVkIGluZm9ybWF0aW9uKSAtLT4KICA8ZyBvcGFjaXR5PSIwLjMiPgogICAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iMTAwIiByPSIzIiBmaWxsPSIjM2I4MmY2Ii8+CiAgICA8Y2lyY2xlIGN4PSIyODAiIGN5PSIxNTAiIHI9IjIiIGZpbGw9IiM4YjVjZjYiLz4KICAgIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjIwMCIgcj0iMi41IiBmaWxsPSIjM2I4MmY2Ii8+CiAgICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIyNTAiIHI9IjIiIGZpbGw9IiM4YjVjZjYiLz4KICAgIDxjaXJjbGUgY3g9IjMyMCIgY3k9IjI4MCIgcj0iMyIgZmlsbD0iIzNiODJmNiIvPgogICAgPGNpcmNsZSBjeD0iMTgwIiBjeT0iMzUwIiByPSIyIiBmaWxsPSIjOGI1Y2Y2Ii8+CiAgICA8Y2lyY2xlIGN4PSI5MCIgY3k9IjQyMCIgcj0iMi41IiBmaWxsPSIjM2I4MmY2Ii8+CiAgICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSI0ODAiIHI9IjIiIGZpbGw9IiM4YjVjZjYiLz4KICAgIAogICAgPGNpcmNsZSBjeD0iOTUwIiBjeT0iMTIwIiByPSIyLjUiIGZpbGw9IiMzYjgyZjYiLz4KICAgIDxjaXJjbGUgY3g9IjEwODAiIGN5PSIxODAiIHI9IjIiIGZpbGw9IiM4YjVjZjYiLz4KICAgIDxjaXJjbGUgY3g9IjEwMjAiIGN5PSIyNDAiIHI9IjMiIGZpbGw9IiMzYjgyZjYiLz4KICAgIDxjaXJjbGUgY3g9IjExMjAiIGN5PSIzMDAiIHI9IjIiIGZpbGw9IiM4YjVjZjYiLz4KICAgIDxjaXJjbGUgY3g9Ijk3MCIgY3k9IjM4MCIgcj0iMi41IiBmaWxsPSIjM2I4MmY2Ii8+CiAgICA8Y2lyY2xlIGN4PSIxMTAwIiBjeT0iNDUwIiByPSIyIiBmaWxsPSIjOGI1Y2Y2Ii8+CiAgICA8Y2lyY2xlIGN4PSIxMDUwIiBjeT0iNTIwIiByPSIzIiBmaWxsPSIjM2I4MmY2Ii8+CiAgPC9nPgogIAogIDwhLS0gQ29ubmVjdGlvbiBsaW5lcyBmbG93aW5nIHRvIGNlbnRlciAocmVwcmVzZW50aW5nIGNvbnRleHQgZ2F0aGVyaW5nKSAtLT4KICA8ZyBvcGFjaXR5PSIwLjIiIHN0cm9rZT0idXJsKCNhY2NlbnRHcmFkaWVudCkiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIj4KICAgIDxwYXRoIGQ9Ik0gMTUwIDEwMCBRIDMwMCAyMDAgNTAwIDMxNSIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1Ij4KICAgICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0ic3Ryb2tlLWRhc2hvZmZzZXQiIGZyb209IjAiIHRvPSIxMCIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz4KICAgIDwvcGF0aD4KICAgIDxwYXRoIGQ9Ik0gMjgwIDE1MCBRIDQwMCAyMjAgNTAwIDMxNSIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1Ij4KICAgICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0ic3Ryb2tlLWRhc2hvZmZzZXQiIGZyb209IjAiIHRvPSIxMCIgZHVyPSIxLjJzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPgogICAgPC9wYXRoPgogICAgPHBhdGggZD0iTSAxMDAgMjUwIFEgMzAwIDI4MCA1MDAgMzE1IiBzdHJva2UtZGFzaGFycmF5PSI1LDUiPgogICAgICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJzdHJva2UtZGFzaG9mZnNldCIgZnJvbT0iMCIgdG89IjEwIiBkdXI9IjAuOXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+CiAgICA8L3BhdGg+CiAgICA8cGF0aCBkPSJNIDE4MCAzNTAgUSAzNTAgMzMwIDUwMCAzMTUiIHN0cm9rZS1kYXNoYXJyYXk9IjUsNSI+CiAgICAgIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9InN0cm9rZS1kYXNob2Zmc2V0IiBmcm9tPSIwIiB0bz0iMTAiIGR1cj0iMS4xcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz4KICAgIDwvcGF0aD4KICAgIAogICAgPHBhdGggZD0iTSA5NTAgMTIwIFEgNzUwIDIwMCA3MDAgMzE1IiBzdHJva2UtZGFzaGFycmF5PSI1LDUiPgogICAgICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJzdHJva2UtZGFzaG9mZnNldCIgZnJvbT0iMCIgdG89IjEwIiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPgogICAgPC9wYXRoPgogICAgPHBhdGggZD0iTSAxMDgwIDE4MCBRIDkwMCAyNDAgNzAwIDMxNSIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1Ij4KICAgICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0ic3Ryb2tlLWRhc2hvZmZzZXQiIGZyb209IjAiIHRvPSIxMCIgZHVyPSIxLjNzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPgogICAgPC9wYXRoPgogICAgPHBhdGggZD0iTSAxMDIwIDI0MCBRIDg1MCAyODAgNzAwIDMxNSIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1Ij4KICAgICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0ic3Ryb2tlLWRhc2hvZmZzZXQiIGZyb209IjAiIHRvPSIxMCIgZHVyPSIwLjk1cyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz4KICAgIDwvcGF0aD4KICAgIDxwYXRoIGQ9Ik0gOTcwIDM4MCBRIDgyMCAzNTAgNzAwIDMxNSIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1Ij4KICAgICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0ic3Ryb2tlLWRhc2hvZmZzZXQiIGZyb209IjAiIHRvPSIxMCIgZHVyPSIxLjE1cyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz4KICAgIDwvcGF0aD4KICA8L2c+CiAgCiAgPCEtLSBDZW50cmFsIG5vZGUgKHRoZSBDb250ZXh0IERlYWxlcikgLS0+CiAgPGcgZmlsdGVyPSJ1cmwoI2dsb3cpIj4KICAgIDxjaXJjbGUgY3g9IjYwMCIgY3k9IjMxNSIgcj0iODAiIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNhY2NlbnRHcmFkaWVudCkiIHN0cm9rZS13aWR0aD0iMyIgb3BhY2l0eT0iMC42Ii8+CiAgICA8Y2lyY2xlIGN4PSI2MDAiIGN5PSIzMTUiIHI9IjYwIiBmaWxsPSJub25lIiBzdHJva2U9InVybCgjYWNjZW50R3JhZGllbnQpIiBzdHJva2Utd2lkdGg9IjIiIG9wYWNpdHk9IjAuNCI+CiAgICAgIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9InIiIHZhbHVlcz0iNjA7NjU7NjAiIGR1cj0iMnMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+CiAgICA8L2NpcmNsZT4KICAgIDxjaXJjbGUgY3g9IjYwMCIgY3k9IjMxNSIgcj0iNDAiIGZpbGw9InVybCgjYWNjZW50R3JhZGllbnQpIiBvcGFjaXR5PSIwLjgiLz4KICAgIAogICAgPCEtLSBJY29uIHJlcHJlc2VudGF0aW9uIC0gc2ltcGxpZmllZCBicmFpbi9uZXR3b3JrIGh5YnJpZCAtLT4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYwMCwgMzE1KSIgZmlsbD0iI2ZmZmZmZiI+CiAgICAgIDxjaXJjbGUgY3g9Ii0xNSIgY3k9Ii0xMCIgcj0iNSIvPgogICAgICA8Y2lyY2xlIGN4PSIxNSIgY3k9Ii0xMCIgcj0iNSIvPgogICAgICA8Y2lyY2xlIGN4PSItMTUiIGN5PSIxMCIgcj0iNSIvPgogICAgICA8Y2lyY2xlIGN4PSIxNSIgY3k9IjEwIiByPSI1Ii8+CiAgICAgIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSI2Ii8+CiAgICAgIDxsaW5lIHgxPSItMTUiIHkxPSItMTAiIHgyPSIwIiB5Mj0iMCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgICAgPGxpbmUgeDE9IjE1IiB5MT0iLTEwIiB4Mj0iMCIgeTI9IjAiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICAgIDxsaW5lIHgxPSItMTUiIHkxPSIxMCIgeDI9IjAiIHkyPSIwIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgICA8bGluZSB4MT0iMTUiIHkxPSIxMCIgeDI9IjAiIHkyPSIwIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPC9nPgogIDwvZz4KICAKICA8IS0tIFRpdGxlIC0tPgogIDx0ZXh0IHg9IjYwMCIgeT0iNDgwIiBmb250LWZhbWlseT0iJ0ludGVyJywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjUyIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4KICAgIEZyb20gUHJvZHVjdCBNYW5hZ2VyCiAgPC90ZXh0PgogIDx0ZXh0IHg9IjYwMCIgeT0iNTQwIiBmb250LWZhbWlseT0iJ0ludGVyJywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjUyIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ1cmwoI2FjY2VudEdyYWRpZW50KSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+CiAgICB0byBDb250ZXh0IERlYWxlcgogIDwvdGV4dD4KICAKICA8IS0tIFN1YnRpdGxlIC0tPgogIDx0ZXh0IHg9IjYwMCIgeT0iNTg1IiBmb250LWZhbWlseT0iJ0ludGVyJywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIwIiBmaWxsPSIjOTRhM2I4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjgiPgogICAgSG93IEFJIFRyYW5zZm9ybWVkIE15IFJvbGUKICA8L3RleHQ+CiAgCiAgPCEtLSBEZWNvcmF0aXZlIGNvZGUgYnJhY2tldHMgLS0+CiAgPHRleHQgeD0iNTAiIHk9IjgwIiBmb250LWZhbWlseT0iJ0pldEJyYWlucyBNb25vJywgJ0NvdXJpZXIgTmV3JywgbW9ub3NwYWNlIiBmb250LXNpemU9IjQ4IiBmaWxsPSIjM2I4MmY2IiBvcGFjaXR5PSIwLjMiIGZvbnQtd2VpZ2h0PSIzMDAiPns8L3RleHQ+CiAgPHRleHQgeD0iMTEzMCIgeT0iNTgwIiBmb250LWZhbWlseT0iJ0pldEJyYWlucyBNb25vJywgJ0NvdXJpZXIgTmV3JywgbW9ub3NwYWNlIiBmb250LXNpemU9IjQ4IiBmaWxsPSIjOGI1Y2Y2IiBvcGFjaXR5PSIwLjMiIGZvbnQtd2VpZ2h0PSIzMDAiPn08L3RleHQ+Cjwvc3ZnPg==" width="1200" height="630" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="introduction-the-shift-in-my-pm-role">Introduction: The Shift in My PM Role<a href="https://ilyazakharau.com/blog/product-manager-to-context-dealer#introduction-the-shift-in-my-pm-role" class="hash-link" aria-label="Direct link to Introduction: The Shift in My PM Role" title="Direct link to Introduction: The Shift in My PM Role" translate="no">​</a></h2>
-<p>As a Product manager, I am building proofs-of-concept (POC) and constantly hunting for context.</p>
-<p>That's what my role is about now. I am reluctant to create roadmaps, write any required documents, and manage the backlog in Jira.</p>
-<p>Previously, writing those requirements docs, sitting on mockups to ensure they matched the requirements, writing user stories, and many other related tasks were part of the creative process.</p>
-<p>I enjoyed that. That was a reason I kept going in my craft for now more than a decade: from an L1 support engineer to a Senior product manager.</p>
-<p>Now I am looking and constructing something that a "team can build in the near future." Everything else stepped aside. I don't enjoy it anymore.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="from-jira-to-ides-my-daily-weapons">From Jira to IDEs: My Daily Weapons<a href="https://ilyazakharau.com/blog/product-manager-to-context-dealer#from-jira-to-ides-my-daily-weapons" class="hash-link" aria-label="Direct link to From Jira to IDEs: My Daily Weapons" title="Direct link to From Jira to IDEs: My Daily Weapons" translate="no">​</a></h2>
-<p>My PM toolkit is a bunch of IDEs (VS Code, IntelliJ IDEA, Cursor, etc.) with multiple AI-related plugins like Claude Code and Continue. Bruno is used for API calls, Bedrock, Ollama, a bunch of MCP servers run locally, and a bunch of custom internal tooling.</p>
-<p>And now I don't like being dragged out of it, doing traditional PM stuff.</p>
-<p>Recently, I was procrastinating on writing another BRD. Instead of writing, I spent a week trying to find Context and use it to build a new feature.</p>
-<p>Only after that did I approach the BRD generation with an LLM, recognizing that I needed to communicate my idea to stakeholders in a formal way. The outcome was not great, but good enough to share with the others.</p>
-<p>Really, I don't want to spend much time on that. I focused on extracting values from various ideas and seeking the Context to make that happen.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-it-means-to-deal-in-context">What It Means to Deal in Context<a href="https://ilyazakharau.com/blog/product-manager-to-context-dealer#what-it-means-to-deal-in-context" class="hash-link" aria-label="Direct link to What It Means to Deal in Context" title="Direct link to What It Means to Deal in Context" translate="no">​</a></h2>
-<p>I can call myself a Context Dealer.</p>
-<p>It's someone who tries to locate disintegrated pieces of information spread across various systems and enterprise units and transform them into a valuable Context. So we can use that Context to improve our AI capabilities.</p>
-<p>You need to approach those who own that data, ensure its quality, format, and maintainability. Data is the King: I don't want to feed my AI Agent with messy and unreliable Context.</p>
-<p>I am less concerned with writing code and prompts. My two primary concerns are operational costs (read my <a href="https://ilyazakharau.com/blog/ai-poc-to-mvp" target="_blank" rel="noopener noreferrer" class="">previous article</a> about that) and quality user experience, which the right LLM, a well-written prompt, and precise Context can achieve.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="building-relationships-and-managing-data-flows">Building Relationships and Managing Data Flows<a href="https://ilyazakharau.com/blog/product-manager-to-context-dealer#building-relationships-and-managing-data-flows" class="hash-link" aria-label="Direct link to Building Relationships and Managing Data Flows" title="Direct link to Building Relationships and Managing Data Flows" translate="no">​</a></h2>
-<p>Extracting is about building relationships with data providers (making deals), leading to a new data governance process. Sometimes it is about data analysis and mapping.</p>
-<p>At first, it seems easy, as there are a lot of low-hanging fruits around. But very soon you start to realize gaps such as non-documented pieces of knowledge, ill-written docs, incorrect, incomplete, outdated, or absent data.</p>
-<p>The absence of data is better than incorrect data. Because first, you are aware you lack some data. For the latter, you might not be aware.</p>
-<p>Gathering new data is a demanding and time-consuming process. AI tools can help there: you can blend results from several MCPs and generate the desired outcome. But I don't need to explain the risks of AI-synthesized data.</p>
-<p>When you have gathered, processed, and utilized the data, you can pass it further to leverage it in other AI agents. It is like a flow of streams that emerged into a vast river. And as a Context Dealer, you are in charge of your data flows from which you can benefit.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="giving-old-ideas-new-life-with-ai">Giving Old Ideas New Life with AI<a href="https://ilyazakharau.com/blog/product-manager-to-context-dealer#giving-old-ideas-new-life-with-ai" class="hash-link" aria-label="Direct link to Giving Old Ideas New Life with AI" title="Direct link to Giving Old Ideas New Life with AI" translate="no">​</a></h2>
-<p>Every PM has a graveyard of features and opportunities that have never seen the light because of various reasons. I am reviewing never-implemented BRDs, postponed and cancelled Jira tickets, and notes to seek what we can potentially revive in that New Brave AI World.</p>
-<p>Something became irrelevant from a business perspective, something is not relevant because of AI itself. But there are some old-forgotten gems, and when you rediscover them, the first thought is: "We can give it another try".</p>
-<p>You can vibecode a POC by yourself, and test whether it is feasible and does the job as intended. Then you go to your Team and closest stakeholders to align with them. If there is a consensus, then comes BRD and other procedures to communicate with the senior stakeholders and a broader business audience.</p>
-<p>It is cheaper and more effective. I like that so much rather than writing another BRD and a bunch of user stories. Now, a POC is an outcome of my PM work, not just docs and mockups.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="vanguard-of-a-changing-profession">Vanguard of a Changing Profession<a href="https://ilyazakharau.com/blog/product-manager-to-context-dealer#vanguard-of-a-changing-profession" class="hash-link" aria-label="Direct link to Vanguard of a Changing Profession" title="Direct link to Vanguard of a Changing Profession" translate="no">​</a></h2>
-<p>We all heard from every corner that product management has changed. As contemporaries, we may not realize the full scale of that change at the moment. We need some time, maybe a few years, to understand and process what has been shifted and how persistent those implications are.</p>
-<p>A Python course I took in 2015 and my involvement with APIs for the last half of a decade put me in a beneficial position. There is a slogan that PMs need to become technical or go extinct. My career was quite unconventional, but now, as the environment has transformed, I am in the right place and time.</p>
-<p>Context Dealer is a good metaphor for how I feel in my position right now. Another metaphor: I'm like the vanguard of a giant army: riding ahead to scout the land, secure supplies, and clear the path forward. Not someone who is just looking at and drawing the path through the maps in a general's office.</p>
-<p>How do you feel about those changes?</p>]]></content>
         <category label="Product Management" term="Product Management"/>
         <category label="AI" term="AI"/>
     </entry>
@@ -455,82 +92,6 @@
         <link href="https://ilyazakharau.com/blog/ai-poc-to-mvp"/>
         <updated>2025-10-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[A PM's experience designing AI-based capabilities from proof-of-concept to MVP, covering model selection, testing, prompt engineering, and managing the unpredictable nature of LLMs.]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="AI-generated" src="https://ilyazakharau.com/assets/images/ai-poc-to-mvp-82268a625ae5fb5bf2903b5b851ed60f.png" width="1660" height="960" class="img_ev3q"></p>
-<p>This article is a summary of my PM experience on designing an artificial intelligence (AI)-based capability for an existing product from the proof-of-concept (POC) stage to a minimal viable product (MVP).</p>
-<p>When you are adding an AI feature to an existing product, you can either:</p>
-<ul>
-<li class="">introduce an entirely new functionality</li>
-<li class="">extend existing functionality with AI possibilities.</li>
-</ul>
-<p>In my case, the latter is true: we aim to introduce AI search to enhance user experience. It sounds pretty trivial, I acknowledge that. The challenge is that search is the critical functionality for that product.</p>
-<p>Therefore, we need to introduce a new search method to provide users with more value than the existing one. If AI search works "just good enough," then a traditional one could be considered a failure.</p>
-<p>The improvement must be substantial, because of …</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-price">The Price<a href="https://ilyazakharau.com/blog/ai-poc-to-mvp#the-price" class="hash-link" aria-label="Direct link to The Price" title="Direct link to The Price" translate="no">​</a></h2>
-<p>Product managers who previously worked on products that are primarily based on third-party integrations consider API costs for services like Google Maps and other providers as a key variable. Now, with the advent of AI, the rest of the PM world has become familiar with this concept.</p>
-<p>An existing, mature functionality has a low maintenance cost. Introducing the new method of utilizing it with AI, adding permanent costs for accessing Large Language Models (LLMs, further just referenced as Model). Whether your organization has its own infrastructure or uses an external provider, such as AWS or Azure, there are still costs to pay.</p>
-<p>In my case, I can't charge users an additional fee to cover AI costs. The only justification would be that users become more efficient with AI search, thereby increasing productivity and decreasing their time-to-market with our core system.</p>
-<p>That means that the value delivered by AI must exceed the costs. In my case, value is difficult to measure, especially from the beginning. My job is to keep AI costs as low as possible while still delivering value to justify those costs and "overcome" the existing functionality.</p>
-<p>That leads us…</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="model-selection">Model Selection<a href="https://ilyazakharau.com/blog/ai-poc-to-mvp#model-selection" class="hash-link" aria-label="Direct link to Model Selection" title="Direct link to Model Selection" translate="no">​</a></h2>
-<p>The irony here is that you need to select a model first, but you don't know whether it is the best and cost-efficient solution. Relying on benchmarks helps to make the first choice.</p>
-<p>There is a natural inclination to consider open-source LLMs. It is easy to kick off with building a POC and following an MVP.</p>
-<p>A question you should keep in mind: «How do we go with that Model to production?". Having on-premise infrastructure within your organization requires not only purchasing and maintenance costs, but also expertise to support and scale it effectively. A cloud provider with an OSS model might be a better choice for the start.</p>
-<p>Paid LLMs are generally better than their OSS counterparts, even though we are seeing the closing of the gap. A year ago, Llama 3.1 was not performing well with structured data, such as JSON (although texts in PDF were fine). Newer releases have improved much.</p>
-<p>Also, a year ago, there was a concern about a context window (i.e., how many tokens can be consumed). Now it is a lesser problem with 200K and more tokens for popular models.</p>
-<p>So my strategy is to proceed with paid, but on the older version of an LLM from a cloud provider. I get a cheaper price for the API, along with good performance and stability. However, I am constantly seeking alternatives for lower costs.</p>
-<p>LLMs become cheaper, and their older versions become increasingly affordable. I believe that it won't last forever, and prices will eventually rise. The task is to avoid vendor lock and be flexible enough to switch the models easily.</p>
-<p>To achieve that, you need…</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="testing">Testing<a href="https://ilyazakharau.com/blog/ai-poc-to-mvp#testing" class="hash-link" aria-label="Direct link to Testing" title="Direct link to Testing" translate="no">​</a></h2>
-<p>The main lesson I learned from the last 6 months: you need to think about testing long before you deliver the first pieces of AI functionality. We've built the initial capabilities and then thought about how we're going to test it.</p>
-<p>With a few attempts, I vibe-coded a thing I called "evaluation framework," allowing me to run a conversation with LLM and then estimate its response with another LLM using some subjective metric. That was a clunky solution, which was re-vibecoded into a more solid solution.</p>
-<p>Also, the guys asked me not to call it a framework, but I insisted that 'framework' is a good name for something we are not sure how to entitle. Just call any unknown and doubtful stuff a "framework" and people will love it.</p>
-<p>Now we have a tool that allows us to test cases across various models and come with their response evaluation. I would rather have such a solution when we started, as we might save much time on prompt engineering and model switching.</p>
-<p>You might have a question about why we build our own…</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tooling">Tooling<a href="https://ilyazakharau.com/blog/ai-poc-to-mvp#tooling" class="hash-link" aria-label="Direct link to Tooling" title="Direct link to Tooling" translate="no">​</a></h2>
-<p>Where there is gold digging, there are people who sell shovels. And sometimes a shovel can cost like gold. There is so much AI tooling that I would need another full-time job to keep up with every tool in the market.</p>
-<p>We proceed with building our tools because:</p>
-<ul>
-<li class="">Free tools are mostly (raw) shit</li>
-<li class="">We weren't sure about the paid tooling not being expensive shit</li>
-<li class="">In an enterprise, it takes time to onboard a new vendor. And we had a tight timeline.</li>
-<li class="">We can vibecode what we need pretty quickly.</li>
-</ul>
-<p>We have built the previously mentioned evaluation framework and admin tool to manage prompts and configure models for various workflows. Those are internal tools we are not going to share outside the Team. This is an excellent case where vibecoding helps us increase productivity in line with our specific requirements and vision.</p>
-<p>That all started with a question about how we would manage…</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="prompts">Prompts<a href="https://ilyazakharau.com/blog/ai-poc-to-mvp#prompts" class="hash-link" aria-label="Direct link to Prompts" title="Direct link to Prompts" translate="no">​</a></h2>
-<p>Prompt engineering (and a broader term, "context engineering") is a game-changer in how we approach the development process. We kind of separated good-old development and writing prompts.</p>
-<p>This is how our team dynamics works:</p>
-<ul>
-<li class="">1 Dev is working on UI</li>
-<li class="">1 Dev is building a backend around LLM</li>
-<li class="">1 BA is working on requirements and prompts</li>
-<li class="">1 QA to test the outcome</li>
-<li class="">1 me as PM doing various stuff (that is a topic for another article)</li>
-</ul>
-<p>For us, it wouldn't be possible to fix everything with prompts, so we were developing a logic to help "guide" our workflow through various tools or sub-agents. We added writing prompts as a Definition-of-Done. That caused multiple situations that development has been ready for some time, but we are stuck writing "the right" prompt to proceed with testing.</p>
-<p>Sometimes changes in prompts broke already working test cases. Prompts tend to become bigger and unmanageable. Many times, we were stuck, wondering why things stopped working after changes in another unrelated part of the prompt. We went back and forth, trying various techniques, approaches, models, and even architectures.</p>
-<p>That made estimation difficult. Initially, we stopped providing estimates in story points, and after some time, we initiated development. We were learning Spring AI, how to build the chatbot UX from scratch, how to write prompts, how to test, and how to manage all that.</p>
-<p>We ended up estimating the "dev" part only, excluding the "prompt" part from any estimation, but time-framed within a sprint.</p>
-<p>The precise scope of MVP helped us to stay on track. We were confident that we could do that, and our approach, with a relaxed process, paid off.</p>
-<p>We end up with "Divide and conquer": many precise pieces of prompts tied to the steps of the workflow and some tools. From the outside, such prompt management might seem complicated, but that gives us a glimpse of control of the…</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="black-box">Black box&nbsp;<a href="https://ilyazakharau.com/blog/ai-poc-to-mvp#black-box" class="hash-link" aria-label="Direct link to Black box&nbsp;" title="Direct link to Black box&nbsp;" translate="no">​</a></h2>
-<p>At the moment of the greatest despair, you should remember that it is an undeterministic thing outside your complete control. That is another game-changer all team members need to adapt to.</p>
-<p>There are good days when a selected LLM performs, and there are bad days. Bad days are usually those when you need to demo your AI feature.</p>
-<p>The outcome is not always consistent. That is the price we pay. There are techniques to achieve more consistent results, but they increase the price, as you need to call the LLM several times and compare the results (probably using another LLM).</p>
-<p>Sometimes, that black box surprises you with use cases you did not initially anticipate. You might sound like a classic "scope creep". And it is more tempting because the price of the "non-documented" feature is a few new lines in the system prompt.</p>
-<p>This is where a product vision is required, so everything stays on track.</p>
-<p>And the right data in your context is the most important. While developing our AI search, "Prompt engineering" was considered no longer relevant alone, and the newly emerging "Context engineering" has come to attention.</p>
-<p>It is the whole topic itself. My point here is that you need to prepare (preprocess) the structured data you want to utilize to decrease noise, which could mislead the LLM.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="summary">Summary<a href="https://ilyazakharau.com/blog/ai-poc-to-mvp#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary" translate="no">​</a></h2>
-<p>Here is a summary of what I am trying to share with you:</p>
-<ol>
-<li class="">Cheaper but good-enough LLM is a better long-term choice.</li>
-<li class="">Be ready to change LLMs frequently.</li>
-<li class="">Start thinking about testing from the start.</li>
-<li class="">Relax the processes while you are learning.</li>
-<li class="">Context is the king: it is still the same good-old "trash in - trash out".</li>
-<li class="">Don't invent your own chatbot UX. I didn't mention it before, but beware: use existing UI frameworks. Designing chatbots is not as straightforward as it may seem.</li>
-</ol>]]></content>
         <category label="Product Management" term="Product Management"/>
         <category label="AI" term="AI"/>
     </entry>
@@ -540,42 +101,6 @@
         <link href="https://ilyazakharau.com/blog/product-management-noise"/>
         <updated>2025-08-20T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Exploring the challenges product managers face as they advance: dealing with increasing noise, endless conversations, and distance from implementation details.]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="AI-generated title image" src="https://ilyazakharau.com/assets/images/product-management-noise-277ee71a8ed95e72182717495bfcf80d.png" width="1624" height="1036" class="img_ev3q"></p>
-<p>The higher you climb the product manager ladder, the more noise gathers around you.</p>
-<p>You hear multiple ideas and suggestions for improvements from various people. And that doesn't make much sense in the current picture. It would be nice to do in an ideal world, but we are too far from that.</p>
-<p>There is a tendency for companies to lay off people but don't cut down their expectations, trying to operate as if nothing had happened and the business goes as usual.</p>
-<p>They likely hope for AI to resolve that inconsistency between dreams and reality. But that is a gamble at the moment. It might pay off for some, but hurt others.</p>
-<p>The level of noise also depends on the area you are working in. In the API realm, very few people in an organization have the necessary competency. Or can admit they know something about API design.</p>
-<p>Plus API changes are a complex and stressful process. So, usually everyone tries to keep the status quo without asking to rebuild something because they have a different view on that.</p>
-<p>After moving to the UI realm, I quickly realized that I was surrounded by many experts. They are willing to share their ideas with me about how everything should work and look like. How lucky I am as a PO, you might think (a bit of irony there).</p>
-<p>UI is very subjective compared to API, even though we are talking about interfaces. We interact with it daily, bringing with us some expectations and biases. In particular, stakeholders (or just random people in an org) often attempt to introduce practices from B2C apps into B2B enterprises.</p>
-<p>B2B enterprise software should not be ugly (in most cases it is ugly as hell). However, there should be a clear line between the incredible user experience of swiping through content and the frustration of dealing with boring tables and unbearable filtering options.</p>
-<p>That is just an example.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="endless-conversations">Endless Conversations<a href="https://ilyazakharau.com/blog/product-management-noise#endless-conversations" class="hash-link" aria-label="Direct link to Endless Conversations" title="Direct link to Endless Conversations" translate="no">​</a></h2>
-<p>The higher you climb, the more conversations you've been dragged into. At some point, you ask yourself, "What the heck am I doing on that call?"</p>
-<p>There are plenty of abstract conversations that appear from nothing and go nowhere. Sometimes they re-appear to make a full circle again.</p>
-<p>It's about initiatives that are good to implement, but not to prioritize over others. It's kind of nice to have if you have enough resources (which you don't obviously).</p>
-<p>Such initiatives have their advocates, but no one wants to commit. Everyone agrees it would be good to make it happen. Fast forward to the next year's roadmap planning, and here we go again.</p>
-<p>The worst kind is half-done-but-abandoned initiatives. They keep re-appearing, and no one has the political will to kill that thing or admit that it went wrong. But most likely it would be dragged further until totally forgotten (and then re-animated again).</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="distance-from-implementation">Distance from Implementation<a href="https://ilyazakharau.com/blog/product-management-noise#distance-from-implementation" class="hash-link" aria-label="Direct link to Distance from Implementation" title="Direct link to Distance from Implementation" translate="no">​</a></h2>
-<p>The further you climb, the further you are from the implementation detail. When I was on a backlog refinement call with a team the same question: "what I am doing there?"</p>
-<p>The guys do a great job, they discuss tasks in such detail. Sometimes I ask a few clarification questions, address some high-level concerns, and that is it.</p>
-<p>I trust my team, but also I don't want them to feel abandoned. They need a figure to validate assumptions and provide direction and vision.</p>
-<p>When I skip a retro, I feel like I am betraying the team with whom I've been working for many years. At the same time, while feeling guilty, I know they are a mature product team who can handle themselves and reach out to me if my contribution is required.</p>
-<p>I need to let it go and learn how to delegate to cut the noise.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="managing-the-noise">Managing the Noise<a href="https://ilyazakharau.com/blog/product-management-noise#managing-the-noise" class="hash-link" aria-label="Direct link to Managing the Noise" title="Direct link to Managing the Noise" translate="no">​</a></h2>
-<p>The noise distracts you from important things.</p>
-<p>You can't get rid of it completely. You can't ignore it, as it can bring some insights.</p>
-<p>First, you need to define what the noise is in your PO or PM job. To do that, you must understand your priorities. Without knowing your priorities, everything around becomes a loud noise.</p>
-<p>Second, you need to stop feeling sorry if you intentionally skip some conversations. Some meetings might be valuable to attend, but they are unlikely to give you something to achieve your current priorities. Just a distraction.</p>
-<p>So we get to the importance of saying No. Again, you can't say no to everything, but you must be very selective.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="practical-solutions">Practical Solutions<a href="https://ilyazakharau.com/blog/product-management-noise#practical-solutions" class="hash-link" aria-label="Direct link to Practical Solutions" title="Direct link to Practical Solutions" translate="no">​</a></h2>
-<p>To master the noise, start talking with people individually rather than in groups. I found that it gives a lot more insight than having a group chat.</p>
-<p>That might sound counterintuitive: having 5 people on a call in an hour seems more straightforward than talking to each person separately. But the trick is that you don't need to speak with all of them. There are one or two key persons who you really need. And one-on-one, if you know how to plan the conversation, they are very productive.</p>
-<p>You can't avoid group calls, but you must be sure they are facilitated. I expect an organizer to facilitate a call, but you might need to step up.</p>
-<p>If you don't see an agenda for an upcoming call, it is a good point to apologize and skip it.</p>
-<p>If I feel I am not needed on a call and I can't contribute there, I apologize and leave. You feel guilt for missing something at the start, but then there is a relief, believe me.</p>
-<p>Document every outcome. If someone raises a previously abandoned topic again, send all the relevant materials to study, and then schedule a follow-up discussion.</p>]]></content>
         <category label="Product Management" term="Product Management"/>
     </entry>
     <entry>
@@ -584,46 +109,6 @@
         <link href="https://ilyazakharau.com/blog/systemic-problems-career-risk"/>
         <updated>2025-07-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[How AI is enabling sub-optimization and making systemic problem-solving a career risk in today's employment market]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="AI-generated" src="https://ilyazakharau.com/assets/images/systemic-problems-career-0579c911933c50c40926443ad5a5dec9.png" width="785" height="385" class="img_ev3q"></p>
-<p>There are complex issues at many organizational and technical layers, whose resolution requires considerable planning and cross-team effort. Individuals who possess the ability to resolve such matters must be valuable to an organization.</p>
-<p>However, with recent changes in the employment market and the rise of AI, that is no longer relevant to you personally. Let me explain what I mean here.</p>
-<hr>
-<p>Regarding the range of problems we are trying to solve, whether we are discussing a product, product portfolio, or the organization as a whole, there is a spectrum from low-hanging fruit to systemic problems.</p>
-<p>First are those that can be resolved relatively easily. That usually appears as an insight and results in a quick fix or new feature in one place. A benefit here is evident and immediate.</p>
-<p>System issues are related to a specific system or a set of components in a system. Systemic issues spread across several systems. That requires a broader perspective to define the problem itself. Sometimes (almost always) it is a complicated matter.</p>
-<p>After defining the problem, achieving a resolution requires changes across various systems related to the system of interest. The knowledge of how those system behaves is a must. Gaining that knowledge is about building the right expertise.</p>
-<p>Then, coordinating and resolving the issue at different levels requires considerable dedication, effort, and time. Attempting to solve a systemic issue only at one layer is a sub-optimization and may lead to unforeseen consequences, ultimately worsening the problem.</p>
-<hr>
-<p>Recently, I have had such a situation (I'll try to be quite abstract to avoid sharing the details):</p>
-<p>There is an issue across all business domains in the organization that has existed for a long time due to a lack of an engineering culture. Let's call it a tech debt. Resolving this requires determination and cross-team coordination.</p>
-<p>A few years ago, I identified a root cause, prepared guidelines, and started communicating with each party to resolve the issue. The issue doesn't impact my layer of responsibility. I am only interested in that because resolving that issue will indirectly improve the user experience of one of my products.</p>
-<p>All parties have acknowledged that this issue is important. However, due to the existing debt lasting for so long, limited capacity, and other business-critical priorities, progress has been limited in general. As a product manager, I can't dictate to other business areas what to do. Be honest, I don't have any executive power to dictate anything to anyone, as most PMs do.</p>
-<p>All those years, it was about begging other product and engineering managers, sometimes architects, and team leads, during common planning sessions to plan some work on resolving the issue. Some areas made good progress. However, as mentioned, it does not alter the entire picture.</p>
-<p>Rewinding to now, the brave new AI age.</p>
-<p>I can resolve the user experience issue at the product level with the help of AI. Not an ideal solution, but it works within my scope and doesn't involve cross-area dependencies. That tech debt will continue to exist, but that would no longer be my problem. And my users will be happy. Good deal if you ask me.</p>
-<p>I met resistance to that idea because of the very reason that we are not addressing the underlying systemic issue across the organization. So the idea has been parked.</p>
-<p>I was mad about it. However, that led me to certain conclusions I want to share with you.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-some-chronic-systemic-issues-may-never-be-fully-resolved">1) Some chronic systemic issues may never be fully resolved.<a href="https://ilyazakharau.com/blog/systemic-problems-career-risk#1-some-chronic-systemic-issues-may-never-be-fully-resolved" class="hash-link" aria-label="Direct link to 1) Some chronic systemic issues may never be fully resolved." title="Direct link to 1) Some chronic systemic issues may never be fully resolved." translate="no">​</a></h2>
-<p>If it falls into the quadrant of valuable-but-not-critical things, which require many resources and cross-area coordination, then welcome to the realm of Limbo.</p>
-<p>There will always be higher priorities and a shortage of people to do the needed, but not so critical, work right now.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-considering-the-current-job-market-it-may-not-be-worth-chasing">2) Considering the current job market, it may not be worth chasing.<a href="https://ilyazakharau.com/blog/systemic-problems-career-risk#2-considering-the-current-job-market-it-may-not-be-worth-chasing" class="hash-link" aria-label="Direct link to 2) Considering the current job market, it may not be worth chasing." title="Direct link to 2) Considering the current job market, it may not be worth chasing." translate="no">​</a></h2>
-<p>Nowadays, there is no such thing as long-term or even mid-term planning at your job. You might be fired at any point in time, despite how good you are.</p>
-<p>Instinctively, we feel that we need to prove ourselves as irreplaceable. And those complex limbo problems do not seem to be the right path to deliver consistent, visible results.</p>
-<p>The progress there is non-linear. So, the employee's logic here is: why do I need to do something so long-term with a postponed benefit, as I can be sacked at any moment?</p>
-<p>Someone else will take credit for your hard and dedicated work (if that resolution ever happens, of course). You can't add it to your CV as an "I tried so hard" item.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-ai-makes-sub-optimization-easier-and-more-likely">3) AI makes sub-optimization easier and more likely<a href="https://ilyazakharau.com/blog/systemic-problems-career-risk#3-ai-makes-sub-optimization-easier-and-more-likely" class="hash-link" aria-label="Direct link to 3) AI makes sub-optimization easier and more likely" title="Direct link to 3) AI makes sub-optimization easier and more likely" translate="no">​</a></h2>
-<p>With LLM capabilities, we have a significant yet unstable tooling that can help us resolve issues more quickly than we previously considered. It is natural to start applying it in areas not currently considered a priority to achieve fast results.</p>
-<p>However, AI is not capable of immediately resolving cross-system problems. Even though it could provide great assistance that we did not have before.</p>
-<p>Thus, utilizing it under the pressure of quick results without careful consideration and delegating much to AI could have a negative outcome.</p>
-<p>I admit that in the example I shared, I prioritized my benefit over resolving the problem itself. I know that would work for my product, giving a better experience for my users. And probably make me a better product manager in the eyes of the public.</p>
-<p>However, I must also admit that I don't know what consequences could arise from worsening the general problem by creating such inconsistencies in the broader system layers.</p>
-<hr>
-<p>All those mentioned circumstances lead to an unhappy conclusion: focusing your efforts on chronic systemic issues might not be the best strategy for your career right now. If you are under pressure to provide quick and showable results, that wouldn't be helpful. Or even worse, that could be damaging to your career.</p>
-<p>Using AI is not a silver bullet and can make a situation worse in the future. Will you meet that future in that company? Do you even care about that future?</p>
-<p>Of course, that tendency is bad for organizations. Such chronic diseases, which have a non-trivial but feasible cure, are accumulating and could blow up, leading to unforeseen consequences.</p>
-<p>Now we have a bad combination of factors, so we use a cannon to kill mosquitoes. The only difference is that it could fire back at you.</p>
-<p>Big corporations have immense inertia, so even such a blast rarely kills them. Their goal is to generate income at the end of the day, not to be efficient.</p>]]></content>
         <category label="Business Analysis" term="Business Analysis"/>
     </entry>
     <entry>
@@ -632,46 +117,6 @@
         <link href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner"/>
         <updated>2025-07-02T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Learn proven strategies for building stakeholder trust in any situation - from new projects to damaged relationships. Discover practical tips for managing expectations, practicing transparency, and turning around failed projects.]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="AI-generated" src="https://ilyazakharau.com/assets/images/build-stakeholder-trust-adb421faeac7843fa402700a218b5ec9.png" width="1590" height="1348" class="img_ev3q"></p>
-<p>Any stakeholder management framework is ineffective if there is no trust between you, as a product owner, and your stakeholders. Trust is challenging to gain, resourceful to maintain, and very easy to lose.</p>
-<p>For stakeholders, you represent your team, your product, and your organization. If they don't trust you and consider you an unreliable partner, then it is a chain effect with a downward spiral.</p>
-<p>How to build and then maintain that trust? It is straightforward - deliver expectations. If you can't deliver, then manage those expectations.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="understanding-your-starting-position">Understanding Your Starting Position<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#understanding-your-starting-position" class="hash-link" aria-label="Direct link to Understanding Your Starting Position" title="Direct link to Understanding Your Starting Position" translate="no">​</a></h2>
-<p>To establish trust, you must first understand your current baseline position. It depends on the current state of affairs and your starting position in it.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-new-project-scenario">The New Project Scenario<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#the-new-project-scenario" class="hash-link" aria-label="Direct link to The New Project Scenario" title="Direct link to The New Project Scenario" translate="no">​</a></h3>
-<p>If it is a new project, then you have some credit for future trust. Everyone is new to each other. Initially, everyone is more optimistic about future endeavors.</p>
-<p>You can utilize that capital to build trust and then make it good enough to maintain it. A trick is that such optimism often leads to higher but unfulfilled expectations when things become rough. And things will become rough after the honeymoon, when a few program increments have passed and things no longer look so promising.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="taking-over-a-successful-project">Taking Over a Successful Project<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#taking-over-a-successful-project" class="hash-link" aria-label="Direct link to Taking Over a Successful Project" title="Direct link to Taking Over a Successful Project" translate="no">​</a></h3>
-<p>Another case is when you jump into an ongoing project where a person in your previous role, or the project team itself, has gained considerable trust. Now your job is not to break things. You are thoroughly observed, as stakeholders are suspicious because they don't know you.</p>
-<p>Managing expectations, you can set a low bar, taking the time for onboarding. But that is limited, and if you still use it as an excuse after several months, that will damage your relationship with stakeholders.</p>
-<p>Also, if everything worked well before you arrived, you are not expected to start breaking things and make changes to suit your preferences. As individuals, we are often reluctant to change, especially when the change seems unnecessary.</p>
-<p>Making drastic changes in a stable environment undermines the work of the previous person. Plus, it puts you in a vulnerable position if such changes backfire. You can't afford even a little bit of failure with your new world order, as stakeholders quickly downgrade your credibility.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-damaged-trust-scenario">The Damaged Trust Scenario<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#the-damaged-trust-scenario" class="hash-link" aria-label="Direct link to The Damaged Trust Scenario" title="Direct link to The Damaged Trust Scenario" translate="no">​</a></h3>
-<p>The worst situation you may encounter is joining an ongoing project where trust has already been broken. That could include a demotivated team, nervous program management, and frustrated customers, among other issues. Sometimes, more often than we would like, software implementation projects take a wrong turn.</p>
-<p>You might be seen as someone who can get things back on track. I have one main piece of advice for you: <strong>don't act like Jesus Christ</strong>.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="avoid-the-superhero-complex">Avoid the Superhero Complex<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#avoid-the-superhero-complex" class="hash-link" aria-label="Direct link to Avoid the Superhero Complex" title="Direct link to Avoid the Superhero Complex" translate="no">​</a></h2>
-<p>Don't overestimate yourself as a superhero who will immediately save the day. People who were and still are on the project are not stupid. Sometimes you can have brilliant minds in the room, but things don't go as expected.</p>
-<p>Simple rule: if something seems to be easy, it's more likely that it isn't.</p>
-<p>Be humble, don't rush with quick, unchecked solutions. Those might have been tried before. If they didn't work, that doesn't mean they wouldn't work again. Take time to analyze the pretext, actions, and consequences.</p>
-<p>With rushing, you can quickly exhaust your credit of trust.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="strategies-for-building-trust">Strategies for Building Trust<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#strategies-for-building-trust" class="hash-link" aria-label="Direct link to Strategies for Building Trust" title="Direct link to Strategies for Building Trust" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="start-small-and-be-consistent">Start Small and Be Consistent<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#start-small-and-be-consistent" class="hash-link" aria-label="Direct link to Start Small and Be Consistent" title="Direct link to Start Small and Be Consistent" translate="no">​</a></h3>
-<p>How to gain the trust back? Start with little things. Pay attention to small promises. If you said you would return with an update the next day, you would return with an update the next day. Even if there is nothing to say and there are only "no updates, I will reach out to you ASAP when something appears."</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="practice-extreme-transparency">Practice Extreme Transparency<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#practice-extreme-transparency" class="hash-link" aria-label="Direct link to Practice Extreme Transparency" title="Direct link to Practice Extreme Transparency" translate="no">​</a></h3>
-<p>Practice extreme transparency. I follow the "Clarity over comfort" principle, which I found in Matt LeMay's book. Be transparent about blockers and dependencies. Articulate your expectations from other parties clearly &amp; loudly, and in a documented manner.</p>
-<p>If something is your fault or the fault of your team, be ready to take responsibility and learn from it.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="avoid-the-blame-game">Avoid the Blame Game<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#avoid-the-blame-game" class="hash-link" aria-label="Direct link to Avoid the Blame Game" title="Direct link to Avoid the Blame Game" translate="no">​</a></h3>
-<p>Don't blame others. That is a reference to a key point: if a trust between parties goes awry due to complex issues, blaming one party (even if that party is not present) is a poor move. Finding a scapegoat can drive some quick alignment, but in the long term, it is a bad strategy. First, someone can be offended by that and cause unexpected consequences in the future. Second, some people may find this behavior unprofessional. Third, you can quickly become one to blame if you introduce the "blaming" culture.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="listen-actively-and-be-helpful">Listen Actively and Be Helpful<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#listen-actively-and-be-helpful" class="hash-link" aria-label="Direct link to Listen Actively and Be Helpful" title="Direct link to Listen Actively and Be Helpful" translate="no">​</a></h3>
-<p>Be helpful and listen carefully. Sometimes you only need to listen. Some people simply talk without listening to others. In this case, those who are not listened to will soon stop expressing their thoughts, as they no longer have trust. Why talk then? If it were to happen, that trend would be tough to reverse.</p>
-<p>My other obvious advice: shut up and listen. When stakeholders trust you, they provide additional information that allows you to learn more about them, which in turn fosters stronger bonds. That might be something personal or about the industry, other products, stakeholders, and so on.</p>
-<p>That may seem trivial, but for a decade, I have seen people trying to dominate and push their agendas instead of simply listening to stakeholders.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="go-the-extra-mile-strategically">Go the Extra Mile (Strategically)<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#go-the-extra-mile-strategically" class="hash-link" aria-label="Direct link to Go the Extra Mile (Strategically)" title="Direct link to Go the Extra Mile (Strategically)" translate="no">​</a></h3>
-<p>Do extra steps. If you asked for help, but it falls outside your usual responsibilities, do anything to help. Some limitations: (1) Be very selective about whom to do that extra help by enabling your political sense. (2) Keep it transactional: I do something for you, expecting something from you in the future. If such a rule is broken, the game changes.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="build-personal-connections">Build Personal Connections<a href="https://ilyazakharau.com/blog/building-stakeholder-trust-product-owner#build-personal-connections" class="hash-link" aria-label="Direct link to Build Personal Connections" title="Direct link to Build Personal Connections" translate="no">​</a></h3>
-<p>Use every opportunity to go out with stakeholders with whom you need to build or regain trust. Consuming beverages together (coffee, beer, anything else) is the strongest bonding thing humanity has invented so far. But practice that wisely.</p>
-<hr>
-<p><strong>Key Takeaway</strong>: Trust in stakeholder relationships isn't built through grand gestures or quick fixes. It's earned through consistent delivery, transparent communication, and genuine care for stakeholder success. Whether you're starting fresh or rebuilding damaged relationships, focus on small wins, active listening, and maintaining integrity in every interaction.</p>]]></content>
         <category label="Product Strategy" term="Product Strategy"/>
         <category label="Stakeholder Management" term="Stakeholder Management"/>
         <category label="Leadership" term="Leadership"/>
@@ -682,49 +127,6 @@
         <link href="https://ilyazakharau.com/blog/to-tease-a-future-feature-or-not-to-tease"/>
         <updated>2025-06-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Explore the pros and cons of announcing upcoming product features, with real-world insurance industry examples and practical strategies for product managers to handle feature communication.]]></summary>
-        <content type="html"><![CDATA[<p>Should we let users know about upcoming features? Can it make them angry if you tease them and then underdeliver?</p>
-<p><img decoding="async" loading="lazy" alt="AI-generated" src="https://ilyazakharau.com/assets/images/tease-feature-634aa1ec863d11f0ce5fe1033db7a092.jpeg" width="1024" height="1024" class="img_ev3q"></p>
-<p>Let's find out.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="my-bad-user-experience-with-insurance">My Bad User Experience with Insurance<a href="https://ilyazakharau.com/blog/to-tease-a-future-feature-or-not-to-tease#my-bad-user-experience-with-insurance" class="hash-link" aria-label="Direct link to My Bad User Experience with Insurance" title="Direct link to My Bad User Experience with Insurance" translate="no">​</a></h2>
-<p>As I work in the Insurance business, I am quite demanding of the user experience of insurance products I use in my day-to-day life. I have life &amp; health insurance with a monthly premium payment. One day, I decided to change the payment frequency to pay once per year.</p>
-<p>On a policy details page in my customer portal, which looks quite fancy, by the way, there is a button labeled "Change Frequency."</p>
-<p>Fine, I thought, now I can easily change the payment frequency, pay for an entire year, and won't have to bother with it for the next 12 months.</p>
-<p>I clicked the button and received a pop-up with a message stating that the payment frequency change is not available at this time but will be available soon. I can send a paper application by mail. Traditional mail.</p>
-<p>I don't know how it works in your country, but in Poland, visiting a post office is a significant source of stress. There are not many offices, and usually, there are many people, so there are not enough workers to serve everyone quickly. To use a "priority delivery" with confirmation, you should write the destination address on two applications. On paper, by your hands. &nbsp;</p>
-<p>Even though I'm exaggerating the whole drama, if I have a choice between continuing to pay monthly or going to the post office, I choose the less stressful option.</p>
-<p>So, for the next several months, while paying a fee, I opened the customer portal, clicked that button, and hoped it would finally work. Each time, I made a payment and left frustrated.</p>
-<p>Ironically, I work on the Insurance platform, which supports such functionality. But that specific insurance carrier used another vendor.</p>
-<p>After nine months and nine frustrating accidents, while writing this post, I clicked and realized that I can now finally change my payment frequency online. <em>Thank you!</em></p>
-<p>Now, let's review such a case from the Product Manager's perspective.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="product-managers-perspective">Product Manager's Perspective<a href="https://ilyazakharau.com/blog/to-tease-a-future-feature-or-not-to-tease#product-managers-perspective" class="hash-link" aria-label="Direct link to Product Manager's Perspective" title="Direct link to Product Manager's Perspective" translate="no">​</a></h2>
-<p>You don't have an important and desirable feature, but it will be included in future releases.</p>
-<p>What you can do:</p>
-<ul>
-<li class="">
-<p><strong>Option A</strong>: Create a mock UI component that will notify a user about upcoming functionality.</p>
-</li>
-<li class="">
-<p><strong>Option B</strong>: Don't mention a feature at all until it's ready.</p>
-</li>
-<li class="">
-<p><strong>Option C</strong>: Find a way to notify a user about the absent but soon-coming functionality without mock UI components</p>
-</li>
-</ul>
-<p>The digital experience team, who worked on the customer portal with my insurance, decided to proceed with <strong>Option A</strong> and the mock button. That makes me unhappy as a user, as I am teased with something and don't get it immediately. A product team thought that teasing such functionality would have amazed users. And make them eager to get one.&nbsp;</p>
-<p>That may work in some cases. However, in some conservative industries (and insurance is a conservative one), if users don't get what they see, they become unhappy.</p>
-<p><strong>For me, interaction with insurance is always anxious.</strong> I want to accomplish tasks effectively and return to my everyday life. That non-working button, which had been inactive for nine months, wasn't a disaster, but it was enough for me to write about in a post.</p>
-<p>I have a practical explanation about that mock button. As the UI design for that screen was ready, it was decided to implement it entirely without some capabilities rather than proceed iteratively.</p>
-<p>As a product manager, I totally understand that. Iterative work with UX design requires additional effort for close and continuous cooperation between product, engineering, and design teams. <strong>When UX designers act as third-party service providers, they complete their work and move on to another team or product.</strong> That might be the case here.</p>
-<p>Considering <strong>Option B</strong>, certain future features are so essential that we want users to know we are actively working on them. Additionally, there may be workarounds, and we want users to be aware of them as well.</p>
-<p>In my example, there is an option to satisfy my needs in an offline way. It was good that they offered that option. However, I would not have known about it if it hadn't been mentioned. Without that, my user journey might be broken.</p>
-<p>So, absence may cause frustration as well as unfulfilled expectations.</p>
-<p><strong>Option C</strong> is in the middle. We need to inform users that the missing functionality will be available soon and provide alternative solutions in the meantime. But handle it more gently with UX means.</p>
-<p>A piece of text placed in the right spot on the UI screen is a simple yet effective solution. One-time notification with a short message or a few lines on the screen.</p>
-<p>Users do not read manuals, and they 100% are not interested in public roadmaps of features (which is a debatable practice).</p>
-<hr>
-<p>In summary, there are several ways to inform users about missing features and potential workarounds. Just let UX designers figure that out for you. But after that, you still must deliver.</p>
-<p>Another debatable question is whether we should provide a timeline for when a feature will be available. Or let users guess how long "soon" means: weeks, months, years.</p>
-<p>The answer is NO. Because here, a half-truth is better than lying about deadlines. Next time, let's talk about the fragile art of non-commiting.</p>]]></content>
         <category label="Product Management" term="Product Management"/>
         <category label="Product Strategy" term="Product Strategy"/>
     </entry>
@@ -734,18 +136,6 @@
         <link href="https://ilyazakharau.com/blog/julius-caesar-was-a-startup"/>
         <updated>2025-06-04T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Discover how Julius Caesar's political career parallels modern startup strategies, exploring his ambitious rise through borrowed capital, risk-taking, and eventual success in Ancient Rome.]]></summary>
-        <content type="html"><![CDATA[<p>While reading Julius Caesar’s biography by Adrian Goldsworthy, I learned a surprising fact: he funded his political career as a startup would today.</p>
-<p>Caesar was from a very noble patrician family. However, at the moment of his birth, his family was not incredibly rich and powerful compared to other Roman nobility. They have significant connections, but that alone would not be enough to build an outstanding political career.</p>
-<p>The Roman political system was not characterized by parties but rather by individuals. Those individuals spent a large amount of their money to gain popularity among the citizens, support their lifestyle, engage in what we today consider bribery, and so on.</p>
-<p>As we know, Gaius Julius Caesar was a very ambitious person. From an early stage, when he began climbing the career ladder, he consistently borrowed money from his wealthy political supporters, who saw potential benefits in a future leader. He also used those funds to maintain his lavish lifestyle, which was considered extravagant by Roman standards of the day.</p>
-<p>Caesar had to rush to maintain the belief in his support, so money continued to flow to gain more popularity and cover previous borrowings. And he did exceptionally well by reaching each new position in a political hierarchy as soon as his age allowed him to do that. And sometimes even earlier.</p>
-<p>There were cases when Caesar was near what we can call a “bankruptcy” 💸 when he undertook some drastic actions. A notable example is that he refused a triumph dedicated to his military campaign in Spain, which can be considered the pinnacle of anyone's career in Rome, to run for consular nomination that year.</p>
-<p>Consularship was a prestigious elected office in the Roman Republic. Two consuls held it, jointly exercising executive authority, commanding armies, presiding over the Senate and assemblies, and were replaced annually to prevent the concentration of power.</p>
-<p>So, Caesar could have obtained his triumph and waited another year to secure the consulship. However, for him and his donors, advancing his career was critical; he could not wait.</p>
-<p>Only during his Consulship, and more likely his subsequent military campaign in Gaul, did Caesar finally become reliant on the funds he had gained. Using modern language, he achieved the required profitability level without further investments 💼📈. He was above his 40s, and the most interesting part of his life had only begun.</p>
-<p>After reading that, I was amazed at how easily we can draw a line between today’s startups and 2000 years ago.</p>
-<p>Considering his impact on humanity's history, Julius Caesar was one of the most successful startups in the world. 🏛️🔥</p>
-<p><img decoding="async" loading="lazy" alt="Traditional Goku and the Book" src="https://ilyazakharau.com/assets/images/caesar-startup-c18d1205f3d5fdf2ec771d296b02128a.jpeg" width="830" height="1280" class="img_ev3q"></p>]]></content>
         <category label="Community & Insights" term="Community & Insights"/>
     </entry>
     <entry>
@@ -754,47 +144,6 @@
         <link href="https://ilyazakharau.com/blog/do-we-need-junior-business-analysts"/>
         <updated>2025-05-13T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[An opinionated look at the relevance of junior Business Analyst roles in the AI-driven job market of 2025.]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-temptation-to-say-no">The Temptation to Say No<a href="https://ilyazakharau.com/blog/do-we-need-junior-business-analysts#the-temptation-to-say-no" class="hash-link" aria-label="Direct link to The Temptation to Say No" title="Direct link to The Temptation to Say No" translate="no">​</a></h2>
-<p>I saw on LinkedIn a rare opportunity for 2025: a vacancy for a Junior BA. I wondered whether hiring someone for such a junior position makes sense, considering the current level of AI advancement.</p>
-<p>My immediate answer is ^^NO^^: as a Product Manager managing a portfolio of products, AI could do the same work as a junior Business Analyst does. And sometimes, with a better quality and less involvement of someone who needs to guide that person.</p>
-<p>Let's discuss the statement above, because the answer is not as simple as it may seem.</p>
-<p><img decoding="async" loading="lazy" alt="AI-generated nonsense" src="https://ilyazakharau.com/assets/images/junior-ba-vs-ai-e6c36679d82fe9f6298b41478155cc6f.jpeg" width="1024" height="1024" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-reality-of-junior-roles">The Reality of Junior Roles<a href="https://ilyazakharau.com/blog/do-we-need-junior-business-analysts#the-reality-of-junior-roles" class="hash-link" aria-label="Direct link to The Reality of Junior Roles" title="Direct link to The Reality of Junior Roles" translate="no">​</a></h2>
-<p>I hired, interviewed, and mentored several junior business analysts. I was a junior business analyst many years ago, so I have some credibility to debate that topic.</p>
-<blockquote>
-<p>Let's exclude the speculation that AI will replace everyone in the software development business in a few years. The people who say that are biased, and they have a clear financial incentive to push their narrative.</p>
-</blockquote>
-<p>We are not there yet, and it is unclear when or whether we will achieve full automation to produce production-ready solutions.</p>
-<p>Junior developers, for instance, are not capable of writing production-ready code without supervision for a complex enterprise system. The same applies to junior business analysts, who need guidance at every analysis stage.</p>
-<p>Let's review the basic responsibilities of a junior BA:</p>
-<ol>
-<li class=""><strong>Requirements gathering</strong>: usually assisting a more experienced colleague with focusing on document analysis. They need time to develop other techniques, like interviewing and workshops.</li>
-<li class=""><strong>Documenting requirements</strong>: writing business requirements documents, use cases, user stories, acceptance criteria, etc. All those BA artifacts require an additional review from a more experienced colleague.</li>
-<li class=""><strong>Stakeholder communication</strong>: I recently wrote about that aspect, which is difficult to replace with AI. Junior specialists are primarily involved in simple tasks like demos, scheduling, meeting participation, taking notes, and following up on action items.</li>
-</ol>
-<p>AI is good at document analysis, producing credible BA artifacts, recording demos, and taking meeting notes with the following action items. Of course, it is possible when you use the right tools and know the proper techniques.</p>
-<p><strong>Based on my observation, a junior BA requires about a year to start giving real value, covering all efforts spent on their training.</strong> That number can vary depending on a person's background, skills, and familiarity with a business domain. But again, that is my observation without any data proof.</p>
-<p>So, do I need to invest a year of my time and my colleagues' time (which might not end successfully if a person underdelivers) when AI tools cover those basic responsibilities usually required from a junior BA?</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-market-has-changed">The Market Has Changed<a href="https://ilyazakharau.com/blog/do-we-need-junior-business-analysts#the-market-has-changed" class="hash-link" aria-label="Direct link to The Market Has Changed" title="Direct link to The Market Has Changed" translate="no">​</a></h2>
-<p>From a short-term business perspective, the answer is an obvious ^^NO^^. Product managers and middle/senior business analysts are empowered enough to manage activities that they could previously delegate to junior specialists. If they are not empowered with AI tooling, they will soon be replaced by those who are.</p>
-<p>That coincides with the unfortunate state of the job market, with the limited and narrowing demand. Nowadays, you can hire experienced professionals for an amount of money that was unthinkable five years ago. Continuous tech layoffs have dramatically decreased the financial expectations of people ready to accept pay cuts to have a job.</p>
-<p>In 2021, I was looking for a middle BA to join my Digital Experience Platform team and relieve me of the requirements burden. Due to the technical and complex domain requiring API knowledge and not overpaying for that, job seekers showed little interest. I hired and trained a Junior BA, which was a good decision at that moment.</p>
-<p>In 2025, I would have had a vast choice from dozens, if not hundreds, of experienced candidates. So, I would not consider hiring a junior person, even for cheaper money, but because I need to invest my time in mentoring and training.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-long-term-problem-no-juniors-no-future">The Long-Term Problem: No Juniors, No Future<a href="https://ilyazakharau.com/blog/do-we-need-junior-business-analysts#the-long-term-problem-no-juniors-no-future" class="hash-link" aria-label="Direct link to The Long-Term Problem: No Juniors, No Future" title="Direct link to The Long-Term Problem: No Juniors, No Future" translate="no">​</a></h2>
-<p>The denial of hiring junior business analysts causes another problem: <strong>extinction</strong>. We had to have a flow of fresh blood into the discipline.</p>
-<p>Organizations tended to hire junior specialists to keep up with growing demand and provide circulation to replace people who will eventually leave. Leave for another job or another, often a managerial role in the company.</p>
-<p>But now the demand is low.</p>
-<p>And senior specialists like me will also struggle: no one will naturally replace us and let us grow on a career ladder.</p>
-<blockquote>
-<p>But the ladder no longer exists. Big tech eliminates the mid-managerial level. That means we have no space to advance and are destined to stay experienced individual contributors. AI-powered individual contributors.</p>
-</blockquote>
-<p>And our number will diminish as in the Hunter Games, until all that reaches a kind of balance.</p>
-<p>Or another Black Swan will get rid of us. Who knows.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-comes-next">What Comes Next?<a href="https://ilyazakharau.com/blog/do-we-need-junior-business-analysts#what-comes-next" class="hash-link" aria-label="Direct link to What Comes Next?" title="Direct link to What Comes Next?" translate="no">​</a></h2>
-<p>Business Analysis will strive as a discipline, but I doubt that a BA role will exist as it did 5-10 years ago. It will transform, and we will soon see what it becomes.</p>
-<p>And we, my dear experienced professionals, are trapped in a vicious circle: we are undergoing a crucial transformation while an old, good career ladder is broken.</p>
-<p>My fellow juniors! Even though my words sound pessimistic, that doesn't mean no one is hiring and everyone should be desperate. Keep trying: where there's a will, there's a way.</p>
-<p><strong>Good luck to us all!</strong></p>]]></content>
         <category label="Business Analysis" term="Business Analysis"/>
     </entry>
     <entry>
@@ -803,99 +152,6 @@
         <link href="https://ilyazakharau.com/blog/the-product-managers-view-on-composability"/>
         <updated>2025-04-20T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Understanding composable architecture from a Product Manager's perspective, its challenges, and impact on vendor relationships]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" src="https://ilyazakharau.com/assets/images/composability-for-pm-e56c4c1b27a32a8564c0e11dbca060a4.png" width="1024" height="1024" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="composable-definition-and-mach">Composable Definition and MACH<a href="https://ilyazakharau.com/blog/the-product-managers-view-on-composability#composable-definition-and-mach" class="hash-link" aria-label="Direct link to Composable Definition and MACH" title="Direct link to Composable Definition and MACH" translate="no">​</a></h2>
-<p><em>Composability</em>, also known as <em>Composable solutions</em> or <em>Composable commerce</em>, is a design principle in which individual components or services are <strong>modular</strong>, <strong>independent</strong>, and <strong>interoperable</strong>. It allows them to be easily combined, reused, or replaced to build complex systems.</p>
-<p>We have a custom-built core product for software businesses, whether a monolith or a set of microservices. In addition, you (when I mention you, I mean a product, area, or organization) have several external integrations with different levels of complexity.</p>
-<p>For non-software businesses, several vendors of different scales have some in-house solutions. Those businesses are the primary beneficiaries, as Composable is a way to eliminate vendor lock-in and gain more control while also being flexible enough to adapt to market changes.</p>
-<p>Composable addresses the latter case by using <em>"best-of-breed"</em> components available, whether market or house-built and adapting them according to business requirements.</p>
-<p>To build such a miraculous system, you need <strong>middleware</strong> that connects several headless subsystems via API and provides governance and data consistency.</p>
-<p>That matches a MACH architecture style corresponding to:</p>
-<ul>
-<li class=""><strong>M</strong>icroservices,</li>
-<li class=""><strong>A</strong>PI-first</li>
-<li class=""><strong>C</strong>loud-native</li>
-<li class=""><strong>H</strong>eadless.</li>
-</ul>
-<p>Sometimes, <em>Composable</em> and <em>MACH</em> seem interchangeable, but the former, as mentioned already, is a software architecture style, and the latter is rather a business architecture. But those terms are tied together in the current agenda.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="recipe-for-building-a-composable-solution">Recipe for Building a Composable Solution<a href="https://ilyazakharau.com/blog/the-product-managers-view-on-composability#recipe-for-building-a-composable-solution" class="hash-link" aria-label="Direct link to Recipe for Building a Composable Solution" title="Direct link to Recipe for Building a Composable Solution" translate="no">​</a></h2>
-<p>A successful recipe for building a composable solution consists of:</p>
-<ul>
-<li class="">vendor or internal systems that follow MACH and, ideally, are certified by <a href="https://machalliance.org/" target="_blank" rel="noopener noreferrer" class="">MACH Alliance</a> as truly MACH</li>
-<li class="">the middleware to connect and operate them</li>
-<li class="">UI layer for end-users, unless your business is providing an API</li>
-</ul>
-<p>The paradox is that you need a custom-built middleware to connect multiple systems and maintain their interoperability. If you choose a ready-made platform from the market, you are again trapped in a vendor lock-in, as it becomes a bottleneck of your composable solution. So, to be puristic, you need to build such a middleware using open source only.</p>
-<p>It is similar to the UI, which you need to build from scratch to provide a unified user experience. Although it is not trivial, building the composable layer is a real challenge with some high risks.</p>
-<blockquote>
-<p><strong>Bad news</strong>: your organization is likely to lack all the required expertise.</p>
-</blockquote>
-<blockquote>
-<p><strong>Good news</strong>: there are guys who can help you for some money.</p>
-</blockquote>
-<blockquote>
-<p><strong>Outcome</strong>: your organization probably get a composable system, considering some risks.</p>
-</blockquote>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-myth-of-plug-and-play">The Myth of Plug-and-Play<a href="https://ilyazakharau.com/blog/the-product-managers-view-on-composability#the-myth-of-plug-and-play" class="hash-link" aria-label="Direct link to The Myth of Plug-and-Play" title="Direct link to The Myth of Plug-and-Play" translate="no">​</a></h2>
-<p>While on the vendor side, I've seen many times how product owners on the customer side struggle to learn the limits of a vendor system.</p>
-<p>Learning and adopting a third-party system as your own is a time-consuming effort. After achieving that, there is still a risk that something will go wrong with a vendor: something will break, a vendor will be acquired by a bigger corporation, which will raise prices to compensate for a recent acquisition, and so on.</p>
-<p>Composability mitigates those risks by considering vendor systems as easy to plug and unplug at any moment. If a vendor is MACH compliant, then changing a <strong>Packaged Business Component (PBC)</strong> should not have such an impact.</p>
-<blockquote>
-<p>If we talk about interchanging several API endpoints, that is not a problem. If we are talking about migrating to another product with dozens or hundreds of APIs, its own data model, and business logic, there are no identical systems in the world.</p>
-</blockquote>
-<p>The middleware needs to handle such friction to make the transition as smooth as possible.</p>
-<p>There are two problems here:</p>
-<p><strong>(1)</strong> every migration is a high-risk challenge</p>
-<p><strong>(2)</strong> introducing complexity into the middleware</p>
-<p>Those are manageable problems if you have people who know how to deal with them.</p>
-<p>The remaining challenges are people who are slow to change (mentioned already) and vendor contracts.</p>
-<p>Most vendors build their business models on upselling their products to achieve their ultimate goal: selling their entire suite (of something). Vendors love vendor lock-in. They want to put their customers on that needle and keep them there as long as possible. That is a part of their nature.</p>
-<p>Enterprise vendors' attempts to "build open ecosystems" seem to be shooting themselves in the foot. The idea of Composability is lovely to customers, so vendors and system integrators are leveraging that as a new marketing weapon.</p>
-<p>SaaS subscriptions may seem like a guarantee of a quick exit from one vendor to another. However, that walkout from larger enterprise vendors that provide critical business capabilities won't be easy, especially when you haven't had leverage while signing the agreement. There may be complicated contract terms, complex migration, and a lack of alternatives.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="composability-in-e-commerce-and-beyond">Composability in E-Commerce and Beyond<a href="https://ilyazakharau.com/blog/the-product-managers-view-on-composability#composability-in-e-commerce-and-beyond" class="hash-link" aria-label="Direct link to Composability in E-Commerce and Beyond" title="Direct link to Composability in E-Commerce and Beyond" translate="no">​</a></h2>
-<p>Composability took off in e-commerce, so it is sometimes referred to as Composable commerce. That industry has been on the edge of innovation for the last decades through various modular transformations. The coincidental rise of Clouds and Microservices created a pretext for raising a Composable business architecture.</p>
-<p>Now, it spreads to different industries, which are more conservative, sometimes more regulated, and more change-resistant. Only time will tell how successful the adoption will be and whether it becomes a de facto standard.</p>
-<p>Also, Composability got unlucky in clashing with AI rise, and that might be a reason if you hadn't known about that idea before reading this article. Composable and AI agents are not mutually exclusive and can co-exist. That is an approach that is promoted to keep it on track during the AI hype.</p>
-<p>I might sound critical about Composable, but it is not actually true. I admit that it brings such complexity, which is not handled correctly, and can easily lead the system to disaster. I am fascinated by the complexity and challenges it comes with. But before you go in that direction, you need to know how to cook (<em>a Walter White meme should be there</em>).</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="product-managers-perspective">Product Manager's Perspective<a href="https://ilyazakharau.com/blog/the-product-managers-view-on-composability#product-managers-perspective" class="hash-link" aria-label="Direct link to Product Manager's Perspective" title="Direct link to Product Manager's Perspective" translate="no">​</a></h2>
-<p>Let's return to the article title and discuss Composable from the Product Manager's perspective.</p>
-<p>If you are a product manager, there can be two situations:</p>
-<p><strong>(1)</strong> you have a composable middleware that is your product. So, you are a Platform or Technical PM who needs to have a great knowledge of system integration: tools, patterns, and approaches. It is another discipline quite different from the startup PM we read about, and API Platform PM can also be used in that context. Still, Composable has a broader definition than an API Platform, so they are not interchangeable.</p>
-<p><strong>(2)</strong> more interesting for me to explore: when you manage a product or a product composed of multiple vendors and house-built components. I have never been in such a situation - with my Digital Experience Platform, I am near Case 1.</p>
-<p>But let's do a mind experiment. There is a transformational stage where a product becomes composable. To my mind, it is similar to splitting a monolith into microservices and replacing the legacy.</p>
-<blockquote>
-<p>Just by accident, I have a <a href="https://ilyazakharau.com/essays/replacing-legacy/" target="_blank" rel="noopener noreferrer" class="">series of article</a> about that.</p>
-</blockquote>
-<p>Then, there is a relatively stable stage of operation followed by a migration phase in which one PBC is replaced with a better one. For the stable stage, if you have a new feature, the process will be different, whether an in-house built PBC or one coming from a vendor. That might become complicated when the new feature is split across several PBCs.</p>
-<p>You may contradict that the system is not correctly split, then. I agree, but you can't decompose a monolithic structure perfectly and keep it stale forever.</p>
-<p>The outcome might be building your customization over a vendor PBC using some extension point or just using the vendor's SDK. Alternatively, you can request the changes from the vendor. They can build some customization for additional money or promise to add the feature to a base product. That is the most unsafe option ever, as Composable implies fewer dependencies on the vendor and that is not the case here.</p>
-<blockquote>
-<p>Again, just by accident, I have an <a href="https://ilyazakharau.com/backlog-management-about-dependencies/" target="_blank" rel="noopener noreferrer" class="">article</a> and a <a href="https://ilyazakharau.com/firefighting-depencies-case-study/" target="_blank" rel="noopener noreferrer" class="">case study</a> about managing dependencies.</p>
-</blockquote>
-<p>Holistically, you end up with only two options:</p>
-<p><strong>(1)</strong> build customization over a vendor PBC and
-<strong>(2)</strong> switch PBC to another vendor, or <strong>(2.1)</strong> build PBC in-house.</p>
-<p>If I could talk with someone who embraced Composable in their organization, I would ask:</p>
-<blockquote>
-<p><em>"What is the threshold after which your organization decides to change a vendor?"</em></p>
-</blockquote>
-<p>Option 2.1 is when you have the competency and resources to build PBCs in-house, which justifies some business-critical capability you can't delegate anymore.</p>
-<p>Changing a small vendor is often a bureaucratic nightmare, and people are not usually happy to deal with it. So, tolerating some difficulties with existing vendors correlates with their size and criticality. Data portability and API contract changes are most prominent, but they are not the only obstacles on the way.</p>
-<p>My thought here is that having a composable platform and MACH-compliant vendors is not enough if the entire organization continues to do business as usual. That requires a holistic transformation, and that is the biggest challenge of all.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="final-thoughts">Final Thoughts<a href="https://ilyazakharau.com/blog/the-product-managers-view-on-composability#final-thoughts" class="hash-link" aria-label="Direct link to Final Thoughts" title="Direct link to Final Thoughts" translate="no">​</a></h2>
-<p>For product managers, Composable requires an additional sidetrack: knowing the vendors you are utilizing in your product. I believe most of my fellow PMs already do this. Now, you need to keep an eye on rival vendors in their markets.</p>
-<p>Suppose anything goes wrong with the current one. In that case, you need to quickly dive into competing proposals and be able to select wisely what your product requires with a focus on reliability and further development.</p>
-<p>There is nothing worse than changing one shitty vendor to another shitty vendor, even if the cost of migration is not so high compared to traditional business architectures.</p>
-<p>Although my article may criticize the concept of Composability, I am a fan of that approach, and I hope it will be adopted by many industries.</p>
-<p>While working on implementing an insurance platform, I saw Carriers introduce advanced middleware to connect multiple vendors and custom software systems. But that was more modular than composable itself. Changing any of those vendors has a huge impact anyway.</p>
-<p>So, that concept has a long road ahead. I will keep an eye on it, and hopefully, this is not the last article on the topic.</p>
-<p>Take care</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="continue-reading-about-composability">Continue reading about Composability<a href="https://ilyazakharau.com/blog/the-product-managers-view-on-composability#continue-reading-about-composability" class="hash-link" aria-label="Direct link to Continue reading about Composability" title="Direct link to Continue reading about Composability" translate="no">​</a></h2>
-<ul>
-<li class="">Jonathan Murray on Composable Enterprise&nbsp;-&nbsp;<a href="https://adamalthus.com/blog/2013/04/04/the-composable-enterprise/" target="_blank" rel="noopener noreferrer" class="">https://adamalthus.com/blog/2013/04/04/the-composable-enterprise/</a></li>
-<li class="">Gartner on Composable Business&nbsp;-&nbsp;<a href="https://www.gartner.com/smarterwithgartner/gartner-keynote-the-future-of-business-is-composable" target="_blank" rel="noopener noreferrer" class="">https://www.gartner.com/smarterwithgartner/gartner-keynote-the-future-of-business-is-composable</a>&nbsp;</li>
-<li class="">What is Composable Business Application? (Youtube) - <a href="https://www.youtube.com/watch?v=_oHqiDWTrAQ" target="_blank" rel="noopener noreferrer" class="">https://www.youtube.com/watch?v=_oHqiDWTrAQ</a></li>
-</ul>]]></content>
         <category label="Experience Architecture" term="Experience Architecture"/>
     </entry>
     <entry>
@@ -904,48 +160,6 @@
         <link href="https://ilyazakharau.com/blog/stakeholder-alignment-the-underrated-skill-every-product-manager-needs"/>
         <updated>2025-03-10T22:00:00.000Z</updated>
         <summary type="html"><![CDATA[There is much buzz about whether AI could replace human product managers. I am not very concerned. Much of my work involves dealing with stakeholders at different levels and pursuing various objectives. AI will find it challenging to substitute that side of people interaction. I mean politics in a sense of power dynamics among multiple groups of stakeholders.]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" src="https://ilyazakharau.com/assets/images/stakeholder-alignment-e066b8d03158e940f8efd6b9475664b0.jpeg" width="1024" height="1024" class="img_ev3q"></p>
-<p>There is much buzz about whether AI could replace human product managers. I am not very concerned. Much of my work involves dealing with stakeholders at different levels and pursuing various objectives. AI will find it challenging to substitute that side of people interaction. I mean politics in a sense of power dynamics among multiple groups of stakeholders.</p>
-<p>We don't like politics in the workplace, but it is inevitable when there are more than a dozen people.</p>
-<p>Dealing with internal or external stakeholders always involves politics and personal-professional relationships. The larger the organization, the more complex the political landscape and the bigger the stakes.</p>
-<p>The power dynamics impact everyone in the organization, including individual contributors. When an individual contributor (IC) transitions to a manager role, they become a part of the game without any choice.</p>
-<p>I believe that business analysts, particularly those from outsourcing and consultants, are better than the rest of us in that field. Even as individual contributors, they are exposed to various stakeholders and learn to operate in different environments.</p>
-<p>So when people from such roles transition to product management in enterprises, they are more effective in dealing with them than their colleagues with a purely engineering background.</p>
-<p>You can't learn that solely from books. That comes with experience and some "political sense."</p>
-<p>Such a sense helps to navigate flaws, leverage successes (even the smallest ones), and establish and maintain the right relationships. It also includes maintaining subordination and not messing with anyone's ego.</p>
-<p>Whether you have a political sense or not, you can develop by paying attention to your relationships with and around others, how they evolve, and their outcomes. This can all be summarized as "social intellect," i.e., the ability to understand social dynamics, navigate interactions effectively, and adapt to different social contexts to build meaningful and influential connections.&nbsp;</p>
-<p>Of course, you can also read management books, as many contribute to that topic.</p>
-<hr>
-<p>As a product manager, you might be in a peculiar situation because you have a lot of responsibility but not enough power to execute it. You need to drive alignment across various parties, strive for resources, and seek attention.</p>
-<p>I differentiate several types of the "alignment" stakeholders:</p>
-<ul>
-<li class="">Alignment on requirements</li>
-<li class="">Alignment on a solution</li>
-<li class="">Alignment on resources</li>
-</ul>
-<p>Alignment of requirements implies requirements elicitation and further validation. The main and most challenging aspect is prioritizing those requirements and their sources. Every Subject Matter Expert (SME) wants that their needs and opinions would be treated at most. You, as a PM, also would like to treat your stakeholders equally well.</p>
-<p>But that's not going to happen.</p>
-<p>Early in my career, I learned that if you try to appeal to everyone, you appeal to no one.</p>
-<p>Stakeholders have different "weights" based on their position in the organization, experience, and general reputation in an industry. Your responsibility is to identify the "whales" and lesser "fish."</p>
-<p>The enterprise hierarchy should be helpful but may not represent the internal power dynamics. A seasoned IC's opinion may have more weight than that of a line manager on the level above.</p>
-<p>That can happen for various reasons. The most common is when a manager is new and/or less experienced in the field compared to others. Such an IC serves longer and has more connections and recognition. That person could be a manager themselves, but they either don't want to or are not trusted enough. Or, they could be a lower-level manager working in the field with better awareness of the details and recognition.</p>
-<p>Your job is to identify that imbalance and get the right direction. Sometimes, you are redirected to a heavy-weight SME from the start. Sometimes, it is like, "Oh, I forgot to mention you need to talk to that guy before I can approve the requirements." After those words, you usually start requirements elicitation from scratch.</p>
-<p>There is always one missed stakeholder with whom you haven't engaged in the requirements process. I heard that phrase in a podcast and couldn't recall the source. But that has proved to be true so many times. You need to make sure you don't miss legal folks, security, and such whales.</p>
-<p>Each SME has a professional role and an ego-driven personality. We say that no one should take work matters personally. But it isn't easy to let go when your feedback on certain questions is undervalued. We've all been there. Some people can handle that better than others, and some don't.</p>
-<p>While prioritizing requirements, you don't want to mess with someone's ego. Sometimes, for the lower priorities, it is still worth spending time on communication and establishing the relationship. Setting the right expectations is tricky: "I appreciate your input, but in the current circumstance, I can't say when or even if it would be done." Be politically correct and empathetic because you don't know whether that stakeholder will become a critical one on the next initiative.&nbsp;</p>
-<hr>
-<p>Having many stakeholders for many product initiatives, I tend to group them by area and further deal with them by those groups. That might be a natural step to save effort in the horrendous time product people spend on communication. I invited SMEs to a meeting, not considering their hierarchy (senior managers are another case, though): a manager and their most experienced subordinate. Everything worked fine for some time until the manager could not join one day.</p>
-<p>I realized that the subordinate is a limitless source of very useful information. That didn't appear earlier, as the manager pulled a blanket on their side and basically silenced the guy.&nbsp;</p>
-<p>Since that time, I have had separate conversations on different hierarchical layers. The drawback is that I need to re-iterate with the managers and conversations I had with their subordinates. Not saving much time, but I developed an efficient three-touch point strategy:</p>
-<ol>
-<li class="">Hey, I need to talk to some of your folks about…</li>
-<li class="">Talk to a subordinate</li>
-<li class="">Hey, I spoke with the guy, and that was said...</li>
-</ol>
-<p>If a manager wants to be the center of every communication, that can become problematic, but I don't suggest acting behind the back anyway. Some people feel that they need to sign off on what their people say. That could be beneficial in some ways and totally frustrating in others.</p>
-<hr>
-<p>Collaboration with stakeholders and aligning their sometimes conflicting priorities is a puzzling topic that deserves a broader highlight.</p>
-<p>Please let me know if you are interested, and I will publish some insights on the topic.</p>]]></content>
         <category label="Product Management" term="Product Management"/>
         <category label="Product Strategy" term="Product Strategy"/>
     </entry>
@@ -955,42 +169,6 @@
         <link href="https://ilyazakharau.com/blog/2024-reflections-2025-plans"/>
         <updated>2024-12-28T14:30:00.000Z</updated>
         <summary type="html"><![CDATA[Another year is almost over, so it is time to summarize all that happened and discuss what is coming. First, let me wish you a Merry Christmas and Happy New Year before I dive into self-reflections relevant only to a few readers.]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="cover" src="https://ilyazakharau.com/assets/images/2024-reflections-b669d4ffe72604f55ef56db0eff0b829.jpeg" width="1024" height="1024" class="img_ev3q"></p>
-<p>Another year is almost over, so it is time to summarize all that happened and discuss what is coming. First, let me wish you a Merry Christmas and Happy New Year before I dive into self-reflections relevant only to a few readers.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="achievements">Achievements<a href="https://ilyazakharau.com/blog/2024-reflections-2025-plans#achievements" class="hash-link" aria-label="Direct link to Achievements" title="Direct link to Achievements" translate="no">​</a></h2>
-<p>In 2024, I published 24 articles, including 7 editions of the <a href="https://buymeacoffee.com/barszawaorg" target="_blank" rel="noopener noreferrer" class="">BArszawa</a> blog, where I acted as a writer and an editor. That's two times more than in 2023.</p>
-<p>The audience grew correspondingly. More than 700 unique visitors to the <a href="https://ilyazakharau.com/" target="_blank" rel="noopener noreferrer" class="">Blog</a> itself (300 visitors in 2023), + 100 readers on <a href="https://medium.com/@ilyazakharau" target="_blank" rel="noopener noreferrer" class="">Medium</a>, and + 1000 followers on <a href="https://www.linkedin.com/in/ilya-zakharau/" target="_blank" rel="noopener noreferrer" class="">LinkedIn</a>. That might not sound astonishing, but I am grateful to every audience member for their attention.</p>
-<p>I have many readers from the U.S. and India, even though Poland and Belarus are still my core audiences. I started getting some feedback, especially on Medium. That surprised me as I didn't know how to react first.</p>
-<p>The most notable moment for me was when Karl Wiegers left a comment under <a href="https://medium.com/analysts-corner/swebok-v3-and-v4-software-requirements-a598cf7ea485" target="_blank" rel="noopener noreferrer" class="">my article</a>. I quoted his book regarding the requirements structure and compared it with different approaches. He kindly explained why he decided to go that way and thanked me for the article.</p>
-<p>To understand my level of excitement, you need some context...</p>
-<p>I haven't taken a business analysis course or earned a computer science degree. My only available study was that book, the "Software Requirements". Ten years ago, I worked in 24/7 IT customer support and only dreamed about becoming a business analyst. Good offline BA courses, for starters, cost a lot, and I couldn't afford them. At that time, there were no quality online BA courses for beginners.</p>
-<p>I had a 90-minute commute to and from work, and the book was always with me. I read it on the subway, at home, and occasionally at work.</p>
-<p>That is why Karl's comment meant so much to me and caused such an emotional reaction, so I am sharing it with you right now. It took me an entire day to construct a response.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="content-platform-strategy">Content Platform strategy<a href="https://ilyazakharau.com/blog/2024-reflections-2025-plans#content-platform-strategy" class="hash-link" aria-label="Direct link to Content Platform strategy" title="Direct link to Content Platform strategy" translate="no">​</a></h2>
-<p>While reviewing my year stats, I found an interesting case: my top 3 best-performing posts on Medium are among the least engaged articles on LinkedIn.
-<img decoding="async" loading="lazy" alt="Top 2024 Medium posts" src="https://ilyazakharau.com/assets/images/2024-top-medium-3ca6e0a667a9ddb653d85002a6df51ce.png" width="2250" height="1102" class="img_ev3q">
-<img decoding="async" loading="lazy" alt="Same less engaged in LinkedIn" src="https://ilyazakharau.com/assets/images/2024-less-linkedin-68f8cf7b6aa9a04cb8f282638900a70e.png" width="1552" height="1538" class="img_ev3q"></p>
-<p>The same works in a different direction: my top 3 best-performing LinkedIn posts are the least popular on Medium.</p>
-<p>I assume that Medium values more focused and advanced content than LinkedIn. There might be bias because I stopped investing in LinkedIn engagement at some point in the year, which influenced some recent posts to work out poorly. However, I still think my assumption is correct, considering everyone sees what LinkedIn has become.</p>
-<p>Since my <a href="https://ilyazakharau.com/updates-on-content-strategy/" target="_blank" rel="noopener noreferrer" class="">last update</a> on content strategy, I am no longer considering LinkedIn as the primary social platform. I will keep posting links to my new publications, and that is it.</p>
-<p>I don't like the direction of that social platform. I was tired of constantly posting and engaging with other content to keep my social index high so others could see my posts in their feed, which now looks like Instagram.</p>
-<p>I dropped off Instagram, but I can't just leave LinkedIn because of the effort I already put into building my audience there. So I will be present there, but just for publication announcements.</p>
-<p>Instead, I will focus on Medium, which has brought good results in 2024. Thanks to Igor Arkhipov and the <a href="https://medium.com/analysts-corner" target="_blank" rel="noopener noreferrer" class="">Analyst's Corner</a> for the opportunity to reach to a new audience.</p>
-<p>The posts published beyond the well-known publications are not performing well, so I am not experimenting much there. I will keep publishing my new articles on my blog and then in the Analyst's Corner.</p>
-<p>I decided not to proceed with the idea of creating my own email newsletter. I haven't come up with a plan for how that could work.</p>
-<p>Medium provides email subscription features, but very few people use them to receive my posts. Thus, I assume a standalone newsletter with the same content will unlikely gain considerable traction.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="content-plan-for-2025">Content Plan for 2025<a href="https://ilyazakharau.com/blog/2024-reflections-2025-plans#content-plan-for-2025" class="hash-link" aria-label="Direct link to Content Plan for 2025" title="Direct link to Content Plan for 2025" translate="no">​</a></h2>
-<p>One more article for "Requirements &amp; API" will conclude the series and the two-year period of publishing API-related content. I covered general topics but don't want to transform them into the API blog, as enough people cover that on a decent level.</p>
-<p>Instead, there will be content about UX and design systems from the product management perspective. I am dealing with something new in my work time, so I have some thoughts and discoveries to share with you.</p>
-<p>Another big topic is Composable solutions. I did the research but haven't written an article about it yet. So, one or two takes will explain that concept and give my perspective.</p>
-<p>There will be several general posts about product management, such as stakeholder power dynamics in enterprises, product documentation, onboarding, etc.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="consistency-is-the-key">Consistency is the Key<a href="https://ilyazakharau.com/blog/2024-reflections-2025-plans#consistency-is-the-key" class="hash-link" aria-label="Direct link to Consistency is the Key" title="Direct link to Consistency is the Key" translate="no">​</a></h2>
-<p>Even though I made 24 posts during a year, that doesn't mean 2 posts in a month cadence. I was more productive in the first half of the year, then barely returned after the summer break with no chance to restore previous productivity. It is difficult to avoid burning out trying to manage professional and personal life.</p>
-<p>Also, I revived my old hobby of playing guitar in a band and writing music. I have a few more years before the midlife crisis strikes, but who knows when it will strike? I want to dedicate more time to that at the expense of my other activities, including that blog.</p>
-<p>So there will be 12 posts, each in a month, no less, no more. That might sound like less content, but I am committed to providing something interesting and appealing.</p>
-<p>Stepping into the second decade of my professional career in IT, I spent some time thinking about what I like the most. And the answer is: performing for the audience. Writing, like music or public speaking, is how to make it.</p>
-<p><strong>It is better to focus on what you like than pretend you follow the masses and enjoy what you don't like.</strong></p>
-<p>Happy 2025! Stay tuned, and see you there!</p>]]></content>
         <category label="Community & Insights" term="Community & Insights"/>
     </entry>
     <entry>
@@ -999,22 +177,6 @@
         <link href="https://ilyazakharau.com/blog/barszawa-blog-edition-07-2024"/>
         <updated>2024-12-22T23:00:00.000Z</updated>
         <summary type="html"><![CDATA[Here is the next blog edition of our Business Analysis Community in Warsaw: BArszawa Blog #7 (December'24)]]></summary>
-        <content type="html"><![CDATA[<p>Here is the next blog edition of our Business Analysis Community in Warsaw: <a href="https://buymeacoffee.com/barszawaorg/barszawa-blog-7-december-24" target="_blank" rel="noopener noreferrer" class="">BArszawa Blog #7 (December'24)</a></p>
-<p>What is inside:</p>
-<ul>
-<li class="">Community updates from recent events "Product Metrics Unveiled" and "AI as Game-Changer for Modern Business Analysis".</li>
-<li class="">And traiditionanly a new portion of useful materials.</li>
-</ul>
-<p>Previous BArszawa editions:</p>
-<ul>
-<li class=""><a href="https://buymeacoffee.com/barszawaorg/barszawa-blog-6-september-24" target="_blank" rel="noopener noreferrer" class="">BArszawa Blog #6 (September'24)</a></li>
-<li class=""><a href="https://buymeacoffee.com/barszawaorg/barszawa-blog-5-may-24" target="_blank" rel="noopener noreferrer" class="">BArszawa Blog #5 (May'24)</a></li>
-<li class=""><a href="https://buymeacoffee.com/barszawaorg/barszawa-blog-april-24-edition" target="_blank" rel="noopener noreferrer" class="">BArszawa Blog - April'24 Edition</a></li>
-<li class=""><a href="https://buymeacoffee.com/barszawaorg/barszawa-blog-march-24-edition" target="_blank" rel="noopener noreferrer" class="">BArszawa Blog - March'24 Edition</a></li>
-<li class=""><a href="https://www.buymeacoffee.com/barszawaorg/yudoyeyefe?utm_source=izblog&amp;utm_medium=post" target="_blank" rel="noopener noreferrer" class="">BArszawa Blog - February'24 Edition</a></li>
-<li class=""><a href="https://www.buymeacoffee.com/barszawaorg/zatetasexo?utm_source=izblog&amp;utm_medium=post" target="_blank" rel="noopener noreferrer" class="">BArszawa Blog - January'24 Edition</a></li>
-</ul>
-<p>Note: that is the last BArszawa blog edition under my editorial watch. In 2025 I will focus exclusively on my blog.</p>]]></content>
         <category label="BArszawa" term="BArszawa"/>
         <category label="Community & Insights" term="Community & Insights"/>
     </entry>
@@ -1024,65 +186,7 @@
         <link href="https://ilyazakharau.com/blog/requirements-api-idl"/>
         <updated>2024-12-16T21:00:00.000Z</updated>
         <summary type="html"><![CDATA[A new chapter in the Requirements & API series continues uncovering API design specifics. This time, we look closer into IDLs (Interface Definition Languages).]]></summary>
-        <content type="html"><![CDATA[<p>A <a class="" href="https://ilyazakharau.com/essays/requirements-api/5-idl"><strong>new chapter</strong></a> in the Requirements &amp; API series continues uncovering API design specifics. This time, we look closer into IDLs (Interface Definition Languages).</p>
-<p>I examine OpenAPI as an industry standard, Microsoft-powered rival TypeSpec, and an underdog JSight. They have a similar purpose but achieve that in very different ways.</p>
-<p>We are approaching the end of the journey. In 2025, one more article will describe API workflows.</p>
-<p>For now, that's it for 2024. Of course, there will be an overview reflecting on the past year and sharing some plans for the upcoming one.</p>
-<p>Stay tuned!</p>
-<p>Previous chapters:</p>
-<ul>
-<li class=""><a class="" href="https://ilyazakharau.com/essays/requirements-api/4-design">Design</a></li>
-<li class=""><a class="" href="https://ilyazakharau.com/essays/requirements-api/3-analysis">Analysis</a></li>
-<li class=""><a class="" href="https://ilyazakharau.com/essays/requirements-api/2-definitions">Definitions</a></li>
-</ul>]]></content>
         <category label="Community & Insights" term="Community & Insights"/>
         <category label="Archive" term="Archive"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Pending Backlog Items Have a Price]]></title>
-        <id>https://ilyazakharau.com/blog/pending-backlog-items</id>
-        <link href="https://ilyazakharau.com/blog/pending-backlog-items"/>
-        <updated>2024-11-10T21:00:00.000Z</updated>
-        <summary type="html"><![CDATA[For future plans, please don't create one-liner tickets in your backlog. In recent years, I have been dealing with massive backlogs of outdated items written by people no longer around. This has resulted in painful and time-consuming reviews and (re)-negotiations with stakeholders. If you have such experience at least once, you are likely a fan of focused and precise backlogs like myself.]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="AI-generated nonsense" src="https://ilyazakharau.com/assets/images/pending_backlog_items-013ccf1fe5c4a3b4d62f5da3bb274dfd.png" width="1024" height="1024" class="img_ev3q"></p>
-<p>For future plans, please don't create one-liner tickets in your backlog.</p>
-<p>The only excuse is when you must "proof" some future work. I knew a project manager in an outsourcing project who told business analysts to create 500 Jira issues to showcase to a customer the scope of work for continuing a development team's assignment.</p>
-<p>In recent years, I have been dealing with massive backlogs of outdated items written by people no longer around. That has resulted in painful and time-consuming reviews and (re)-negotiations with stakeholders.</p>
-<p>If you have such experience at least once, you are likely a fan of focused and precise backlogs like myself.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="missing-context">Missing context<a href="https://ilyazakharau.com/blog/pending-backlog-items#missing-context" class="hash-link" aria-label="Direct link to Missing context" title="Direct link to Missing context" translate="no">​</a></h2>
-<p>Dealing with the previous mess is an unavoidable necessity. You can't simply say, "Let's abandon the current backlog and come up with the new shiny one." Even though that might be a rational decision, not all stakeholders will like that.</p>
-<p>The main issue is the missed context. A few people met on a topic, agreed on a specific outcome, and created a bunch of tickets in Jira with vague descriptions. These are just some improvements for the future, not the priority for the moment. Also, in a good case, there might be an epic, and in a best-case scenario, there might be a follow-up email with meeting notes.</p>
-<p>A year or two passed, and the tickets traveled through plans and roadmaps. Now, you are the newly assigned product owner who has to do something with them. No matter what strategy you choose (we'll discuss that later), you spend valuable time on it. You pay the price for mismanaging the backlog.</p>
-<p>Here, we return to the original thought: <strong>every backlog item has a price, and the longer it exists, the higher that price is</strong>.</p>
-<p>That price concerns the time and mental effort you and your colleagues spend on revisiting. Processing such a ticket might be painful from the process perspective because, in large enterprises, you must comply with a ticket lifecycle and rules.</p>
-<p>It is not a particularly pleasant activity to do during work hours, especially if you have several hundred such items.</p>
-<p><strong>I advise you not to create backlog tickets specifying some plans until you are not sure you will work on them next quarter</strong>.</p>
-<p>I assure you that the only constant with plans is that they change. The business, organizational, and technical environments around your product also change. In the past, I created too many tickets beforehand that I later canceled, and I canceled many more tickets created with good intentions by someone else.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-prevent-that-sprawl">How to prevent that sprawl?<a href="https://ilyazakharau.com/blog/pending-backlog-items#how-to-prevent-that-sprawl" class="hash-link" aria-label="Direct link to How to prevent that sprawl?" title="Direct link to How to prevent that sprawl?" translate="no">​</a></h2>
-<p>Document such items for the future in business or product requirements documents, keep them in a spreadsheet or create an epic/Uber epic without going to specific task/feature decomposition.</p>
-<p>Basically, <strong>it is a backlog for the backlog</strong>. But it is not so detailed, thus not extensive, and informal, so you should not follow the process compliance burden.</p>
-<p>Adding something to Jira may feel like a distant commitment, but it remains a commitment.</p>
-<p>Some outside people can create tickets in your backlog. That is fine when the improvement is isolated and specific and can be completed sooner or later. But make it clear that anything more significant and "it-would-be-nice-for-future" must first be defined and processed in a different format than a bunch of tickets.</p>
-<p>Please try your best to preserve the context, source, and essential details. <strong>Please don't transfer the price to future yourself to others who might eventually continue your job</strong>.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-deal-with-the-existing-sprawl">How to deal with the existing sprawl?<a href="https://ilyazakharau.com/blog/pending-backlog-items#how-to-deal-with-the-existing-sprawl" class="hash-link" aria-label="Direct link to How to deal with the existing sprawl?" title="Direct link to How to deal with the existing sprawl?" translate="no">​</a></h2>
-<p>If you are a new product owner with a vast and unclear product backlog, there is no easy answer. I am sorry.</p>
-<p>You need to review the backlog and cut what is not required anymore. You can only choose some extreme strategies or combine them:</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="strategy-1-total-war">Strategy 1: "Total War"<a href="https://ilyazakharau.com/blog/pending-backlog-items#strategy-1-total-war" class="hash-link" aria-label="Direct link to Strategy 1: &quot;Total War&quot;" title="Direct link to Strategy 1: &quot;Total War&quot;" translate="no">​</a></h3>
-<p>That means you are determined to pay the full price but proceed with the total clean-up. It is complex and requires dedication, setting your soft skills on max. You also need some of your capacity and the capacity of others, also remembering that it is not your primary responsibility.</p>
-<p>You will thoroughly address each topic and trace it back to stakeholders with whom you will prioritize an item or make it redundant until the mess is resolved.</p>
-<p>The alternative option is to cut what you see as unnecessary and wait if that hurts somewhere. That is quicker but riskier, considering the stakeholders who could be unhappy with such rushed decisions.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="strategy-2-dont-touch">Strategy 2: "Don't Touch"<a href="https://ilyazakharau.com/blog/pending-backlog-items#strategy-2-dont-touch" class="hash-link" aria-label="Direct link to Strategy 2: &quot;Don't Touch&quot;" title="Direct link to Strategy 2: &quot;Don't Touch&quot;" translate="no">​</a></h3>
-<p>That means you don't do anything specific and transfer the price to a future you or someone else. Understanding the current priorities is enough; you don't need to touch the past backlog items.</p>
-<p>If senior stakeholders raise something, then it is a trigger to reconsider it. Until then, keep it in a trash can at the bottom of the backlog.</p>
-<p>Even though the approach "not to do anything" has some negative connotations, it is the most cost-effective and common strategy among the PO peers. You are treated by dealing with ongoing priorities and not only how you manage outdated items in the product backlog.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="strategy-3-adapt-to-survive">Strategy 3: "Adapt to survive"<a href="https://ilyazakharau.com/blog/pending-backlog-items#strategy-3-adapt-to-survive" class="hash-link" aria-label="Direct link to Strategy 3: &quot;Adapt to survive&quot;" title="Direct link to Strategy 3: &quot;Adapt to survive&quot;" translate="no">​</a></h3>
-<p>It combines the two extremes: You continuously revisit tickets that have been pending for more than one year while being very conscious and taking time to study involved stakeholders.</p>
-<p>That means you can renegotiate the closing with some stakeholders with whom you already have established connections and trust. With some, you need patience and several rounds to define the next steps.</p>
-<p>Some topics are too politically sensitive, so it is better not to touch them as that might lead to difficult conversations and ego fights. You must navigate your product and team away from uncharted waters and political battles. Usually, there are some topics that are considered relevant by senior management, but downstream teams avoid them like a plague.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="final-thought">Final thought<a href="https://ilyazakharau.com/blog/pending-backlog-items#final-thought" class="hash-link" aria-label="Direct link to Final thought" title="Direct link to Final thought" translate="no">​</a></h2>
-<p>Cancelling a pending ticket is not the only answer. You can restructure it and incorporate what is really important into the current or short-term priorities. You can also align it with the long-term priorities and keep it on the epic level instead of many items. The top class is to transfer such an item to another team (let someone else pay the price).</p>
-<p>But the main idea is to be responsible for a backlog you manage by keeping it focused and preventing it from sprawling. <strong>Don't make other people pay the price for your mismanagement</strong>.</p>]]></content>
-        <category label="Product Management" term="Product Management"/>
-        <category label="Product Strategy" term="Product Strategy"/>
     </entry>
 </feed>

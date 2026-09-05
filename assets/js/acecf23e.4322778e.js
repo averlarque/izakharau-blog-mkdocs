@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkizakharau_blog_docusaurus=self.webpackChunkizakharau_blog_docusaurus||[]).push([[1903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"Product Strategy & Digital Experience Insights","authorsListPath":"/blog/authors"}')}}]);

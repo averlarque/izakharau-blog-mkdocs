@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkizakharau_blog_docusaurus=self.webpackChunkizakharau_blog_docusaurus||[]).push([[4813],{74370:(a,s,u)=>{u.d(s,{A:()=>i});var e=u(98587),r=(u(96540),u(44060)),c=u(74848),n=["children"];function i(a){var s=a.children,u=(0,e.A)(a,n);return(0,c.jsx)(r.A,Object.assign({},u,{children:(0,c.jsx)("main",{className:"bs-page",children:s})}))}}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkizakharau_blog_docusaurus=self.webpackChunkizakharau_blog_docusaurus||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"Essays about Systems, People, and Interfaces in-between","authorsListPath":"/blog/authors"}')}}]);

@@ -1,0 +1,95 @@
+<svg viewBox="0 0 760 1260" width="760" height="1260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flowchart of the OpenSpec workflow: the PM writes a brief and drafts a proposal, the developer designs and applies a solution, tests loop back to regenerating the solution until they pass, then the branch merges and the PM writes docs and archives the change.">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#514e4c"/>
+    </marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4a9b8e"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="760" height="1260" fill="#f7f5f2"/>
+
+  <text x="380" y="34" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="600" fill="#201e1d">OpenSpec Workflow</text>
+
+  <!-- connecting spine -->
+  <line x1="380" y1="104" x2="380" y2="150" stroke="#514e4c" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="380" y1="214" x2="380" y2="260" stroke="#514e4c" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="380" y1="324" x2="380" y2="370" stroke="#514e4c" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="380" y1="434" x2="380" y2="480" stroke="#514e4c" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="380" y1="544" x2="380" y2="590" stroke="#514e4c" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="380" y1="654" x2="380" y2="708" stroke="#514e4c" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="380" y1="850" x2="380" y2="898" stroke="#514e4c" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="398" y="878" font-family="Georgia, serif" font-size="13" fill="#514e4c">yes</text>
+  <line x1="380" y1="964" x2="380" y2="1010" stroke="#514e4c" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="380" y1="1074" x2="380" y2="1120" stroke="#514e4c" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- loop-back: tests fail -->
+  <path d="M210,780 L120,780 L120,622 L138,622" fill="none" stroke="#4a9b8e" stroke-width="2.5" marker-end="url(#arrowAccent)"/>
+  <text x="128" y="700" font-family="Georgia, serif" font-size="13" font-weight="600" fill="#3e8175" transform="rotate(-90 128 700)" text-anchor="middle">no — regenerate</text>
+
+  <!-- role legend -->
+  <circle cx="150" cy="1210" r="6" fill="#4a9b8e"/>
+  <text x="164" y="1215" font-family="Georgia, serif" font-size="13" fill="#514e4c">Product Manager</text>
+  <circle cx="330" cy="1210" r="6" fill="#514e4c"/>
+  <text x="344" y="1215" font-family="Georgia, serif" font-size="13" fill="#514e4c">Developer</text>
+
+  <!-- box template values: x=140 w=480 h=64 -->
+
+  <!-- 1 PM: Write brief -->
+  <rect x="140" y="40" width="480" height="64" rx="4" fill="#ffffff" stroke="#6b6866" stroke-width="1.5"/>
+  <circle cx="164" cy="72" r="6" fill="#4a9b8e"/>
+  <text x="380" y="66" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="600" fill="#201e1d">Write the brief</text>
+  <text x="380" y="86" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#514e4c">business intent, in a Jira ticket</text>
+
+  <!-- 2 PM: /opsx-new -->
+  <rect x="140" y="150" width="480" height="64" rx="4" fill="#ffffff" stroke="#6b6866" stroke-width="1.5"/>
+  <circle cx="164" cy="182" r="6" fill="#4a9b8e"/>
+  <text x="380" y="176" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="600" fill="#201e1d">/opsx-new</text>
+  <text x="380" y="196" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#514e4c">new branch + OpenSpec change created</text>
+
+  <!-- 3 PM: /opsx-continue -->
+  <rect x="140" y="260" width="480" height="64" rx="4" fill="#ffffff" stroke="#6b6866" stroke-width="1.5"/>
+  <circle cx="164" cy="292" r="6" fill="#4a9b8e"/>
+  <text x="380" y="286" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="600" fill="#201e1d">/opsx-continue</text>
+  <text x="380" y="306" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#514e4c">generates proposal.md from the ticket</text>
+
+  <!-- 4 PM: review, commit, push -->
+  <rect x="140" y="370" width="480" height="64" rx="4" fill="#ffffff" stroke="#6b6866" stroke-width="1.5"/>
+  <circle cx="164" cy="402" r="6" fill="#4a9b8e"/>
+  <text x="380" y="396" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="600" fill="#201e1d">Review, commit, push</text>
+  <text x="380" y="416" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#514e4c">iterate on proposal.md, push the branch</text>
+
+  <!-- 5 DEV: design + task -->
+  <rect x="140" y="480" width="480" height="64" rx="4" fill="#ffffff" stroke="#6b6866" stroke-width="1.5"/>
+  <circle cx="164" cy="512" r="6" fill="#514e4c"/>
+  <text x="380" y="506" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="600" fill="#201e1d">Discuss &amp; design</text>
+  <text x="380" y="526" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#514e4c">generates design.md + task.md</text>
+
+  <!-- 6 DEV: /opsx-apply -->
+  <rect x="140" y="590" width="480" height="64" rx="4" fill="#ffffff" stroke="#6b6866" stroke-width="1.5"/>
+  <circle cx="164" cy="622" r="6" fill="#514e4c"/>
+  <text x="380" y="616" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="600" fill="#201e1d">/opsx-apply</text>
+  <text x="380" y="636" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#514e4c">generates the solution in code</text>
+
+  <!-- 7 decision diamond -->
+  <polygon points="380,708 550,780 380,852 210,780" fill="#ffffff" stroke="#6b6866" stroke-width="1.5"/>
+  <text x="380" y="774" text-anchor="middle" font-family="Georgia, serif" font-size="14.5" font-weight="600" fill="#201e1d">Tests pass?</text>
+  <text x="380" y="792" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#514e4c">dev deploy, manual or AI evals</text>
+
+  <!-- 8 merge -->
+  <rect x="140" y="898" width="480" height="64" rx="4" fill="#ffffff" stroke="#6b6866" stroke-width="1.5"/>
+  <text x="380" y="936" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="600" fill="#201e1d">Merge to master</text>
+
+  <!-- 9 PM: docs -->
+  <rect x="140" y="1010" width="480" height="64" rx="4" fill="#ffffff" stroke="#6b6866" stroke-width="1.5"/>
+  <circle cx="164" cy="1042" r="6" fill="#4a9b8e"/>
+  <text x="380" y="1036" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="600" fill="#201e1d">Generate docs</text>
+  <text x="380" y="1056" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#514e4c">release notes + user documentation</text>
+
+  <!-- 10 PM: /opsx-archive -->
+  <rect x="140" y="1120" width="480" height="64" rx="4" fill="#ffffff" stroke="#6b6866" stroke-width="1.5"/>
+  <circle cx="164" cy="1152" r="6" fill="#4a9b8e"/>
+  <text x="380" y="1146" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="600" fill="#201e1d">/opsx-archive</text>
+  <text x="380" y="1166" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#514e4c">syncs the spec, archives the change</text>
+</svg>
