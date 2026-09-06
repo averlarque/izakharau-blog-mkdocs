@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ilyazakharau.com/blog</id>
-    <title>Ilya Zakharau - Essays about Systems, People, and Interfaces in-between</title>
+    <title>Ilya Zakharau - Essays about Systems, People, and the In-Between</title>
     <updated>2026-09-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ilyazakharau.com/blog"/>
